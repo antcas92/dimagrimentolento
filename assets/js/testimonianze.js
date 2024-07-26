@@ -145,4 +145,27 @@ document.addEventListener('DOMContentLoaded', function() {
     currentVideoPage++;
     showTestimonials(filterVideos.value, currentVideoPage);
   });
+
+
+
+
+
+
+
+  //For contattaci button:
+  document.getElementById('contactButton').addEventListener('click', function() {
+    document.getElementById('form').scrollIntoView({ behavior: 'smooth' });
+  });
+    // Aggiungere animazione allo scroll
+    document.addEventListener('scroll', function() {
+      const buttonContainer = document.getElementById('contactButtonContainer');
+      if (!buttonContainer.classList.contains('slide-in')) {
+        buttonContainer.classList.add('slide-in');
+        buttonContainer.style.transform = 'translateY(0)';
+      }
+    });
+  
 });
+
+
+

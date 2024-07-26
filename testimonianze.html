@@ -14,6 +14,7 @@
   <meta name="author" content="Studio Scarpato" />
   <link rel="shortcut icon" href="https://www.nutrizionistascarpato.it/assets/images/webp/logo-100.webp">
   <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="carousel.css" />
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
 
@@ -108,9 +109,79 @@
       background: linear-gradient(90deg, #3f51b5 0%, #00bcd4 100%);
     }
   </style>
+  <style>
+    @keyframes slideIn {
+      from {
+        transform: translateY(100%);
+      }
+      to {
+        transform: translateY(0);
+      }
+    }
+    .hidden-offscreen {
+      transform: translateY(200%);
+      transition: transform 0.5s ease-out;
+    }
+    .slide-in {
+      animation: slideIn 0.5s ease-out;
+    }
+  </style>
+	<!-- START - We recommend to place the below code in head tag of your website html  -->
+	<style>
+		@font-face {
+			font-display: block;
+			font-family: Roboto;
+			src: url(https://assets.sendinblue.com/font/Roboto/Latin/normal/normal/7529907e9eaf8ebb5220c5f9850e3811.woff2) format("woff2"), url(https://assets.sendinblue.com/font/Roboto/Latin/normal/normal/25c678feafdc175a70922a116c9be3e7.woff) format("woff")
+		}
+
+		@font-face {
+			font-display: fallback;
+			font-family: Roboto;
+			font-weight: 600;
+			src: url(https://assets.sendinblue.com/font/Roboto/Latin/medium/normal/6e9caeeafb1f3491be3e32744bc30440.woff2) format("woff2"), url(https://assets.sendinblue.com/font/Roboto/Latin/medium/normal/71501f0d8d5aa95960f6475d5487d4c2.woff) format("woff")
+		}
+
+		@font-face {
+			font-display: fallback;
+			font-family: Roboto;
+			font-weight: 700;
+			src: url(https://assets.sendinblue.com/font/Roboto/Latin/bold/normal/3ef7cf158f310cf752d5ad08cd0e7e60.woff2) format("woff2"), url(https://assets.sendinblue.com/font/Roboto/Latin/bold/normal/ece3a1d82f18b60bcce0211725c476aa.woff) format("woff")
+		}
+
+		#sib-container input:-ms-input-placeholder {
+			text-align: left;
+			font-family: "Helvetica", sans-serif;
+			color: #c0ccda;
+		}
+
+		#sib-container input::placeholder {
+			text-align: left;
+			font-family: "Helvetica", sans-serif;
+			color: #c0ccda;
+		}
+
+		#sib-container textarea::placeholder {
+			text-align: left;
+			font-family: "Helvetica", sans-serif;
+			color: #c0ccda;
+		}
+	</style>
+	<link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
+	<!--  END - We recommend to place the above code in head tag of your website html -->
+
+
+
 </head>
 
 <body class="leading-normal tracking-normal text-white gradient" style="font-family: 'Source Sans Pro', sans-serif;">
+  <div id="contactButtonContainer" class="fixed bottom-4 right-4 z-50 md:hidden hidden-offscreen">
+    <button id="contactButton" class="bg-yellow-500	 text-white font-bold py-2 px-4 rounded-full flex items-center space-x-2 shadow-lg">
+      <i class="fas fa-gift"></i>
+      <span>Richiedi Info</span>
+    </button>
+  </div>
+  
+
   <!--Nav-->
   <nav id="header" class="fixed w-full z-30 top-0 text-white">
     <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
@@ -152,24 +223,29 @@
     </div>
     <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
   </nav>
-  <!--Hero-->
-  <div class="pt-24 pb-10">
+  <div class="pt-24">
     <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
       <!--Left Col-->
-      <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
+      <div class="flex flex-col w-full md:w-2/5 justify-center text-center md:text-left">
         <!-- <p class="uppercase tracking-loose w-full">Perchè saltare da una dieta all'altra senza ottenere risultati?</p> -->
-        <h1 class="my-4 text-3xl mb-5 font-bold leading-tight text-center">
-          <!-- Testimonianze -->
-
+        <h1 class="my-4 text-3xl font-bold leading-tight">
+         Cosa dicono del <br>
+         Dimagrimento Lento?<br> <span style="font-size: 16px;">Ecco le recensioni di alcune delle nostre pazienti</span>
         </h1>
         <!-- <p class="leading-normal text-2xl mb-8">
-          Ecco le nostre sedi
+          Raggiungi con noi il tuo peso ideale e mantienilo per sempre
         </p> -->
         <!-- <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
             Subscribe
           </button> -->
       </div>
+      <!--Right Col-->
+      <div class="w-full md:w-3/5 py-6 text-center">
+        <img class="w-full md:w-4/5 z-50" style="border-radius: 250px 20px 250px 20px;"  alt="foto nutrizionista manuela scarpato"
+          src="./assets/images/1.JPG" />
+        <!-- <img class="w-24 h-24 rounded-full mx-auto" src="https://www.nutrizionistascarpato.it/assets/images/webp/homePotrait.webp" alt="" width="384" height="512"> -->
 
+      </div>
     </div>
   </div>
   <div class="relative -mt-12 lg:-mt-24">
@@ -197,7 +273,12 @@
 
   </div>
 
-<!-- Filtro per i video -->
+
+
+<!-- Sezione per i video -->
+<section class="bg-white py-8">
+  <div class="container max-w-5xl mx-auto m-8">
+    <!-- Filtro per i video -->
 <div class="flex justify-center mb-6 text-black">
   <select id="filter-videos" class="px-4 py-2 border rounded">
     <option value="all">Tutti</option>
@@ -207,12 +288,8 @@
     <option value="-7kg">-7 Kg</option>
   </select>
 </div>
-
-<!-- Sezione per i video -->
-<section class="bg-white py-8">
-  <div class="container max-w-5xl mx-auto m-8">
     <h2 class="w-50 my-2 text-5xl font-bold leading-tight text-center text-gray-800">
-      Testimonianze Video
+      Video
     </h2>
     <div class="w-full mb-4">
       <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
@@ -230,7 +307,7 @@
 <section class="bg-white py-8">
   <div class="container max-w-5xl mx-auto m-8">
     <h2 class="w-50 my-2 text-5xl font-bold leading-tight text-center text-gray-800">
-      Testimonianze Foto
+      Social
     </h2>
     <div class="w-full mb-4">
       <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
@@ -293,6 +370,189 @@
 
 
   </section>
+
+    <!-- Questo è il div al quale il bottone scrollerà -->
+    <div id="form">
+
+<!-- START - We recommend to place the below code where you want the form in your website html  -->
+<div class="sib-form" id="form-section" style="text-align: center;
+         background-color: #ffffff;                                 ">
+  <div id="sib-form-container" class="sib-form-container">
+    <div id="error-message" class="sib-form-message-panel" style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;max-width:540px;">
+      <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+        <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
+          <path d="M256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm-11.49 120h22.979c6.823 0 12.274 5.682 11.99 12.5l-7 168c-.268 6.428-5.556 11.5-11.99 11.5h-8.979c-6.433 0-11.722-5.073-11.99-11.5l-7-168c-.283-6.818 5.167-12.5 11.99-12.5zM256 340c-15.464 0-28 12.536-28 28s12.536 28 28 28 28-12.536 28-28-12.536-28-28-28z" />
+        </svg>
+        <span class="sib-form-message-panel__inner-text">
+                          La tua iscrizione non può essere convalidata.
+                      </span>
+      </div>
+    </div>
+    <div></div>
+    <div id="success-message" class="sib-form-message-panel" style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#085229; background-color:#e7faf0; border-radius:3px; border-color:#13ce66;max-width:540px;">
+      <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+        <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
+          <path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 464c-118.664 0-216-96.055-216-216 0-118.663 96.055-216 216-216 118.664 0 216 96.055 216 216 0 118.663-96.055 216-216 216zm141.63-274.961L217.15 376.071c-4.705 4.667-12.303 4.637-16.97-.068l-85.878-86.572c-4.667-4.705-4.637-12.303.068-16.97l8.52-8.451c4.705-4.667 12.303-4.637 16.97.068l68.976 69.533 163.441-162.13c4.705-4.667 12.303-4.637 16.97.068l8.451 8.52c4.668 4.705 4.637 12.303-.068 16.97z" />
+        </svg>
+        <span class="sib-form-message-panel__inner-text">
+                          La tua prenotazione è avvenuta correttamente.
+                      </span>
+      </div>
+    </div>
+    <div></div>
+    <div id="sib-container" class="sib-container--large sib-container--vertical" style="text-align:center; background-color:rgba(255,255,255,1); max-width:540px; border-radius:3px; border-width:1px; border-color:#dfdfdf; border-style:solid; direction:ltr">
+      <form id="sib-form" method="POST" action="https://0e6bc8d5.sibforms.com/serve/MUIFAIx4p0YpOF2yQ--Oj2tm-GgSGJewonCaomW75eiLufu7VAqgJ1zfvdPYHQxx6ngTUwFvvpnwR8i0aB7ew30Fv_iO79q5Oa7r5WBW3z6bmh7qio88zdfYCxazZX7Az8E0k3rRAzQK72TckYm541L_8Ts_Qputc1s4-UiujRGqFIbP9heuG-z_jS0Lx5vQdbdMiyY24MbXel-E" data-type="subscription">
+        <div style="padding: 8px 0;">
+          <div class="sib-form-block" style="font-size:26px; text-align:center; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif; color:#008080; background-color:transparent; text-align:center">
+            <p><strong>Fatti ricontattare!</strong><br>Lascia i tuoi dati</p>
+          </div>
+        </div>
+        <div style="padding: 8px 0;">
+          <div class="sib-input sib-form-block">
+            <div class="form__entry entry_block">
+              <div class="form__label-row ">
+                <label class="entry__label" style="font-weight: 700; text-align:left; font-size:16px; text-align:left; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif; color:#3c4858;" for="EMAIL" data-required="*">Inserisci la tua Email</label>
+
+                <div class="entry__field">
+                  <input class="input " type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="EMAIL" data-required="true" required />
+                </div>
+              </div>
+
+              <label class="entry__error entry__error--primary" style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
+              </label>
+              <label class="entry__specification" style="font-size:12px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#8390A4; text-align:left">
+                Indica il tuo indirizzo email per iscriverti. Es. abc@xyz.com
+              </label>
+            </div>
+          </div>
+        </div>
+        <div style="padding: 8px 0;">
+          <div class="sib-input sib-form-block">
+            <div class="form__entry entry_block">
+              <div class="form__label-row ">
+                <label class="entry__label" style="font-weight: 700; text-align:left; font-size:16px; text-align:left; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif; color:#3c4858;" for="NOME" data-required="*">Nome</label>
+
+                <div class="entry__field">
+                  <input class="input " maxlength="200" type="text" id="NOME" name="NOME" autocomplete="off" placeholder="NOME" data-required="true" required />
+                </div>
+              </div>
+
+              <label class="entry__error entry__error--primary" style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
+              </label>
+            </div>
+          </div>
+        </div>
+        <div style="padding: 8px 0;">
+          <div class="sib-input sib-form-block">
+            <div class="form__entry entry_block">
+              <div class="form__label-row ">
+                <label class="entry__label" style="font-weight: 700; text-align:left; font-size:16px; text-align:left; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif; color:#3c4858;" for="COGNOME" data-required="*">Cognome</label>
+
+                <div class="entry__field">
+                  <input class="input " maxlength="200" type="text" id="COGNOME" name="COGNOME" autocomplete="off" placeholder="COGNOME" data-required="true" required />
+                </div>
+              </div>
+
+              <label class="entry__error entry__error--primary" style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
+              </label>
+            </div>
+          </div>
+        </div>
+        <div style="padding: 8px 0;">
+          <div class="sib-input sib-form-block">
+            <div class="form__entry entry_block">
+              <div class="form__label-row ">
+                <label class="entry__label" style="font-weight: 700; text-align:left; font-size:16px; text-align:left; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif; color:#3c4858;" for="CELLULARE" data-required="*">Numero di Cellulare</label>
+                <div class="entry__field">
+                  <input maxlength="200" type="text" data-numeric="true" class="input " id="CELLULARE" name="CELLULARE" autocomplete="off" placeholder="CELLULARE" data-required="true" required />
+                </div>
+              </div>
+              <label class="entry__error entry__error--primary" style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
+              </label>
+            </div>
+          </div>
+        </div>
+        <div style="padding: 8px 0;">
+          <div class="sib-input sib-form-block">
+            <div class="form__entry entry_block">
+              <div class="form__label-row ">
+                <label class="entry__label" style="font-weight: 700; text-align:left; font-size:16px; text-align:left; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif; color:#3c4858;" for="COMUNE">Comune di residenza</label>
+
+                <div class="entry__field">
+                  <input class="input " maxlength="200" type="text" id="COMUNE" name="COMUNE" autocomplete="off" placeholder="COMUNE" />
+                </div>
+              </div>
+
+              <label class="entry__error entry__error--primary" style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
+              </label>
+            </div>
+          </div>
+        </div>
+        <div style="padding: 8px 0;">
+          <div class="sib-form-block" style="text-align: center">
+            <button class="sib-form-block__button sib-form-block__button-with-loader" style="font-size:16px; text-align:center; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif; color:#FFFFFF; background-color:#008080; border-radius:15px; border-width:0px;" form="sib-form" type="submit">
+              <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon" viewBox="0 0 512 512">
+                <path d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z" />
+              </svg>
+              Richiedi Consulto Gratuito
+            </button>
+          </div>
+        </div>
+        <div style="padding: 8px 0;">
+          <div class="sib-form-block" style="font-size:16px; text-align:left; font-style:italic; font-family:&quot;Helvetica&quot;, sans-serif; color:#818181; background-color:transparent; text-align:left">
+            <div class="sib-text-form-block">
+              <p>NOTA: la compilazione del post non è vincolante.&nbsp;</p>
+              <p>Verrai ricontattata/o nel giro di 48 ore.</p>
+            </div>
+          </div>
+        </div>
+
+        <input type="text" name="email_address_check" value="" class="input--hidden">
+        <input type="hidden" name="locale" value="it">
+      </form>
+    </div>
+  </div>
+</div>    
+
+<section class="text-white py-12 px-6 md:px-12 rounded-lg mx-4 md:mx-auto max-w-5xl">
+  <div class="md:flex md:items-center">
+    <div class="md:w-1/2 md:pr-8">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">Contatta gli studi</h2>
+      <p class="text-lg mb-6">Se desideri scoprire di più sul Dimagrimento Lento o hai domande specifiche per valutare se i nostri programmi sono adatti alle tue esigenze, siamo qui per te. Contattaci e saremo lieti di fornirti tutte le informazioni necessarie per aiutarti a prendere la decisione giusta.</p>
+    </div>
+    <div class="md:w-1/2">
+      <div class="bg-white text-gray-800 p-4 rounded-lg mb-4 shadow-lg">
+        <div class="flex items-center">
+          <div class="flex-shrink-0">
+            <i class="fas fa-phone-alt text-green-500 text-2xl"></i>
+          </div>
+          <div class="ml-4">
+            <a href="tel:3516793334" class="block">
+              <p class="font-bold">Clicca qui per chiamarci!</p>
+              <p class="text-lg font-bold">351 679 3334</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white text-gray-800 p-4 rounded-lg shadow-lg">
+        <div class="flex items-center">
+          <div class="flex-shrink-0">
+            <i class="fab fa-whatsapp text-green-500 text-2xl"></i>
+          </div>
+          <div class="ml-4">
+            <a href="https://wa.me/3516793334?text=Ciao,%20ho%20bisogno%20di%20informazioni%20sui%20vostri%20servizi." class="block">
+              <p class="font-bold">Non puoi chiamare?</p>
+              <p class="text-lg font-bold">Clicca qui per contattarci su WhatsApp!</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</div>
+    
   <!--Footer-->
   <footer class="bg-white">
     <div class="container mx-auto px-8">
@@ -334,6 +594,34 @@
       </div>
     </div>
   </footer>
+  <!-- START - We recommend to place the below code in footer or bottom of your website html  -->
+<script>
+	window.REQUIRED_CODE_ERROR_MESSAGE = 'Scegli un prefisso paese';
+	window.LOCALE = 'it';
+	window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "Le informazioni fornite non sono valide. Controlla il formato del campo e riprova.";
+  
+	window.REQUIRED_ERROR_MESSAGE = "Questo campo non può essere lasciato vuoto. ";
+  
+	window.GENERIC_INVALID_MESSAGE = "Le informazioni fornite non sono valide. Controlla il formato del campo e riprova.";
+  
+	window.INVALID_NUMBER = "Le informazioni fornite non sono valide. Controlla il formato del campo e riprova.";
+  
+  
+  
+	window.translation = {
+	  common: {
+		selectedList: '{quantity} lista selezionata',
+		selectedLists: '{quantity} liste selezionate'
+	  }
+	};
+  
+	var AUTOHIDE = Boolean(0);
+  </script>
+  <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
+  
+  
+  <!-- END - We recommend to place the above code in footer or bottom of your website html  -->
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>
     var scrollpos = window.scrollY;
@@ -417,7 +705,7 @@
     }
   </script>
 </body>
-<script src="./assets/js/main.js"></script>
+<script src="./assets/js/testimonianze.js"></script>
 <!-- Cookie Consent by FreePrivacyPolicy.com https://www.FreePrivacyPolicy.com -->
 <script type="text/javascript" src="//www.freeprivacypolicy.com/public/cookie-consent/4.0.0/cookie-consent.js" charset="UTF-8"></script>
 <script type="text/javascript" charset="UTF-8">
