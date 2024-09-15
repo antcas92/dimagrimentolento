@@ -146,12 +146,6 @@ document.addEventListener('DOMContentLoaded', function() {
     showTestimonials(filterVideos.value, currentVideoPage);
   });
 
-
-
-
-
-
-
   //For contattaci button:
   document.getElementById('contactButton').addEventListener('click', function() {
     document.getElementById('form').scrollIntoView({ behavior: 'smooth' });

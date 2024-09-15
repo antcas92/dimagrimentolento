@@ -14,7 +14,7 @@
   <meta name="author" content="Studio Scarpato" />
   <link rel="shortcut icon" href="https://www.nutrizionistascarpato.it/assets/images/webp/logo-100.webp">
   <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
-  <link rel="stylesheet" href="carousel.css" />
+  <link rel="stylesheet" href="./assets/css/basic.css" />
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
 
   <meta property="og:locale" content="it_IT" />
@@ -117,18 +117,11 @@
     <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
       <div class="pl-4 flex items-center">
         <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
-          <!--Icon from: http://www.potlabicons.com/ -->
-          <!-- <svg class="h-8 fill-current inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.005 512.005">
-              <rect fill="#2a2a31" x="16.539" y="425.626" width="479.767" height="50.502" transform="matrix(1,0,0,1,0,0)" />
-              <path
-                class="plane-take-off"
-                d=" M 510.7 189.151 C 505.271 168.95 484.565 156.956 464.365 162.385 L 330.156 198.367 L 155.924 35.878 L 107.19 49.008 L 211.729 230.183 L 86.232 263.767 L 36.614 224.754 L 0 234.603 L 45.957 314.27 L 65.274 347.727 L 105.802 336.869 L 240.011 300.886 L 349.726 271.469 L 483.935 235.486 C 504.134 230.057 516.129 209.352 510.7 189.151 Z "
-              />
-            </svg> -->
-          <img class="w-7 inline" src="https://www.nutrizionistascarpato.it/assets/images/webp/logo-100.webp" alt="logo">
+ 
           <div class="inline pl-2">
-            Studio Scarpato
+            Dimagrimento Lento
           </div>
+          <img class="inline" style="width: 2.55rem;" src="./assets/images/webp/logo-new.webp">
         </a>
       </div>
       <div class="block lg:hidden pr-4">
@@ -159,32 +152,43 @@
     </div>
     <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
   </nav>
-  <!--Hero-->
-  <div class="pt-24">
-    <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
-      <!--Left Col-->
-      <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
-        <!-- <p class="uppercase tracking-loose w-full">Perchè saltare da una dieta all'altra senza ottenere risultati?</p> -->
-        <h1 class="my-4 text-3xl font-bold leading-tight">
-          Stanca di saltare da una dieta all’altra? <br><br> Inizia OGGI il tuo percorso di dimagrimento lento e diventa una vera “Nutrizionista di te stessa”.
-        </h1>
-        <!-- <p class="leading-normal text-2xl mb-8">
-          Raggiungi con noi il tuo peso ideale e mantienilo per sempre
-        </p> -->
-        <!-- <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-            Subscribe
-          </button> -->
-      </div>
-      <!--Right Col-->
-      <div class="w-full md:w-3/5 py-6 text-center">
-        <img class="w-full md:w-4/5 z-50" style="border-radius: 250px 20px 250px 20px;"  alt="foto nutrizionista manuela scarpato"
-          src="https://www.nutrizionistascarpato.it/assets/images/webp/homePotrait.webp" />
-        <!-- <img class="w-24 h-24 rounded-full mx-auto" src="https://www.nutrizionistascarpato.it/assets/images/webp/homePotrait.webp" alt="" width="384" height="512"> -->
+<!-- Hero -->
+<div class="pt-16">
+  <div class="container px-4 mx-auto flex flex-wrap flex-col md:flex-row items-center">
+    
+    <!-- Sezione Testo -->
+    <div class="flex flex-col w-full md:w-1/2 justify-center items-center text-center md:text-left md:pr-8">
+      
+<!-- Titolo principale ottimizzato per mobile -->
+<h1 class="my-4 text-xl md:text-3xl font-bold leading-tight md:leading-snug text-white">
+  <span class="block mb-1 text-lg md:text-xl">Stanca di saltare da una dieta all’altra?</span>
+  <span class="block text-lg md:text-xl">Inizia oggi il tuo percorso di</span>
+  <span class="block text-5xl md:text-6xl font-bold mt-2"
+        style="color:#22f752; text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 1px 3px rgba(0, 0, 0, 0.2);">
+    Dimagrimento Lento
+  </span>
+  <span class="block mt-6 text-xl md:text-2xl">
+    e diventa la<br>
+    "<span class="underline" style="color: white; font-size: 1.25em;">Nutrizionista di te stessa</span>"
+  </span>
+</h1>
 
-      </div>
+      <!-- Pulsante CTA -->
+      <button style="background-color: #12bd39;" class="mx-auto hover:bg-yellow-200  text-white-800 font-bold rounded-full my-6 py-3 px-6 shadow-xl focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+        Inizia ora
+      </button>
+    </div>
+
+    <!-- Sezione Immagine -->
+    <div class="w-full md:w-1/2 py-6 text-center">
+      <img class="home-img max-w-full h-auto rounded-lg shadow-2xl" alt="foto nutrizionista manuela scarpato" src="assets/images/home2.jpeg"/>
     </div>
   </div>
-  <div class="relative -mt-12 lg:-mt-24">
+</div>
+
+
+
+  <div class="relative">
     <svg viewBox="0 0 1428 174" version="1.1" xmlns="http://www.w3.org/2000/svg"
       xmlns:xlink="http://www.w3.org/1999/xlink">
       <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -210,8 +214,8 @@
   </div>
   <section class="bg-white border-b py-8">
     <div class="container max-w-5xl mx-auto m-8">
-      <h2 class="w-50 my-2 text-5xl font-bold leading-tight text-center text-gray-800">
-        Raggiungi e mantieni per sempre il tuo peso ideale senza:
+      <h2 class="w-50 my-2 text-3xl font-bold leading-tight text-center text-gray-800">
+        Raggiungi e mantieni per sempre il tuo peso ideale
 
       </h2>
       <div class="w-full mb-4">
@@ -223,14 +227,24 @@
             <!-- I risultati sono per sempre e senza bisogno di  -->
           </h3>
 
-          <ul class="list-disc text-gray-800 ml-5 text-xl">
-            <li class="mb-5">Diete drastiche o diete ad eliminazione di alimenti</li>
-            <li class="mb-5">Beveroni, integratori, tisane o pillole spezza fame</li>
-            <li class="">Allenamenti estenuanti</li>
+          <ul class="text-gray-800 ml-5 text-xl list-none">
+            <li class="mb-5 flex items-start">
+              <img src="./assets/images/ok-circle.svg" alt="Check verde" class="w-6 h-6 mr-2 mt-1">
+              <span><span class="font-bold">SENZA</span> diete drastiche o diete ad eliminazione di alimenti</span>
+            </li>
+            <li class="mb-5 flex items-start">
+              <img src="./assets/images/ok-circle.svg" alt="Check verde" class="w-6 h-6 mr-2 mt-1">
+              <span><span class="font-bold">SENZA</span> beveroni, integratori, tisane o pillole spezza fame</span>
+            </li>
+            <li class="flex items-start">
+              <img src="./assets/images/ok-circle.svg" alt="Check verde" class="w-6 h-6 mr-2 mt-1">
+              <span><span class="font-bold">SENZA</span> allenamenti estenuanti</span>
+            </li>
           </ul>
+          
+          
           <p class="text-gray-600 mt-10 mb-8">
-            Grazie all’innovativo metodo di “Dimagrimento Lento” e ai percorsi dello Studio Scarpato
-          </p>
+            Il metodo 'Dimagrimento Lento' è ideato per accompagnarti verso il raggiungimento del peso ideale in maniera equilibrata e duratura.          </p>
           <div class="flex items-center justify-start">
             <button
               class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
@@ -241,41 +255,46 @@
           </div>
         </div>
         <div class="w-full sm:w-1/2 p-6">
-          <img class="w-full md:w-4/5 z-50  rounded-lg" style="height: 250px;"
-            src="https://www.nutrizionistascarpato.it/newHome/img/2.webp"  alt="foto no beveroni"/>
+          <img class="w-full md:w-4/5 z-50  rounded-lg"
+            src="./assets/images/rosy-bilancia.jpeg"  alt="foto no beveroni"/>
         </div>
       </div>
-      <!-- <div class="flex flex-wrap flex-col-reverse sm:flex-row">
-        <div class="w-full sm:w-1/2 p-6">
-          <img class="w-full md:w-4/5 z-50 rounded-lg" style="height: 250px;"
-            src="https://www.nutrizionistascarpato.it/newHome/img/5.jpeg" />
-        </div>
-        <div class="w-full sm:w-1/2 p-6 mt-6">
-          <div class="align-middle">
-            <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
-              Il segreto dell’innovativo metodo di <br> Dimagrimento
-              Lento?
-            </h3>
-            <p class="text-gray-600 mb-8">
-              Concentrarsi sulla vera causa dell’eccesso di peso:
-              la trasformazione dei comportamenti disfunzionali ad un risultato di dimagrimento che possa essere
-              mantenuto per sempre.
-            </p>
-            <div class="flex items-center justify-start">
-              <button
-                class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                Scopri di più sul Dimagrimento Lento
-              </button>
-            </div>
-          </div>
-        </div>
-      </div> -->
     </div>
   </section>
-  <section class="bg-white border-b py-8">
+  <section class="bg-white py-4">
+    <div class="container mx-auto px-2 pb-5 text-gray-800">
+      <div class="flex flex-col sm:flex-row justify-center my-12 sm:my-4">
+        <div class="flex flex-col w-5/6 lg:w-1/3 mx-auto lg:mx-0 rounded-lg bg-white mt-4 sm:-mt-6 shadow-lg z-10">
+          <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
+            <div class="w-full p-8 text-xl font-bold text-center">
+       I nostri numeri, la vostra soddisfazione
+            </div>
+            <div class="h-1 w-full gradient my-0 py-0 rounded-t"></div>
+          </div>
+          <ul class="w-full text-center text-sm">
+            <li class="border-b p-4"><b>2 studi </b>a Salerno ed Angri </li>
+            <li class="border-b p-4"><b>Oltre 1000</b> pazienti seguiti con successo</li>
+            <li class="border-b p-4"><b>Un team di 7 esperte nutrizioniste</b>, pronte a seguirti passo dopo passo</li>
+            <li class="border-b p-4"><b>Più di 3000 piani alimentari personalizzati<b> consegnati</li>
+          </ul>
+          <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
+            <div class="flex items-center justify-center">
+              <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg">
+                <a href="./testimonianze.html">
+                  Clicca qui per vedere cosa dicono di noi
+                </a>
+              </button>
+            </div>
+          </div> 
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- <section class="bg-white border-b py-8">
     <div class="container max-w-5xl mx-auto m-8">
-      <h2 class="w-50 my-2 text-5xl font-bold leading-tight text-center text-gray-800">
-        Vuoi saperne di più sul Dimagrimento lento?
+      <h2 class="w-50 my-2 text-3xl font-bold leading-tight text-center text-gray-800">
+        I nostri numeri, la vostra soddisfazione
 </h2>
       <div class="w-full mb-4">
         <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
@@ -296,130 +315,8 @@
         </div>
       </div>
     </div>
-  </section>
-
-  <section class="bg-white py-8">
-    <div class="container max-w-5xl mx-auto m-8">
-      <h2 class="w-50 my-2 text-5xl font-bold leading-tight text-center text-gray-800">
-        Testimonianze
-      </h2>
-      <div class="w-full mb-4">
-        <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
-      </div>
-    </div>
-    <div class="w-full mb-4 h-90">
-      <div class='wrapper'>
-        <div class='carousel text-gray-800'>
-          <div class='carousel__item'>
-            <div class='carousel__item-head'>
-              <img class="rounded-full"  alt="foto recensione"
-                src="https://img.icons8.com/bubbles/344/cloud-account-login-female.png">
-            </div>
-            <div class='carousel__item-body'>
-              <p class='title'>Carmela Cavaliere</p>
-              <p>Pensavo di non farcela ma ho perso 16kg!</p>
-            </div>
-          </div>
-          <div class='carousel__item'>
-            <div class='carousel__item-head'>
-              <img class="rounded-full"  alt="foto recensione"
-                src="https://img.icons8.com/bubbles/344/cloud-account-login-female.png">
-
-            </div>
-            <div class='carousel__item-body'>
-              <p class='title'>Scognamiglio Anna</p>
-              <p>Professioniste serie e affidabili</p>
-            </div>
-          </div>
-          <div class='carousel__item'>
-            <div class='carousel__item-head'>
-              <img class="rounded-full"  alt="foto recensione"
-                src="https://img.icons8.com/bubbles/344/cloud-account-login-female.png">
-
-            </div>
-            <div class='carousel__item-body'>
-              <p class='title'>Rita Del Sorbo</p>
-              <p>Amano il proprio lavoro e lo trasmettono</p>
-            </div>
-          </div>
-          <div class='carousel__item'>
-            <div class='carousel__item-head'>
-              <img class="rounded-full"  alt="foto recensione"
-                src="https://img.icons8.com/bubbles/344/cloud-account-login-female.png">
-
-            </div>
-            <div class='carousel__item-body'>
-              <p class='title'>Giovanna Francavilla </p>
-              <p>Mi è piaciuto tantissimo il percorso nutrizionale fornitomi ❤️</p>
-            </div>
-          </div>
-          <div class='carousel__item'>
-            <div class='carousel__item-head'>
-              <img class="rounded-full"  alt="foto recensione"
-                src="https://img.icons8.com/bubbles/344/cloud-account-login-female.png">
-
-            </div>
-            <div class='carousel__item-body'>
-              <p class='title'>Serena D'Onofrio</p>
-              <p>Professionalità, competenza ed incredibili empatia e cortesia</p>
-            </div>
-          </div>
-          <div class='carousel__item'>
-            <div class='carousel__item-head'>
-              <img class="rounded-full"  alt="foto recensione"
-                src="	https://img.icons8.com/bubbles/344/cloud-account-login-female.png">
-
-            </div>
-            <div class='carousel__item-body'>
-              <p class='title'>Annalisa Fantasia</p>
-              <p>Sto imparando a mangiare bene e a gestire i miei attacchi di fame</p>
-            </div>
-          </div>
-          <div class='carousel__item'>
-            <div class='carousel__item-head'>
-              <img class="rounded-full"  alt="foto recensione"
-                src="	https://img.icons8.com/bubbles/344/cloud-account-login-female.png">
-
-            </div>
-            <div class='carousel__item-body'>
-              <p class='title'>Anna Santonicola</p>
-              <p>Ho una dieta varia e gustosa</p>
-            </div>
-          </div>
-          <div class='carousel__item'>
-            <div class='carousel__item-head'>
-              <img class="rounded-full" alt="foto recensione"
-                src="	https://img.icons8.com/bubbles/344/cloud-account-login-female.png">
-
-            </div>
-            <div class='carousel__item-body'>
-              <p class='title'>Rosa Todisco</p>
-              <p>Ho cambiato completamente approccio al cibo</p>
-            </div>
-          </div>
-          <div class='carousel__item'>
-            <div class='carousel__item-head'>
-              <img class="rounded-full"  alt="foto recensione"
-                src="	https://img.icons8.com/bubbles/344/cloud-account-login-female.png">
-
-            </div>
-            <div class='carousel__item-body'>
-              <p class='title'>Maria Argentino</p>
-              <p>Dopo aver perso 14,5kg mi sento rinata</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="flex items-center justify-center mt-5 mb-5">
-      <button
-        class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg">
-        <a href="./testimonianze.html">
-          Ecco cosa dicono di noi i nostri pazienti
-        </a>
-      </button>
-    </div>
-  </section>
+  </section> -->
+ 
   <svg class="wave-top" viewBox="0 0 1439 147" version="1.1" xmlns="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink">
     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -504,41 +401,6 @@
   </div>
 
 
-  <section class="bg-white  py-8">
-    <div class="container mx-auto px-2  pb-5 text-gray-800">
-      <div class="flex flex-col sm:flex-row justify-center pt-12 my-12 sm:my-4">
-        <div class="flex flex-col w-5/6 lg:w-1/3 mx-auto lg:mx-0 rounded-lg bg-white mt-4 sm:-mt-6 shadow-lg z-10">
-          <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
-            <div class="w-full p-8 text-xl font-bold text-center">
-              Lo Studio di Nutrizioniste Scarpato è il primo studio di Nutrizioniste in Italia specializzato nei
-              percorsi di
-              Dimagrimento Lento.
-              <br><br>
-
-              Ecco i nostri numeri:
-            </div>
-            <div class="h-1 w-full gradient my-0 py-0 rounded-t"></div>
-          </div>
-          <ul class="w-full text-center text-sm">
-            <li class="border-b py-4">Due studi aperti in provincia di Salerno</li>
-            <li class="border-b py-4">Oltre 500 pazienti seguiti</li>
-            <li class="border-b py-4">Un team di 7 nutrizioniste </li>
-            <li class="border-b py-4">Oltre 3000 piani alimentari consegnati</li>
-
-          </ul>
-          <!-- <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-            <div class="flex items-center justify-center">
-              <button
-                class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg">
-                <a href="./metodo.html">
-                  Vieni a trovarci
-                </a>                 </button>
-            </div>
-          </div> -->
-        </div>
-      </div>
-  </section>
-
   <!-- <section class="bg-gray-100 py-8">
     <iframe src="https://www.google.com/maps/d/embed?mid=14QO_aey_4ijfrY069N_K-P7AdB_MKok&ehbc=2E312F" width="100%"
       height="480"></iframe>
@@ -585,19 +447,29 @@
         Prenota ora
       </a> </button>
   </section>
+      <!-- brevo-form include start-->
+      <div id="brevo-form"></div>
+      <script>
+        async function loadBrevoForm() {
+            const response = await fetch('brevo-widget.html');
+            const formContent = await response.text();
+            document.getElementById('brevo-form').innerHTML = formContent;
+        }
+        loadBrevoForm();
+    </script>
+      <!-- brevo-form include end-->
   <!--Footer-->
   <footer class="bg-white">
     <div class="container mx-auto px-8">
       <div class="w-full flex flex-col md:flex-row py-6">
-        <div class="flex-1 mb-6 text-black">
+        <!-- <div class="flex-1 mb-6 text-black">
           <a class="text-pink-600 no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
-            <!--Icon from: http://www.potlabicons.com/ -->
-            <img class="w-7 inline" src="https://www.nutrizionistascarpato.it/assets/images/webp/logo-100.webp" alt="foto logo">
+             <img class="w-7 inline" src="https://www.nutrizionistascarpato.it/assets/images/webp/logo-100.webp" alt="foto logo">
             <div class="inline pl-2">
               Studio Scarpato
             </div>
           </a>
-        </div>
+        </div> -->
         <div class="flex-1">
           <p class="uppercase text-gray-500 md:mb-6">Social</p>
           <ul class="list-reset mb-6">
