@@ -14,47 +14,51 @@ document.addEventListener('DOMContentLoaded', function() {
   const testimonialsContainer = document.getElementById('testimonials');
   
   const imagePaths = [
-    { path: basePath + '2023_1.png', category: '2023' },
-    { path: basePath + '2023_2.png', category: '2023' },
-    { path: basePath + '2023_3.png', category: '2023' },
-    { path: basePath + '2023_4.png', category: '2023' },
-    { path: basePath + '2023_5.png', category: '2023' },
-    { path: basePath + '2023_6.png', category: '2023' },
-    { path: basePath + '2023_7.png', category: '2023' },
-    { path: basePath + '2023_8.png', category: '2023' },
-    { path: basePath + '2023_9.png', category: '2023' },
+    { path: basePath + '2023_1.png', category: '2024' },
+    { path: basePath + '2023_2.png', category: '2024' },
+    { path: basePath + '2023_3.png', category: '2024' },
+    { path: basePath + '2023_4.png', category: '2024' },
+    { path: basePath + '2023_5.png', category: '2024' },
+    { path: basePath + '2023_6.png', category: '2024' },
+    { path: basePath + '2023_7.png', category: '2024' },
+    { path: basePath + '2023_8.png', category: '2024' },
+    { path: basePath + '2023_9.png', category: '2024' },
     { path: basePath + 'testimonianza_1.png', category: 'testimonianza' },
-    { path: basePath + 'testimonianza_2.png', category: 'testimonianza' },
-    { path: basePath + 'testimonianza_3.png', category: 'testimonianza' },
-    { path: basePath + 'testimonianza_4.png', category: 'testimonianza' },
-    { path: basePath + 'testimonianza_5.png', category: 'testimonianza' },
-    { path: basePath + 'testimonianza_6.png', category: 'testimonianza' },
-    { path: basePath + 'testimonianza_7.png', category: 'testimonianza' },
-    { path: basePath + 'testimonianza_8.png', category: 'testimonianza' },
-    { path: basePath + 'testimonianza_9.png', category: 'testimonianza' },
-    { path: basePath + 'testimonianza_10.png', category: 'testimonianza' },
-    { path: basePath + 'testimonianza_11.png', category: 'testimonianza' },
-    { path: basePath + 'testimonianza_12.png', category: 'testimonianza' },
-    { path: basePath + 'testimonianza_13.png', category: 'testimonianza' },
-    { path: basePath + 'testimonianza_14.png', category: 'testimonianza' },
-    { path: basePath + 'testimonianza_15.png', category: 'testimonianza' },
-    { path: basePath + 'testimonianza_16.png', category: 'testimonianza' },
-    { path: basePath + 'testimonianza_17.png', category: 'testimonianza' },
-    { path: basePath + 'testimonianza_18.png', category: 'testimonianza' },
-    { path: basePath + 'testimonianza_19.png', category: 'testimonianza' },
-    { path: basePath + 'testimonianza_20.png', category: 'testimonianza' },
-    { path: basePath + 'testimonianza_21.png', category: 'testimonianza' },
-    { path: basePath + 'testimonianza_22.png', category: 'testimonianza' },
+    { path: basePath + 'testimonianza_2.png', category: '2023' },
+    { path: basePath + 'testimonianza_3.png', category: '2023' },
+    { path: basePath + 'testimonianza_4.png', category: '2023' },
+    { path: basePath + 'testimonianza_5.png', category: '2023' },
+    { path: basePath + 'testimonianza_6.png', category: '2023' },
+    { path: basePath + 'testimonianza_7.png', category: '2023' },
+    { path: basePath + 'testimonianza_8.png', category: '2023' },
+    { path: basePath + 'testimonianza_9.png', category: '2023' },
+    { path: basePath + 'testimonianza_10.png', category: '2023' },
+    { path: basePath + 'testimonianza_11.png', category: '2023' },
+    { path: basePath + 'testimonianza_12.png', category: '2023' },
+    { path: basePath + 'testimonianza_13.png', category: '2023' },
+    { path: basePath + 'testimonianza_14.png', category: '2023' },
+    { path: basePath + 'testimonianza_15.png', category: '2023' },
+    { path: basePath + 'testimonianza_16.png', category: '2023' },
+    { path: basePath + 'testimonianza_17.png', category: '2023' },
+    { path: basePath + 'testimonianza_18.png', category: '2023' },
+    { path: basePath + 'testimonianza_19.png', category: '2023' },
+    { path: basePath + 'testimonianza_20.png', category: '2023' },
+    { path: basePath + 'testimonianza_21.png', category: '2023' },
+    { path: basePath + 'testimonianza_22.png', category: '2023' },
     // Aggiungi altri percorsi se necessario
   ];
 
   const testimonials = [
-    { videoid: 'mg0BiI8kVSM', category: '-8kg', name: 'Grazia Calone', description: '-8Kg Ho avuto risultati che non mi sarei mai aspettata' },
-    { videoid: 'dJJaxyO6fSs', category: '-20kg', name: 'Maria Buonocore', description: '-20KG E’ possibile rientrare nei panni di una volta, perdere i “rotolini” e smettere di mangiare per noia e stress' },
-    { videoid: 'FZm7w6Nd_-4', category: '-20kg', name: 'Giovanna Sorrentino', description: '-20KG Di solito mi stanco di una dieta dopo due mesi... invece ora sono felice!' },
-    { videoid: 'Z4HgI07oNYM', category: '-17kg', name: 'Valeria Mauro', description: '-17Kg Non è una dieta mordi e fuggi, ti cambia per tutta la vita' },
-    { videoid: 'gwAaQxLGLqA', category: '-20kg', name: 'Annamaria Mercurio', description: '-20KG Sono più sicura di me e più vicina alla donna che voglio essere' },
-    { videoid: 'JGCuItKy-54', category: '-7kg', name: 'Ylenia Afeltra', description: '-7KG E’ cambiato completamente il mio approccio con l’alimentazione' },
+    { videoid: 'tdjwC8QEyEc', category: '2024', name: 'Alcune testimonianze', description: ''},
+    { videoid: 'WIqKbnbXirc', category: '2024', name: 'Giovanna Limodio', description: ''},
+    { videoid: 'LeZBnmsBLM8', category: '2024', name: 'Daniela Marino', description: ''},
+    { videoid: 'FRuyAC76T_o', category: '2024', name: 'Olimpia Fiumara', description: ''},
+    { videoid: 'mg0BiI8kVSM', category: '2023', name: 'Grazia Calone', description: ''},
+    { videoid: 'dJJaxyO6fSs', category: '2023', name: 'Maria Buonocore', description: '' },
+    { videoid: 'FZm7w6Nd_-4', category: '2022', name: 'Giovanna Sorrentino', description: '' },
+    { videoid: 'Z4HgI07oNYM', category: '2022', name: 'Valeria Mauro', description: '' },
+    { videoid: 'gwAaQxLGLqA', category: '2021', name: 'Annamaria Mercurio', description: '' },
+    { videoid: 'JGCuItKy-54', category: '2021', name: 'Ylenia Afeltra', description: '' },
     // Aggiungi altri video se necessario
   ];
 
@@ -100,7 +104,7 @@ document.addEventListener('DOMContentLoaded', function() {
       const liteYouTube = document.createElement('lite-youtube');
       liteYouTube.setAttribute('style', 'width: 100%;');
       liteYouTube.setAttribute('videoid', testimonial.videoid);
-      liteYouTube.setAttribute('params', 'start=6');
+      //liteYouTube.setAttribute('params', 'start=6');
       
       const p = document.createElement('p');
       p.className = 'text-gray-800 pt-3';
