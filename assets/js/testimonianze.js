@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
   ];
 
   const testimonials = [
-    { videoid: 'tdjwC8QEyEc', category: '2024', name: 'Alcune testimonianze', description: ''},
+    { videoid: 'tdjwC8QEyEc', category: '2024', name: 'Tante testimonianze', description: ''},
     { videoid: 'WIqKbnbXirc', category: '2024', name: 'Giovanna Limodio', description: ''},
     { videoid: 'LeZBnmsBLM8', category: '2024', name: 'Daniela Marino', description: ''},
     { videoid: 'FRuyAC76T_o', category: '2024', name: 'Olimpia Fiumara', description: ''},
