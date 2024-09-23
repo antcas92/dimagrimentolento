@@ -28,9 +28,6 @@
     <header>
         <h1>Benvenuto sulla pagina di dimagrimento lento</h1>
     </header>
-    <div class="container">
-        <h2>Contenuto principale</h2>
-        <p>Questo è un esempio di pagina predefinita.</p>
-    </div>
+  
 </body>
 </html>
