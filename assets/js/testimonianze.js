@@ -49,16 +49,16 @@ document.addEventListener('DOMContentLoaded', function() {
   ];
 
   const testimonials = [
-    { videoid: 'tdjwC8QEyEc', category: '2024', name: 'Tante testimonianze', description: ''},
-    { videoid: 'WIqKbnbXirc', category: '2024', name: 'Giovanna Limodio', description: ''},
-    { videoid: 'LeZBnmsBLM8', category: '2024', name: 'Daniela Marino', description: ''},
-    { videoid: 'FRuyAC76T_o', category: '2024', name: 'Olimpia Fiumara', description: ''},
-    { videoid: 'mg0BiI8kVSM', category: '2023', name: 'Grazia Calone', description: ''},
-    { videoid: 'dJJaxyO6fSs', category: '2023', name: 'Maria Buonocore', description: '' },
-    { videoid: 'FZm7w6Nd_-4', category: '2022', name: 'Giovanna Sorrentino', description: '' },
-    { videoid: 'Z4HgI07oNYM', category: '2022', name: 'Valeria Mauro', description: '' },
-    { videoid: 'gwAaQxLGLqA', category: '2021', name: 'Annamaria Mercurio', description: '' },
-    { videoid: 'JGCuItKy-54', category: '2021', name: 'Ylenia Afeltra', description: '' },
+    { videoid: 'vU9QzdcLi10', category: '2024', name: 'Non è solo dieta: è un nuovo modo di vivere che ti cambia per sempre', description: ''},
+    { videoid: 'WIqKbnbXirc', category: '2024', name: '"Ho scoperto che non era fame vera, ma ansia: ora so come gestirla senza il cibo"', description: ''},
+    { videoid: 'LeZBnmsBLM8', category: '2024', name: '"Ho smesso di essere vittima delle diete: ora so gestire il mio rapporto col cibo"', description: ''},
+    { videoid: 'FRuyAC76T_o', category: '2024', name: '"A 67 anni ho smesso di credere alle diete drastiche: il cambiamento arriva con la calma"', description: ''},
+    { videoid: 'mg0BiI8kVSM', category: '2023', name: '"Non è una dieta drastica: finalmente ho trovato un metodo che rispetta i miei tempi"', description: ''},
+    { videoid: 'dJJaxyO6fSs', category: '2023', name: '“Ho imparato come smettere di mangiare per noia e stress”', description: '' },
+    { videoid: 'FZm7w6Nd_-4', category: '2022', name: '"Prima mi stancavo dopo due mesi di dieta, ora ho trovato gli stimoli giusti per continuare"', description: '' },
+    { videoid: 'Z4HgI07oNYM', category: '2022', name: '“Non è una dieta mordi e fuggi, ti cambia per tutta la vita”', description: '' },
+    { videoid: 'gwAaQxLGLqA', category: '2021', name: '"A 17 anni ho deciso di prendermi cura di me stessa, senza più paura di fallire"', description: '' },
+    { videoid: 'JGCuItKy-54', category: '2021', name: '"È cambiato completamente il mio approccio all’alimentazione"', description: '' },
     // Aggiungi altri video se necessario
   ];
 
