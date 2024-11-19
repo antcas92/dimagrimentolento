@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
   // Variabili e costanti
-  const basePath = './assets/testimonianze_fb/';
+ // const basePath = './assets/testimonianze_fb/';
+  const basePath = './assets/images/ig/';
   const photosPerPage = 4;
   const videosPerPage = 3;
   let currentPhotoPage = 0;
@@ -14,38 +15,27 @@ document.addEventListener('DOMContentLoaded', function() {
   const testimonialsContainer = document.getElementById('testimonials');
   
   const imagePaths = [
-    { path: basePath + '2023_1.png', category: '2024' },
-    { path: basePath + '2023_2.png', category: '2024' },
-    { path: basePath + '2023_3.png', category: '2024' },
-    { path: basePath + '2023_4.png', category: '2024' },
-    { path: basePath + '2023_5.png', category: '2024' },
-    { path: basePath + '2023_6.png', category: '2024' },
-    { path: basePath + '2023_7.png', category: '2024' },
-    { path: basePath + '2023_8.png', category: '2024' },
-    { path: basePath + '2023_9.png', category: '2024' },
-    { path: basePath + 'testimonianza_1.png', category: 'testimonianza' },
-    { path: basePath + 'testimonianza_2.png', category: '2023' },
-    { path: basePath + 'testimonianza_3.png', category: '2023' },
-    { path: basePath + 'testimonianza_4.png', category: '2023' },
-    { path: basePath + 'testimonianza_5.png', category: '2023' },
-    { path: basePath + 'testimonianza_6.png', category: '2023' },
-    { path: basePath + 'testimonianza_7.png', category: '2023' },
-    { path: basePath + 'testimonianza_8.png', category: '2023' },
-    { path: basePath + 'testimonianza_9.png', category: '2023' },
-    { path: basePath + 'testimonianza_10.png', category: '2023' },
-    { path: basePath + 'testimonianza_11.png', category: '2023' },
-    { path: basePath + 'testimonianza_12.png', category: '2023' },
-    { path: basePath + 'testimonianza_13.png', category: '2023' },
-    { path: basePath + 'testimonianza_14.png', category: '2023' },
-    { path: basePath + 'testimonianza_15.png', category: '2023' },
-    { path: basePath + 'testimonianza_16.png', category: '2023' },
-    { path: basePath + 'testimonianza_17.png', category: '2023' },
-    { path: basePath + 'testimonianza_18.png', category: '2023' },
-    { path: basePath + 'testimonianza_19.png', category: '2023' },
-    { path: basePath + 'testimonianza_20.png', category: '2023' },
-    { path: basePath + 'testimonianza_21.png', category: '2023' },
-    { path: basePath + 'testimonianza_22.png', category: '2023' },
-    // Aggiungi altri percorsi se necessario
+    { path: basePath + '2024_ig_1.webp', category: '2024' },
+    { path: basePath + '2024_ig_2.webp', category: '2024' },
+    { path: basePath + '2024_ig_3.webp', category: '2024' },
+    { path: basePath + '2024_ig_4.webp', category: '2024' },
+    { path: basePath + '2024_ig_5.webp', category: '2024' },
+    { path: basePath + '2024_ig_6.webp', category: '2024' },
+    { path: basePath + '2024_ig_7.webp', category: '2024' },
+    { path: basePath + '2024_ig_8.webp', category: '2024' },
+    { path: basePath + '2024_ig_9.webp', category: '2024' },
+    { path: basePath + '2024_ig_11.webp', category: '2024' },
+    { path: basePath + '2023_ig_1.webp', category: '2023' },
+    { path: basePath + '2023_ig_2.webp', category: '2023' },
+    { path: basePath + '2023_ig_3.webp', category: '2023' },
+    { path: basePath + '2023_ig_4.webp', category: '2023' },
+    { path: basePath + '2022_ig_1.webp', category: '2022' },
+    { path: basePath + '2022_ig_2.webp', category: '2022' },
+    { path: basePath + '2022_ig_3.webp', category: '2022' },
+    { path: basePath + '2022_ig_4.webp', category: '2022' },
+    { path: basePath + '2022_ig_5.webp', category: '2022' },
+    { path: basePath + '2022_ig_6.webp', category: '2022' },
+    { path: basePath + '2022_ig_7.webp', category: '2022' }
   ];
 
   const testimonials = [
@@ -59,7 +49,6 @@ document.addEventListener('DOMContentLoaded', function() {
     { videoid: 'Z4HgI07oNYM', category: '2022', name: '“Non è una dieta mordi e fuggi, ti cambia per tutta la vita”', description: '' },
     { videoid: 'gwAaQxLGLqA', category: '2021', name: '"A 17 anni ho deciso di prendermi cura di me stessa, senza più paura di fallire"', description: '' },
     { videoid: 'JGCuItKy-54', category: '2021', name: '"È cambiato completamente il mio approccio all’alimentazione"', description: '' },
-    // Aggiungi altri video se necessario
   ];
 
   // Funzione per mostrare le foto in base al filtro
@@ -110,8 +99,23 @@ document.addEventListener('DOMContentLoaded', function() {
       p.className = 'text-gray-800 pt-3';
       p.innerHTML = `<span class="text-gray-500 text-xl">${testimonial.name} ${testimonial.description}</span>`;
 
+
       div.appendChild(liteYouTube);
       div.appendChild(p);
+      
+      // Aggiungi la description e il bottone/link per cambiar pagina, se la description è popolata
+      if (testimonial.description) {
+        const button = document.createElement('button');
+        button.className = 'mt-2 px-4 py-2 bg-blue-500 text-white rounded';
+        button.innerHTML = testimonial.description;
+        button.addEventListener('click', function() {
+          // Aggiungi qui la logica per cambiare pagina, ad esempio un'azione di navigazione
+          window.location.href = `/pagina-dettagli?videoid=${testimonial.videoid}`; // Esempio di link
+        });
+
+        div.appendChild(button);
+      }
+
       testimonialsContainer.appendChild(div);
     });
 
@@ -152,7 +156,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
   //For contattaci button:
   document.getElementById('contactButton').addEventListener('click', function() {
-    document.getElementById('form').scrollIntoView({ behavior: 'smooth' });
+    document.getElementById('comeHere').scrollIntoView({ behavior: 'smooth' });
+    this.style.opacity = 0; // Usa 'opacity: 0' se vuoi un effetto più graduale
   });
     // Aggiungere animazione allo scroll
     document.addEventListener('scroll', function() {
