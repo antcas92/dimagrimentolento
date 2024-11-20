@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   const testimonials = [
     { videoid: 'vU9QzdcLi10', category: '2024', name: 'Non è solo dieta: è un nuovo modo di vivere che ti cambia per sempre', description: ''},
-    { videoid: 'WIqKbnbXirc', category: '2024', name: '"Ho scoperto che non era fame vera, ma ansia: ora so come gestirla senza il cibo"', description: ''},
+    { videoid: 'WIqKbnbXirc', category: '2024', name: '"Ho scoperto che non era fame vera, ma ansia: ora so come gestirla senza il cibo"', description: 'Scopri la storia di Giovanna'},
     { videoid: 'LeZBnmsBLM8', category: '2024', name: '"Ho smesso di essere vittima delle diete: ora so gestire il mio rapporto col cibo"', description: ''},
     { videoid: 'FRuyAC76T_o', category: '2024', name: '"A 67 anni ho smesso di credere alle diete drastiche: il cambiamento arriva con la calma"', description: ''},
     { videoid: 'mg0BiI8kVSM', category: '2023', name: '"Non è una dieta drastica: finalmente ho trovato un metodo che rispetta i miei tempi"', description: ''},
@@ -106,11 +106,11 @@ document.addEventListener('DOMContentLoaded', function() {
       // Aggiungi la description e il bottone/link per cambiar pagina, se la description è popolata
       if (testimonial.description) {
         const button = document.createElement('button');
-        button.className = 'mt-2 px-4 py-2 bg-blue-500 text-white rounded';
+        button.className = 'mt-2 px-4 py-2 bg-purple-500 text-white rounded';
         button.innerHTML = testimonial.description;
         button.addEventListener('click', function() {
           // Aggiungi qui la logica per cambiare pagina, ad esempio un'azione di navigazione
-          window.location.href = `/pagina-dettagli?videoid=${testimonial.videoid}`; // Esempio di link
+          window.location.href = `/testimonianze/${testimonial.videoid}`; // Esempio di link
         });
 
         div.appendChild(button);
