@@ -39,18 +39,78 @@ document.addEventListener('DOMContentLoaded', function() {
   ];
 
   const testimonials = [
-    { videoid: 'vU9QzdcLi10', category: '2024', name: 'Non è solo dieta: è un nuovo modo di vivere che ti cambia per sempre', description: ''},
-    { videoid: 'WIqKbnbXirc', category: '2024', name: '"Ho scoperto che non era fame vera, ma ansia: ora so come gestirla senza il cibo"', description: 'Scopri la storia di Giovanna'},
-    { videoid: 'LeZBnmsBLM8', category: '2024', name: '"Ho smesso di essere vittima delle diete: ora so gestire il mio rapporto col cibo"', description: ''},
-    { videoid: 'FRuyAC76T_o', category: '2024', name: '"A 67 anni ho smesso di credere alle diete drastiche: il cambiamento arriva con la calma"', description: ''},
-    { videoid: 'mg0BiI8kVSM', category: '2023', name: '"Non è una dieta drastica: finalmente ho trovato un metodo che rispetta i miei tempi"', description: ''},
-    { videoid: 'dJJaxyO6fSs', category: '2023', name: '“Ho imparato come smettere di mangiare per noia e stress”', description: '' },
-    { videoid: 'FZm7w6Nd_-4', category: '2022', name: '"Prima mi stancavo dopo due mesi di dieta, ora ho trovato gli stimoli giusti per continuare"', description: '' },
-    { videoid: 'Z4HgI07oNYM', category: '2022', name: '“Non è una dieta mordi e fuggi, ti cambia per tutta la vita”', description: '' },
-    { videoid: 'gwAaQxLGLqA', category: '2021', name: '"A 17 anni ho deciso di prendermi cura di me stessa, senza più paura di fallire"', description: '' },
-    { videoid: 'JGCuItKy-54', category: '2021', name: '"È cambiato completamente il mio approccio all’alimentazione"', description: '' },
+    {
+      videoid: 'wmaFgW0wJ64',
+      category: '2024',
+      name: '"A 31 anni ho scoperto che i carboidrati non fanno ingrassare: la mia rivoluzione dopo 14 anni"',
+      description: 'Scopri la storia di Chiara',
+      link: 'a-31-anni-ho-scoperto-che-carboidrati-non-fanno-ingrassare'
+    },
+    {
+      videoid: 'WIqKbnbXirc',
+      category: '2024',
+      name: '"Ho scoperto che non era fame vera, ma ansia: ora so come gestirla senza il cibo"',
+      description: 'Scopri la storia di Giovanna',
+      link: 'ho-scoperto-che-non-era-fame-vera-ma-ansia'
+    },
+    {
+      videoid: 'LeZBnmsBLM8',
+      category: '2024',
+      name: '"Ho smesso di essere vittima delle diete: ora so gestire il mio rapporto col cibo"',
+      description: 'Scopri la storia di Daniela',
+      link: 'ho-smesso-di-essere-vittima-delle-diete'
+    },
+    {
+      videoid: 'FRuyAC76T_o',
+      category: '2024',
+      name: '"A 67 anni ho smesso di credere alle diete drastiche: il cambiamento arriva con la calma"',
+      description: '',
+      link: 'a-67-anni-ho-smesso-di-credere-alle-diete-drastiche'
+    },
+    {
+      videoid: 'mg0BiI8kVSM',
+      category: '2023',
+      name: '"Non è una dieta drastica: finalmente ho trovato un metodo che rispetta i miei tempi"',
+      description: '',
+      link: 'non-e-una-dieta-drastica-metodo-rispetta-i-tempi'
+    },
+    {
+      videoid: 'dJJaxyO6fSs',
+      category: '2023',
+      name: '“Ho imparato come smettere di mangiare per noia e stress”',
+      description: '',
+      link: 'ho-imparato-come-smettere-di-mangiare-per-noia-e-stress'
+    },
+    {
+      videoid: 'FZm7w6Nd_-4',
+      category: '2022',
+      name: '"Prima mi stancavo dopo due mesi di dieta, ora ho trovato gli stimoli giusti per continuare"',
+      description: '',
+      link: 'prima-mi-stancavo-dopo-due-mesi-di-dieta'
+    },
+    {
+      videoid: 'Z4HgI07oNYM',
+      category: '2022',
+      name: '“Non è una dieta mordi e fuggi, ti cambia per tutta la vita”',
+      description: '',
+      link: 'non-e-una-dieta-mordi-e-fuggi'
+    },
+    {
+      videoid: 'gwAaQxLGLqA',
+      category: '2021',
+      name: '"A 17 anni ho deciso di prendermi cura di me stessa, senza più paura di fallire"',
+      description: '',
+      link: 'a-17-anni-ho-deciso-di-prendermi-cura-di-me-stessa'
+    },
+    {
+      videoid: 'JGCuItKy-54',
+      category: '2021',
+      name: '"È cambiato completamente il mio approccio all’alimentazione"',
+      description: '',
+      link: 'e-cambiato-completamente-il-mio-approccio-all-alimentazione'
+    }
   ];
-
+  
   // Funzione per mostrare le foto in base al filtro
   function showPhotos(filterValue, page = 0) {
     const start = page * photosPerPage;
@@ -97,7 +157,7 @@ document.addEventListener('DOMContentLoaded', function() {
       
       const p = document.createElement('p');
       p.className = 'text-gray-800 pt-3';
-      p.innerHTML = `<span class="text-gray-500 text-xl">${testimonial.name} ${testimonial.description}</span>`;
+      p.innerHTML = `<span class="text-gray-500 text-xl">${testimonial.name}</span>`;
 
 
       div.appendChild(liteYouTube);
@@ -109,8 +169,7 @@ document.addEventListener('DOMContentLoaded', function() {
         button.className = 'mt-2 px-4 py-2 bg-purple-500 text-white rounded';
         button.innerHTML = testimonial.description;
         button.addEventListener('click', function() {
-          // Aggiungi qui la logica per cambiare pagina, ad esempio un'azione di navigazione
-          window.location.href = `/testimonianze/${testimonial.videoid}`; // Esempio di link
+          window.location.href = `/videotestimonianze/${testimonial.category}/${testimonial.link}.html`; // link
         });
 
         div.appendChild(button);
