@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
  // const basePath = './assets/testimonianze_fb/';
   const basePath = './assets/images/ig/';
   const photosPerPage = 4;
-  const videosPerPage = 3;
+  const videosPerPage = 6;
   let currentPhotoPage = 0;
   let currentVideoPage = 0;
 
@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function() {
       videoid: 'FRuyAC76T_o',
       category: '2024',
       name: '"A 67 anni ho smesso di credere alle diete drastiche: il cambiamento arriva con la calma"',
-      description: '',
+      description: 'Scopri la storia di Olimpia',
       link: 'a-67-anni-ho-smesso-di-credere-alle-diete-drastiche'
     },
     {
