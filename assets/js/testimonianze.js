@@ -40,6 +40,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
   const testimonials = [
     {
+      videoid: '2wZr_8FOoNM',
+      category: '2024',
+      name: '"Ho sconfitto gli attacchi di fame che mi facevano riprendere tutto il peso perso"',
+      description: 'Scopri la storia di Rosita',
+      link: 'Ho-sconfitto-gli-attacchi-di-fame-che-mi-facevano-riprendere-tutto-il-peso-perso'
+    },
+    {
       videoid: 'wmaFgW0wJ64',
       category: '2024',
       name: '"A 31 anni ho scoperto che i carboidrati non fanno ingrassare: la mia rivoluzione dopo 14 anni"',
@@ -59,6 +66,13 @@ document.addEventListener('DOMContentLoaded', function() {
       name: '"Ho smesso di essere vittima delle diete: ora so gestire il mio rapporto col cibo"',
       description: 'Scopri la storia di Daniela',
       link: 'ho-smesso-di-essere-vittima-delle-diete'
+    },
+    {
+      videoid: 'XLNmtank2D0',
+      category: '2024',
+      name: '"Ho smesso di chiamarle diete: finalmente ho imparato a mangiare"',
+      description: 'Scopri la storia di Stefania',
+      link: 'Ho-smesso-di-chiamarle-diete-finalmente-ho-imparato-a-mangiare'
     },
     {
       videoid: 'FRuyAC76T_o',
