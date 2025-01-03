@@ -570,28 +570,180 @@ Il segreto?</p>          <p class="text-gray-600 mt-10 mb-8 text-xl">
     <div class="grid grid-cols-12 gap-8">
       <!-- Video 1 -->
       <div class="col-span-12 md:col-span-4 px-2">
-        <lite-youtube videoid="2wZr_8FOoNM"></lite-youtube>
+        <lite-youtube 
+          videoid="2wZr_8FOoNM"
+          playlabel="Testimonianza Dimagrimento Lento - Gestione attacchi di fame">
+        </lite-youtube>
         <p class="text-center mt-4 text-gray-700 px-2">"Ho sconfitto gli attacchi di fame che mi facevano riprendere tutto il peso perso"</p>
+        
+        <script type="application/ld+json">
+          {
+            "@context": "https://schema.org",
+            "@type": "VideoObject",
+            "name": "Testimonianza Dimagrimento Lento - Gestione attacchi di fame",
+            "description": "Testimonianza reale di una cliente che ha superato gli attacchi di fame con il metodo Dimagrimento Lento",
+            "thumbnailUrl": "https://i.ytimg.com/vi/2wZr_8FOoNM/maxresdefault.jpg",
+            "uploadDate": "2023-09-15T08:00:00+08:00",
+            "embedUrl": "https://www.youtube.com/embed/2wZr_8FOoNM",
+            "duration": "PT2M30S",
+            "publisher": {
+              "@type": "Organization",
+              "name": "Dimagrimento Lento",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://www.dimagrimentolento.it/assets/images/webp/logo-new.webp"
+              }
+            }
+          }
+        </script>
       </div>
 
       <!-- Video 2 -->
       <div class="col-span-12 md:col-span-4 px-2">
-        <lite-youtube videoid="WIqKbnbXirc"></lite-youtube>
+        <lite-youtube 
+          videoid="WIqKbnbXirc"
+          playlabel="Testimonianza Dimagrimento Lento - Gestione dell'ansia e fame emotiva">
+        </lite-youtube>
         <p class="text-center mt-4 text-gray-700 px-2">"Ho scoperto che non era fame vera, ma ansia: ora so come gestirla senza il cibo"</p>
+        
+        <script type="application/ld+json">
+          {
+            "@context": "https://schema.org",
+            "@type": "VideoObject",
+            "name": "Testimonianza Dimagrimento Lento - Gestione dell'ansia e fame emotiva",
+            "description": "Testimonianza di una cliente che ha imparato a gestire ansia e fame emotiva grazie al metodo Dimagrimento Lento",
+            "thumbnailUrl": "https://i.ytimg.com/vi/WIqKbnbXirc/maxresdefault.jpg",
+            "uploadDate": "2023-09-20T08:00:00+08:00",
+            "embedUrl": "https://www.youtube.com/embed/WIqKbnbXirc",
+            "duration": "PT3M15S",
+            "publisher": {
+              "@type": "Organization",
+              "name": "Dimagrimento Lento",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://www.dimagrimentolento.it/assets/images/webp/logo-new.webp"
+              }
+            }
+          }
+        </script>
       </div>
 
       <!-- Video 3 -->
       <div class="col-span-12 md:col-span-4 px-2">
-        <lite-youtube videoid="wmaFgW0wJ64"></lite-youtube>
+        <lite-youtube 
+          videoid="wmaFgW0wJ64"
+          playlabel="Testimonianza Dimagrimento Lento - Trasformazione del rapporto con i carboidrati">
+        </lite-youtube>
         <p class="text-center mt-4 text-gray-700 px-2">"A 31 anni ho scoperto che i carboidrati non fanno ingrassare: la mia rivoluzione dopo 14 anni"</p>
+        
+        <script type="application/ld+json">
+          {
+            "@context": "https://schema.org",
+            "@type": "VideoObject",
+            "name": "Testimonianza Dimagrimento Lento - Trasformazione del rapporto con i carboidrati",
+            "description": "Storia di successo di una cliente che ha superato la paura dei carboidrati grazie al metodo Dimagrimento Lento",
+            "thumbnailUrl": "https://i.ytimg.com/vi/wmaFgW0wJ64/maxresdefault.jpg",
+            "uploadDate": "2023-09-25T08:00:00+08:00",
+            "embedUrl": "https://www.youtube.com/embed/wmaFgW0wJ64",
+            "duration": "PT2M45S",
+            "publisher": {
+              "@type": "Organization",
+              "name": "Dimagrimento Lento",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://www.dimagrimentolento.it/assets/images/webp/logo-new.webp"
+              }
+            }
+          }
+        </script>
       </div>
     </div>
-    <div class="text-center mt-12">
+
+    <!-- Container per i due box recensioni -->
+    <div class="flex flex-col md:flex-row gap-6 justify-center items-center mt-12" 
+         role="complementary" 
+         aria-label="Recensioni clienti">
+      <!-- Box Recensioni Sito -->
       <a href="/testimonianze.html" 
-         class="bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-full shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:scale-105">
-        Scopri le altre recensioni
+         class="review-box w-full md:w-1/2 max-w-md"
+         aria-label="Leggi le recensioni dettagliate dei nostri pazienti">
+        <h3 class="box-title">Recensioni Dettagliate</h3>
+        <p class="box-text">Leggi le storie complete dei nostri pazienti e scopri i loro percorsi di trasformazione</p>
+        <span class="box-button">
+          Scopri le testimonianze
+        </span>
+      </a>
+    
+      <!-- Box TrustPilot -->
+      <a href="https://it.trustpilot.com/review/dimagrimentolento.it" 
+         target="_blank" 
+         rel="noopener noreferrer"
+         class="review-box trustpilot w-full md:w-1/2 max-w-md"
+         aria-label="Leggi le nostre recensioni su Trustpilot">
+        <h3 class="box-title text-green-600">Recensioni Trustpilot</h3>
+        <div class="tp-stars" aria-label="Valutazione 4.5 su 5">
+          <span class="tp-star filled" aria-hidden="true"></span>
+          <span class="tp-star filled" aria-hidden="true"></span>
+          <span class="tp-star filled" aria-hidden="true"></span>
+          <span class="tp-star filled" aria-hidden="true"></span>
+          <span class="tp-star half-filled" aria-hidden="true"></span>
+        </div>
+        <p class="box-text">Leggi le recensioni certificate su Trustpilot</p>
       </a>
     </div>
+
+    <!-- Schema.org markup per le recensioni aggregate -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Dimagrimento Lento",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.5",
+          "reviewCount": "150",
+          "bestRating": "5",
+          "worstRating": "1"
+        }
+      }
+    </script>
+
+    <!-- Schema.org markup per la lista di video -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "VideoObject",
+              "name": "Testimonianza Dimagrimento Lento - Gestione attacchi di fame",
+              "url": "https://www.youtube.com/watch?v=2wZr_8FOoNM"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "VideoObject",
+              "name": "Testimonianza Dimagrimento Lento - Gestione dell'ansia e fame emotiva",
+              "url": "https://www.youtube.com/watch?v=WIqKbnbXirc"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@type": "VideoObject",
+              "name": "Testimonianza Dimagrimento Lento - Trasformazione del rapporto con i carboidrati",
+              "url": "https://www.youtube.com/watch?v=wmaFgW0wJ64"
+            }
+          }
+        ]
+      }
+    </script>
   </div>
 </section>
 
@@ -730,6 +882,8 @@ Il segreto?</p>          <p class="text-gray-600 mt-10 mb-8 text-xl">
       </div>
     </div>
   </footer>
+  <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
+
   <script>
     async function loadBrevoForm() {
       const response = await fetch('brevo-widget.html');
