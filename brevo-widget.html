@@ -80,6 +80,7 @@
                 <form id="sib-form" method="POST"
                     action="https://0e6bc8d5.sibforms.com/serve/MUIFAIx4p0YpOF2yQ--Oj2tm-GgSGJewonCaomW75eiLufu7VAqgJ1zfvdPYHQxx6ngTUwFvvpnwR8i0aB7ew30Fv_iO79q5Oa7r5WBW3z6bmh7qio88zdfYCxazZX7Az8E0k3rRAzQK72TckYm541L_8Ts_Qputc1s4-UiujRGqFIbP9heuG-z_jS0Lx5vQdbdMiyY24MbXel-E"
                     data-type="subscription">
+                    <input type="hidden" id="URL" name="URL">
                     <div style="padding: 8px 0;">
                         <div class="sib-form-block"
                             >
@@ -244,5 +245,8 @@
     };
 
     var AUTOHIDE = Boolean(0);
+</script>
+<script>
+    document.getElementById('URL').value = window.location.href;
 </script>
 <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
