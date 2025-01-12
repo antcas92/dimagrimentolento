@@ -243,10 +243,14 @@
             selectedLists: '{quantity} liste selezionate'
         }
     };
-
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        var urlField = document.getElementById('page_url');
+        if(urlField) {
+            urlField.value = window.location.href;
+        }
+    });
     var AUTOHIDE = Boolean(0);
 </script>
-<script>
-    document.getElementById('URL').value = window.location.href;
-</script>
+
 <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
