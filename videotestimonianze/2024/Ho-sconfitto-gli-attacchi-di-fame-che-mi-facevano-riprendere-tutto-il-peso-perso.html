@@ -113,7 +113,24 @@
       ] 
     }
   </script>
-
+<!-- Aggiungere Review schema -->
+<script type="application/ld+json">
+  {
+    "@type": "Review",
+    "itemReviewed": {
+      "@type": "HealthAndBeautyBusiness",
+      "name": "Dimagrimento Lento"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Rosita"
+    },
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": "5"
+    }
+  }
+  </script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-77WRRK3HT4"></script>
   <script>
@@ -147,7 +164,70 @@
   <!-- youtube LITE Plugin-->
   <script src="https://www.nutrizionistascarpato.it/assets/plugins/lite-yt-embed.js"></script>
   <link rel="stylesheet" href="https://www.nutrizionistascarpato.it/assets/plugins/lite-yt-embed.css" />
-  
+  <style>
+lite-youtube {
+    background-color: #000;
+    position: relative;
+    display: block;
+    contain: content;
+    background-position: center center;
+    background-size: cover;
+    cursor: pointer;
+    max-width: 100%;
+    aspect-ratio: 16/9;
+}
+
+lite-youtube .lty-playbtn {
+    width: 70px;
+    height: 46px;
+    background-color: #212121;
+    z-index: 1;
+    opacity: .8;
+    border-radius: 14%;
+    transition: all .2s cubic-bezier(0, 0, .2, 1);
+    border: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+lite-youtube:hover .lty-playbtn {
+    background-color: red;
+    opacity: 1;
+}
+
+lite-youtube .lty-playbtn:before {
+    content: '';
+    border-style: solid;
+    border-width: 11px 0 11px 19px;
+    border-color: transparent transparent transparent #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+lite-youtube iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.yt-lite {
+    background-color: #000;
+    position: relative;
+    display: block;
+    contain: content;
+    background-position: center center;
+    background-size: cover;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+</style>
   <!-- Define your gradient here - use online tools to find a gradient matching your branding-->
   <style>
     .gradient {
