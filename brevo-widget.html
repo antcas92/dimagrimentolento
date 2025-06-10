@@ -2,7 +2,7 @@
 	<style>
 		@font-face {
 			font-display: block;
-			font-family: Roboto;
+			font-family: Inter;
 			src: url(https://assets.sendinblue.com/font/Roboto/Latin/normal/normal/7529907e9eaf8ebb5220c5f9850e3811.woff2) format("woff2"), url(https://assets.sendinblue.com/font/Roboto/Latin/normal/normal/25c678feafdc175a70922a116c9be3e7.woff) format("woff")
 		}
 
@@ -80,6 +80,7 @@
                 <form id="sib-form" method="POST"
                     action="https://0e6bc8d5.sibforms.com/serve/MUIFAIx4p0YpOF2yQ--Oj2tm-GgSGJewonCaomW75eiLufu7VAqgJ1zfvdPYHQxx6ngTUwFvvpnwR8i0aB7ew30Fv_iO79q5Oa7r5WBW3z6bmh7qio88zdfYCxazZX7Az8E0k3rRAzQK72TckYm541L_8Ts_Qputc1s4-UiujRGqFIbP9heuG-z_jS0Lx5vQdbdMiyY24MbXel-E"
                     data-type="subscription">
+                    <input type="hidden" id="URL" name="URL">
                     <div style="padding: 8px 0;">
                         <div class="sib-form-block"
                             >
@@ -242,7 +243,14 @@
             selectedLists: '{quantity} liste selezionate'
         }
     };
-
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        var urlField = document.getElementById('URL');
+        if(urlField) {
+            urlField.value = window.location.href;
+        }
+    });
     var AUTOHIDE = Boolean(0);
 </script>
+
 <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>

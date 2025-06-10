@@ -96,3 +96,51 @@
 .tp-star.half-filled {
     background: linear-gradient(90deg, #00B67A 50%, #DCDCE6 50%);
 }
+
+lite-youtube {
+    background-color: #000;
+    position: relative;
+    display: block;
+    contain: content;
+    background-position: center center;
+    background-size: cover;
+    cursor: pointer;
+    max-width: 100%;
+    aspect-ratio: 16/9;
+}
+
+lite-youtube > iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+lite-youtube::before {
+    content: none !important; /* Rimuove l'overlay nero */
+}
+
+
+
+
+/* Contenitore principale */
+.yt-lite {
+    background-color: #000;
+    position: relative;
+    display: block;
+    contain: content;
+    background-position: center center;
+    background-size: cover;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+
+/* Ottimizzazioni per dispositivi mobile */
+@media (max-width: 768px) {
+    lite-youtube > .lty-playbtn {
+        width: 60px;
+        height: 42px;
+    }
+}
