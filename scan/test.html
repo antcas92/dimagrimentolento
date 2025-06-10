@@ -4,7 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Scanner Nutri-Score</title>
-  <script src="https://unpkg.com/@zxing/browser@latest"></script>
+  <script type="module">
+    import { BrowserBarcodeReader } from 'https://cdn.jsdelivr.net/npm/@zxing/browser@0.0.10/esm/index.min.js';
+
+    window.ZXing = { BrowserBarcodeReader };
+  </script>
   <style>
     body {
       font-family: sans-serif;
@@ -30,7 +34,7 @@
   <div id="video-container"></div>
   <div id="result"></div>
 
-  <script>
+  <script type="module">
     const startButton = document.getElementById('start-button');
     const videoContainer = document.getElementById('video-container');
     const resultDiv = document.getElementById('result');
