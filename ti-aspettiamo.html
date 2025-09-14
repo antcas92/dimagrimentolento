@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <!-- SEO & META TAGS -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Prenota la tua visita gratuita - Dimagrimento Lento</title>
+  <meta name="description" content="Prenota subito la tua consulenza nutrizionale gratuita. Chiamaci o contattaci su WhatsApp per iniziare il tuo percorso di Dimagrimento Lento.">
+  
+  <!-- Blocca indicizzazione SEO -->
+  <meta name="robots" content="noindex, nofollow">
+  
+  <!-- FAVICON -->
+  <link rel="shortcut icon" href="./assets/images/webp/logo-new.webp">
+
+  <!-- STYLES & FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+
+  <style>
+    .gradient {
+      background: linear-gradient(90deg, #3f51b5 0%, #00bcd4 100%);
+    }
+    
+    .phone-button {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      transition: all 0.3s ease;
+    }
+    
+    .phone-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+    
+    .whatsapp-button {
+      background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+      transition: all 0.3s ease;
+    }
+    
+    .whatsapp-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+    
+    .pulse {
+      animation: pulse 2s infinite;
+    }
+    
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.05);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    .phone-icon {
+      width: 40px;
+      height: 40px;
+      fill: white;
+    }
+
+    .whatsapp-icon {
+      width: 40px;
+      height: 40px;
+      fill: white;
+    }
+
+    @media (min-width: 768px) {
+      .phone-icon, .whatsapp-icon {
+        width: 48px;
+        height: 48px;
+      }
+    }
+
+    .gratuita-highlight {
+      background: linear-gradient(45deg, #ffd700, #ffed4e);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .gift-badge {
+      background: linear-gradient(135deg, #ff6b6b 0%, #ffa726 100%);
+      /* animation: gentle-pulse 3s ease-in-out infinite; */
+      position: relative;
+      overflow: hidden;
+    }
+
+    .gift-badge::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+      transform: rotate(45deg);
+      animation: shine 4s ease-in-out infinite;
+    }
+
+    @keyframes gentle-pulse {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.02);
+      }
+    }
+
+    @keyframes shine {
+      0% {
+        transform: translateX(-100%) translateY(-100%) rotate(45deg);
+      }
+      50% {
+        transform: translateX(-100%) translateY(-100%) rotate(45deg);
+      }
+      100% {
+        transform: translateX(100%) translateY(100%) rotate(45deg);
+      }
+    }
+
+    /* Ottimizzazioni mobile */
+    @media (max-width: 767px) {
+      .mobile-spacing {
+        padding: 1rem;
+      }
+      
+      .mobile-text {
+        font-size: 1.125rem;
+        line-height: 1.5;
+      }
+      
+      .mobile-button {
+        padding: 1rem;
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
+</head>
+
+<body class="leading-normal tracking-normal text-white gradient min-h-screen" style="font-family: 'Source Sans Pro', sans-serif;">
+  
+  <!-- Contenuto principale -->
+  <div class="min-h-screen flex flex-col justify-center items-center px-3 py-4 md:px-4 md:py-8">
+    
+    <!-- Logo e titolo -->
+    <div class="text-center mb-8 md:mb-12">
+      <h1 class="text-3xl md:text-4xl lg:text-6xl font-bold mb-6 md:mb-4" style="text-shadow: 0px 4px 6px #009688, 0px 1px 3px #009688;">
+        Dimagrimento Lento
+      </h1>
+    </div>
+
+    <!-- Badge Regalo -->
+    <div class="gift-badge text-white font-bold rounded-full px-6 py-3 mb-8 md:mb-12 shadow-xl relative">
+      <div class="flex items-center justify-center space-x-2">
+        <span class="text-2xl">🎁</span>
+        <span class="text-lg md:text-xl font-black">OPPORTUNITÀ ESCLUSIVA</span>
+      </div>
+    </div>
+
+    <!-- Messaggio principale -->
+    <div class="text-center mb-10 md:mb-12 max-w-4xl mobile-spacing">
+      <h2 class="text-xl md:text-2xl lg:text-4xl font-bold mb-4 md:mb-6 leading-tight">
+        TI ASPETTIAMO IN STUDIO PER LA TUA VISITA <span class="gratuita-highlight font-black text-2xl md:text-3xl lg:text-5xl">GRATUITA!</span>
+      </h2>
+      <p class="text-lg md:text-xl lg:text-2xl mb-6 md:mb-8 mobile-text">
+        Prenota un appuntamento per iniziare il tuo percorso verso un dimagrimento che dura per sempre
+      </p>
+    </div>
+
+    <!-- Pulsanti di contatto -->
+    <div class="flex flex-col gap-4 md:gap-6 mb-12 md:mb-16 w-full max-w-2xl px-2">
+      
+      <!-- Pulsante Telefono -->
+      <a href="tel:+393516793334" class="phone-button text-white font-bold rounded-2xl py-5 md:py-6 px-6 md:px-8 shadow-2xl focus:outline-none transform transition hover:scale-105 duration-300 ease-in-out pulse mobile-button">
+        <div class="text-center">
+          <div class="flex justify-center mb-2 md:mb-3">
+            <svg class="phone-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+            </svg>
+          </div>
+          <div class="text-lg md:text-xl lg:text-2xl font-bold mb-1 md:mb-2">CHIAMA ORA</div>
+          <div class="text-base md:text-lg lg:text-xl">+39 351 679 3334</div>
+          <div class="text-sm md:text-base mt-1 md:mt-2 opacity-90">Prenota telefonicamente</div>
+        </div>
+      </a>
+
+      <!-- Pulsante WhatsApp -->
+      <a href="https://wa.me/393516793334?text=Ciao,%20vorrei%20prenotare%20la%20consulenza%20gratuita.%20Sono%20un%20cliente%20di%20FitAndGo." target="_blank" class="whatsapp-button text-white font-bold rounded-2xl py-5 md:py-6 px-6 md:px-8 shadow-2xl focus:outline-none transform transition hover:scale-105 duration-300 ease-in-out pulse mobile-button">
+        <div class="text-center">
+          <div class="flex justify-center mb-2 md:mb-3">
+            <svg class="whatsapp-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.051 3.488"/>
+            </svg>
+          </div>
+          <div class="text-lg md:text-xl lg:text-2xl font-bold mb-1 md:mb-2">WHATSAPP</div>
+          <div class="text-base md:text-lg lg:text-xl">Scrivi subito</div>
+          <div class="text-sm md:text-base mt-1 md:mt-2 opacity-90">Messaggio istantaneo</div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Separatore -->
+    <div class="w-full max-w-md mb-6 md:mb-8">
+      <div class="h-1 mx-auto bg-white w-full opacity-25 rounded"></div>
+    </div>
+
+    <!-- Link al sito -->
+    <div class="text-center mobile-spacing">
+      <p class="text-base md:text-lg lg:text-xl mb-3 md:mb-4 mobile-text">
+        Se vuoi sapere di più sul nostro metodo vai qui:
+      </p>
+      <a href="https://www.dimagrimentolento.it" target="_blank" class="inline-block bg-white text-gray-800 font-bold rounded-full py-3 px-6 md:px-8 shadow-lg hover:shadow-xl focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out cursor-pointer">
+        <span class="text-base md:text-lg">www.dimagrimentolento.it</span>
+      </a>
+    </div>
+
+    <!-- Footer minimo -->
+    <div class="text-center mt-8 md:mt-12 opacity-75">
+      <p class="text-xs md:text-sm">
+        © 2025 Dimagrimento Lento - Sedi a Salerno, Angri e Nocera
+      </p>
+    </div>
+
+  </div>
+
+  <!-- Onde decorative bottom -->
+  <div class="absolute bottom-0 w-full pointer-events-none">
+    <svg viewBox="0 0 1428 174" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-2.000000, 44.000000)" fill="#FFFFFF" fill-rule="nonzero" opacity="0.1">
+          <path d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496"></path>
+          <path d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z"></path>
+        </g>
+      </g>
+    </svg>
+  </div>
+
+</body>
+
+</html>
