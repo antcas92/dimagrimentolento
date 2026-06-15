@@ -40,6 +40,90 @@
         input {
             color: #000!important;
         }
+        .sib-form-block__button {
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            width: 100% !important;
+            min-height: 4.75rem !important;
+            appearance: none !important;
+            -webkit-appearance: none !important;
+            background-color: #16A34A !important;
+            color: #FFFFFF !important;
+            -webkit-text-fill-color: #FFFFFF !important;
+            border: none !important;
+            border-radius: 9999px !important;
+            padding: 1rem 2rem !important;
+            font-size: 0 !important;
+            font-weight: 700 !important;
+            line-height: 1.2 !important;
+            text-align: center !important;
+            text-indent: 0 !important;
+            overflow: visible !important;
+            cursor: pointer !important;
+            transition: background 0.2s !important;
+        }
+        .sib-form-block__button:hover {
+            background-color: #15803D !important;
+        }
+        .sib-form-block__button::after {
+            content: attr(aria-label) !important;
+            display: block !important;
+            color: #FFFFFF !important;
+            -webkit-text-fill-color: #FFFFFF !important;
+            font-family: "Helvetica", sans-serif !important;
+            font-size: 1.1rem !important;
+            font-weight: 700 !important;
+            line-height: 1.2 !important;
+            text-align: center !important;
+            white-space: normal !important;
+            text-shadow: none !important;
+        }
+        .sib-form-block__button-text {
+            display: none !important;
+            color: #FFFFFF !important;
+            -webkit-text-fill-color: #FFFFFF !important;
+            font: inherit !important;
+            line-height: 1.2 !important;
+            text-align: center !important;
+            text-indent: 0 !important;
+            white-space: normal !important;
+            text-shadow: none !important;
+        }
+        .sib-form-block__button .sib-hide-loader-icon,
+        .sib-form-block__button svg {
+            display: none !important;
+        }
+        .sib-form,
+        #form-section {
+            width: 100% !important;
+            background: transparent !important;
+            padding-inline: 14px !important;
+            box-sizing: border-box !important;
+        }
+        #sib-form-container {
+            width: 100% !important;
+            background: transparent !important;
+        }
+        #sib-container,
+        #error-message,
+        #success-message {
+            width: 100% !important;
+            max-width: 540px !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
+            box-sizing: border-box !important;
+        }
+        @media (max-width: 640px) {
+            #form-section {
+                padding-inline: 12px !important;
+            }
+            #sib-container,
+            #error-message,
+            #success-message {
+                width: min(calc(100% - 24px), 340px) !important;
+            }
+        }
 	</style>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 	<link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
@@ -194,14 +278,14 @@
                     <div style="padding: 8px 0;">
                         <div class="sib-form-block" style="text-align: center">
                             <button class="sib-form-block__button sib-form-block__button-with-loader"
-                                style="font-size:16px; text-align:center; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif; color:#FFFFFF; background-color:#008080; border-radius:15px; border-width:0px;"
-                                form="sib-form" type="submit">
+                                style="font-size:16px; text-align:center; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif; color:#FFFFFF; background-color:#16A34A; border-radius:9999px; border-width:0px;"
+                                form="sib-form" type="submit" aria-label="Richiedi Consulto Gratuito">
                                 <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon"
                                     viewBox="0 0 512 512">
                                     <path
                                         d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z" />
                                 </svg>
-                                Richiedi Consulto Gratuito
+                                <span class="sib-form-block__button-text">Richiedi Consulto Gratuito</span>
                             </button>
                         </div>
                     </div>
