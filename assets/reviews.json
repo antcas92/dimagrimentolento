@@ -1,0 +1,515 @@
+{
+  "meta": {
+    "source": "Trustpilot",
+    "subject": "Studio Dimagrimento Lento (Dott.ssa Scarpato)",
+    "rating_scale": "1-5",
+    "total_reviews": 71,
+    "note": "Dati estratti via copia-incolla da Trustpilot e ripuliti (refusi corretti, elementi UI rimossi, date normalizzate ISO 8601). 'excerpt' è la frase più efficace di ogni recensione, pensata per anteprime/widget compatti con possibilità di espansione al 'full_text'."
+  },
+  "reviews": [
+    {
+      "name": "Alessandro Tedesco",
+      "date": "2026-04-10",
+      "rating": 5,
+      "excerpt": "Ottimi risultati seguendo i consigli delle dottoresse, senza sacrificare le mie abitudini alimentari.",
+      "full_text": "Ottenuti ottimi risultati seguendo i consigli delle dottoresse, senza sacrificare le mie abitudini alimentari."
+    },
+    {
+      "name": "Annamaria Damiani",
+      "date": "2026-03-28",
+      "rating": 5,
+      "excerpt": "Persone competenti e gentili. Un programma che cambia l'approccio al cibo.",
+      "full_text": "Esperienza molto positiva. Persone competenti e gentili. Un programma che cambia l'approccio al cibo."
+    },
+    {
+      "name": "Valeria Martuscelli",
+      "date": "2026-02-13",
+      "rating": 5,
+      "excerpt": "Stanca di provare mille diete che mi davano risultati temporanei, ho trovato un percorso su misura.",
+      "full_text": "Ho iniziato per curiosità, stanca di provare mille diete che mi davano risultati temporanei. È un percorso che si adatta alle mie esigenze e ai miei gusti. Le dottoresse sono sempre molto gentili e disponibili. Molto comodo avere un'app con il piano alimentare."
+    },
+    {
+      "name": "Loredana",
+      "date": "2026-02-11",
+      "rating": 5,
+      "excerpt": "Fin dal primo appuntamento mi sono sentita \"nel posto giusto\".",
+      "full_text": "Personale dello studio molto competente ed attento ad ogni dettaglio, sempre pronto a fornire risposte ad ogni dubbio o curiosità. Fin dal primo appuntamento mi sono sentita \"nel posto giusto\". Consiglio vivamente questo studio a chi cerca competenza e un rapporto umano autentico."
+    },
+    {
+      "name": "Valentina Pagano",
+      "date": "2026-02-11",
+      "rating": 5,
+      "excerpt": "Dopo anni di diete fallimentari è stato un vero miracolo: i piani sono DAVVERO personalizzati, nessun alimento è demonizzato.",
+      "full_text": "Ho trovato questo studio per caso, dopo anni di diete fallimentari ed è stato un vero miracolo! I piani alimentari sono DAVVERO personalizzati e appositamente costruiti per rispondere ad ogni più piccola esigenza, dalla colazione alla cena. Ogni pasto ha diversi suggerimenti, con opzioni più sfiziose ed elaborate e opzioni più semplici e veloci in modo da adattarsi alla perfezione ad ogni stile di vita. Nessun alimento è demonizzato, le occasioni di socialità e le feste non vanno evitate, ma sempre gestite insieme. Questo proprio perché l'obiettivo non è l'immediata perdita di peso, ma imparare a gestire l'alimentazione in modo sostenibile nel lungo periodo, senza particolari privazioni e mangiando ciò che piace. Le dottoresse sono attentissime, dolcissime e sempre comprensive. Non colpevolizzano come purtroppo fanno molti professionisti, ma neanche assecondano eventuali approcci sbagliati. Le visite durano sempre quasi un'ora perché si affrontano e si risolvono tutti i problemi e le preoccupazioni del caso. Per la prima volta sono davvero soddisfatta e non posso fare a meno di consigliarlo!",
+      "url": "/recensioni/valentina-pagano-anni-di-diete-e-poi-la-svolta.html"
+    },
+    {
+      "name": "Alba",
+      "date": "2026-02-10",
+      "rating": 5,
+      "excerpt": "È la prima volta che riesco a essere costante in una dieta.",
+      "full_text": "È la prima volta che riesco a essere costante in una dieta, dottoresse sempre attente e pronte a supportarmi in tutto."
+    },
+    {
+      "name": "Ilaria Bartiromo",
+      "date": "2026-02-10",
+      "rating": 5,
+      "excerpt": "La parola \"dieta\" è stata sostituita con \"percorso alimentare\": con questo metodo non ti senti stressata.",
+      "full_text": "Ciò che mi ha fatto avvicinare a questo metodo è stata la parola \"lento\": i metodi veloci, con me non funzionano. L'approccio giusto è migliorare lo stile di vita. La parola \"dieta\" è stata sostituita con \"percorso alimentare\", i nostri appuntamenti quindicinali vertono per lo più su una consulenza psicologica, in quanto le dottoresse mi aiutano a capire perché ho \"sgarrato\", a cosa serve consolarmi con il cibo spazzatura, e soprattutto a come ri-equilibrare il malfatto. I piani alimentari sono sempre vari e variegati, adeguati alle mie esigenze, ai miei gusti, alla stagionalità dei cibi. Con questo metodo non ti senti stressata, ti concedi l'uscita con gli amici, le feste, un premio, senza senso di colpa. Sono tutte davvero brave, gentili, pazienti, professionali. Sono molto soddisfatta. Grazie.",
+      "url": "/recensioni/ilaria-bartiromo-percorso-non-dieta.html"
+    },
+    {
+      "name": "Concetta Siglioccolo",
+      "date": "2026-02-10",
+      "rating": 5,
+      "excerpt": "Il piano alimentare è personalizzato, sostenibile e lontano dalle solite 'diete da fame'.",
+      "full_text": "Consiglio vivamente questo studio di nutrizione. Ho trovato un team di professioniste estremamente preparate, capaci di ascoltare le mie esigenze senza mai essere giudicanti. Il piano alimentare è personalizzato, sostenibile e lontano dalle solite 'diete da fame'. Grazie al loro supporto costante, sto raggiungendo i miei obiettivi in modo sano e consapevole. Mi sento seguita con cura e attenzione in ogni fase. Un punto di riferimento prezioso per chiunque voglia davvero cambiare stile di vita."
+    },
+    {
+      "name": "Daniela Paolillo",
+      "date": "2026-02-10",
+      "rating": 5,
+      "excerpt": "Non un semplice rivolgersi al nutrizionista, ma un percorso formativo e di crescita consapevole.",
+      "full_text": "Dimagrimento lento non è un semplice rivolgersi al nutrizionista, ma un percorso formativo e di crescita consapevole sullo stile alimentare che, al giorno d'oggi, è importante acquisire attraverso una guida professionale e preparata. È, infatti, proprio la professionalità e la corretta ed efficace preparazione, che contraddistingue il team delle dottoresse nutrizioniste di Dimagrimento Lento. Esperienza che consiglio in quanto dinamica e sempre aggiornata e attenta."
+    },
+    {
+      "name": "Filomena Ultimo",
+      "date": "2026-02-10",
+      "rating": 5,
+      "excerpt": "È un anno che faccio il programma: le dottoresse ti seguono passo passo, a qualsiasi problema intervengono.",
+      "full_text": "È un anno che faccio il programma di dimagrimento lento, ottimo piano, le dottoresse sono uniche, gentilissime, umane, ti seguono passo passo, a qualsiasi problema intervengono. Consiglio vivamente il percorso."
+    },
+    {
+      "name": "Francesco Mazziotti",
+      "date": "2026-02-10",
+      "rating": 5,
+      "excerpt": "Mi sono reso conto che il tutto non si poteva risolvere con un mese di dieta: è un'assistenza a 360°.",
+      "full_text": "Tutto è iniziato per gioco! Alla fine quando ho fatto il primo incontro mi sono reso conto che il tutto non si poteva risolvere con un mese di dieta. Alla fine è un'assistenza a 360°. Ho raggiunto risultati eccellenti. A chi è intenzionato ad imparare a mangiare, lo consiglio vivamente."
+    },
+    {
+      "name": "Antonio Iuliano",
+      "date": "2026-02-10",
+      "rating": 5,
+      "excerpt": "Grazie al vostro aiuto, ho quasi raggiunto i miei obiettivi e ho migliorato la mia salute.",
+      "full_text": "A tutto lo staff dello studio di Dimagrimento Lento, vorrei esprimere la mia profonda gratitudine per il supporto e la professionalità ricevuti durante il mio percorso di dimagrimento. Grazie al vostro aiuto, ho quasi raggiunto i miei obiettivi e ho migliorato la mia salute. Lo staff è stato sempre disponibile e gentile, e il programma di dimagrimento è stato personalizzato e efficace. Consiglio vivamente questo studio a chi cerca un percorso di dimagrimento serio e supportato. Grazie ancora per tutto!"
+    },
+    {
+      "name": "Carmela Tancredi",
+      "date": "2026-02-10",
+      "rating": 5,
+      "excerpt": "La cosa che apprezzo di più è l'approccio al dimagrimento lento: niente diete da fame o promesse miracolose.",
+      "full_text": "La cosa che apprezzo di più è l'approccio al dimagrimento lento: niente diete da fame o promesse miracolose."
+    },
+    {
+      "name": "Alfonso",
+      "date": "2026-02-10",
+      "rating": 5,
+      "excerpt": "Sono soddisfatto sia per le dottoresse molto brave, sia per il loro impegno verso di me.",
+      "full_text": "Sono soddisfatto sia per le dottoresse molto brave, ma anche per il loro impegno verso di me."
+    },
+    {
+      "name": "Giabo",
+      "date": "2026-02-10",
+      "rating": 5,
+      "excerpt": "Non propongono solo un elenco di pietanze, ma uno stile di vita nuovo: dimagrimento lento, ma costante.",
+      "full_text": "Un team di dottoresse preparate, che portano avanti la stessa idea, giovani, ma soprattutto coinvolgenti! Dottoresse che non propongono solo un elenco di pietanze, ma uno stile di vita nuovo che alla lunga, e senza stress, mi sta portando a un dimagrimento lento, ma costante, divertente in cucina e sulla bilancia. Brave!!!"
+    },
+    {
+      "name": "Vincenzo Riccio",
+      "date": "2026-02-10",
+      "rating": 5,
+      "excerpt": "Sono stati raggiunti traguardi che non speravo, grazie al supporto del gruppo di dottoresse che non mollano mai la presa.",
+      "full_text": "Scrivo questo messaggio nella schiettezza del libero pensiero: sono stati raggiunti traguardi che non speravo ma con l'aiuto e il supporto del gruppo stupendo delle dottoresse che non mollano mai la presa per serietà e professionalità del loro mestiere, far riprendere la forma dei loro pazienti dove ritorna il sorriso a chi l'aveva perso. GRAZIE",
+      "url": "/recensioni/vincenzo-riccio-30-kg.html"
+    },
+    {
+      "name": "Sonia",
+      "date": "2025-11-09",
+      "rating": 5,
+      "excerpt": "La gentilezza e il supporto che ho ricevuto ha fatto la differenza: non ho mai trovato nessuno come loro.",
+      "full_text": "La gentilezza e il supporto che ho ricevuto ha fatto la differenza. Ho avuto diverse esperienze nel farmi seguire da nutrizionisti, ma non ho mai trovato nessuno come loro. I miei risultati sono grazie al loro supporto, perché è proprio questo che serve, saper ascoltare il proprio paziente e aiutarlo a seguire un'alimentazione sana. Sono davvero felice di aver conosciuto le dottoresse."
+    },
+    {
+      "name": "Daniela Chionna",
+      "date": "2025-07-14",
+      "rating": 5,
+      "excerpt": "Pesavo 74 kg, oggi peso 54 kg e non ho più problemi di salute legati al colon irritabile.",
+      "full_text": "Ho cominciato un paio di anni fa perché consigliata da un'amica. Avevo già fatto diete con beveroni, perso chili e ripresi alla grande. Pesavo 74 kg ma ho iniziato per problemi al colon irritabile. Con la dottoressa Ornella la mia vita è cambiata. Oggi peso 54 kg e non ho più problemi di salute. Sto bene con me stessa e, finalmente, posso andare dove voglio... in gita, al mare, senza problemi.",
+      "url": "/recensioni/daniela-chionna-da-74-a-54-kg.html"
+    },
+    {
+      "name": "Rosa Iandolo",
+      "date": "2025-07-09",
+      "rating": 5,
+      "excerpt": "Ho 56 anni e devo perdere 30 kg: finalmente il mio sogno si sta realizzando.",
+      "full_text": "Ho provato molte diete e molti dietologi, ma solo qui ho trovato competenza, empatia, gentilezza, ascolto e veramente qualcuno che si cura di me. Ho 56 anni e devo perdere 30 kg, e finalmente il mio sogno si sta realizzando. Grazie di cuore."
+    },
+    {
+      "name": "Federica D'Angelo",
+      "date": "2025-07-09",
+      "rating": 5,
+      "excerpt": "In meno di tre mesi ho perso 10 kg senza alcun sacrificio.",
+      "full_text": "Studio professionale e ben organizzato! Le dottoresse all'interno sono tutte molto gentili, vieni seguita ed assistita al 100%, non ti senti mai sola, piani nutrizionali sempre in aggiornamento in modo da non stancarti mai e in realtà non ci si sente per nulla a dieta! Ti insegnano passo passo semplicemente come gestire la quotidianità, in meno di tre mesi ho perso 10 kg senza alcun sacrificio. Un ringraziamento speciale alla dottoressa Scarpato.",
+      "url": "/recensioni/federica-dangelo-10-kg-in-3-mesi.html"
+    },
+    {
+      "name": "Tristana Marino",
+      "date": "2025-07-09",
+      "rating": 5,
+      "excerpt": "Fin dalla prima chiacchierata mi sono sentita a mio agio, come tra \"amiche\".",
+      "full_text": "Ho iniziato questo percorso un po' scettica, ma già dalla prima chiacchierata mi sono subito sentita a mio agio, è stata una chiacchierata tra \"amiche\", e il mio percorso è proseguito bene, dandomi molte soddisfazioni senza nessun sacrificio. Le dottoresse sono molto professionali e riescono ad interagire in modo eccellente."
+    },
+    {
+      "name": "Anna Maria La Mura",
+      "date": "2025-05-27",
+      "rating": 5,
+      "excerpt": "La sensazione più bella di questo percorso è il supporto psicologico e la serenità.",
+      "full_text": "Vorrei condividere con voi la mia esperienza iniziata con lo studio Dimagrimento Lento, attualmente sono ancora in una fase iniziale, ma già ho raggiunto risultati soddisfacenti. La sensazione più bella di questo percorso è il supporto psicologico, e la serenità con cui sto acquisendo la mia capacità di gestire gli alimenti. Grazie, consiglio altamente."
+    },
+    {
+      "name": "Raffaele Liguori",
+      "date": "2025-05-19",
+      "rating": 5,
+      "excerpt": "Un cammino senza rinunce drastiche: correggere quelle abitudini sbagliate, anche nel fare la spesa.",
+      "full_text": "Ho preso conoscenza dello studio tramite Facebook, devo dire che mi ha attirato il nome. Avevo più necessità di correggere il gonfiore addominale, l'idea di intraprendere un cammino senza rinunce drastiche... e devo dire che così è, ma non solo: fare una giusta alimentazione, correggere quelle abitudini sbagliate anche nel fare la spesa, sono cose che tutti dovrebbero prendere in considerazione. Io ho scoperto pietanze semplici che a volte, presi dalla routine e dalla fretta, non pensiamo. Anche in questo le dottoresse ti seguono con menù giornalieri, ricettari... sono molto soddisfatto del risultato raggiunto, senza rinunce, consiglio vivamente, grazie dottoresse."
+    },
+    {
+      "name": "Loredana",
+      "date": "2025-05-18",
+      "rating": 5,
+      "excerpt": "Finalmente ho scoperto che i chili vanno miracolosamente via anche mangiando cose buonissime!",
+      "full_text": "Sono molto soddisfatta di aver intrapreso questo percorso con un team di fantastiche dottoresse che, con grande delicatezza e professionalità, coinvolgono chi come me è abbastanza refrattario alle limitazioni alimentari. Finalmente ho scoperto che i chili vanno miracolosamente via anche mangiando cose buonissime!"
+    },
+    {
+      "name": "Francesca de Martino",
+      "date": "2025-05-17",
+      "rating": 5,
+      "excerpt": "Protocolli estremamente personalizzati che vanno oltre il rigido concetto di deficit calorico.",
+      "full_text": "L'approccio utilizzato dalle dottoresse è l'unico che riesce a fronteggiare i miei problemi con il cibo legati sia alla fame nervosa che ad alterazioni ormonali, attraverso l'utilizzo di protocolli estremamente personalizzati e calibrati sulle mie esigenze che vanno oltre il rigido concetto di deficit calorico. Altro aspetto che apprezzo molto è l'assistenza ed il supporto continuo che mi viene offerto per monitorare il mio percorso e superare eventuali difficoltà."
+    },
+    {
+      "name": "Francesco Iaquinandi",
+      "date": "2025-05-17",
+      "rating": 5,
+      "excerpt": "Non si tratta solo di perdere peso, ma di acquisire uno stile di vita sano e sostenibile.",
+      "full_text": "Ho conosciuto questo studio di dimagrimento tramite Facebook e devo dire che è stata una delle scelte migliori che potessi fare per la mia salute e il mio benessere. Fin dal primo appuntamento mi sono sentito accolto con professionalità, empatia e grande attenzione ai miei obiettivi. Il percorso è stato personalizzato sulle mie esigenze, con consigli chiari, supporto costante e risultati concreti. Non si tratta solo di perdere peso, ma di acquisire uno stile di vita sano e sostenibile. Le professioniste dello studio sono sempre disponibili e motivanti, rendendo ogni passo del percorso più semplice e gratificante."
+    },
+    {
+      "name": "Giuseppina Meglio",
+      "date": "2025-05-16",
+      "rating": 5,
+      "excerpt": "Mi sono sentita seguita in ogni fase, con grande disponibilità e umanità.",
+      "full_text": "Mi sono rivolta a questo studio medico per un percorso dietologico e non posso che parlarne benissimo. Le dottoresse sono estremamente competenti, professionali e sempre pronte ad ascoltare con attenzione. Grazie al loro supporto e ai piani alimentari personalizzati, ho ottenuto risultati concreti. Mi sono sentita seguita in ogni fase, con grande disponibilità e umanità. Consiglio vivamente questo studio a chiunque voglia migliorare il proprio stile di vita in modo sano ed efficace."
+    },
+    {
+      "name": "Antonella Cirillo",
+      "date": "2025-05-16",
+      "rating": 5,
+      "excerpt": "Un approccio efficace ed empatico, da consigliare a chiunque abbia pensato di non avere più speranze.",
+      "full_text": "È un percorso nutrizionale efficace basato su un grandissimo supporto concreto e costante! Iniziare una dieta non è semplice, ma la professionalità e la competenza di questo staff hanno reso possibile iniziare questo cammino verso la risoluzione dei miei disturbi alimentari. Da non sottovalutare anche i suggerimenti culinari con ricette simpatiche e facili! Un approccio efficace ed empatico, da consigliare a chiunque abbia pensato di non avere più speranze..."
+    },
+    {
+      "name": "Rosa Di Filippo",
+      "date": "2025-04-12",
+      "rating": 5,
+      "excerpt": "È passato più di un anno e le dottoresse mi seguono con pazienza incoraggiandomi costantemente.",
+      "full_text": "Ho conosciuto lo studio attraverso Facebook e ho ascoltato le varie testimonianze. Per motivi di salute importanti, ho richiesto un incontro. Da quel giorno, ed è passato più di un anno, le dottoresse mi seguono con pazienza incoraggiandomi costantemente. Nonostante sia limitata nel movimento fisico, piano piano, sto raggiungendo il peso che mi è stato imposto per non avere rischi di episodi recidivi di salute legati alla obesità. A loro tutte va il mio grazie."
+    },
+    {
+      "name": "Marianna Di Fiore",
+      "date": "2025-04-10",
+      "rating": 5,
+      "excerpt": "Incinta della mia seconda figlia, le dottoresse mi hanno seguita per tutta la gravidanza.",
+      "full_text": "Mi sono rivolta alle dottoresse del team Dimagrimento Lento in un momento particolare, non volevo più sentir parlare di diete poiché ne avevo fatte così tante e ogni volta avevo ripreso tutti i chili persi. Ero però incinta della mia seconda figlia e volevo evitare di prendere ulteriormente peso, così le dottoresse mi hanno seguita per tutta la gravidanza facendo un percorso del tutto nuovo per me. Sono riuscita a perdere peso gradualmente, senza rinunciare a uscite e feste in famiglia. Ho imparato a controllare la fame nervosa e sono riuscita a perdere diversi chili. Ho iniziato questo percorso circa un anno e mezzo fa e sono stracontenta di averlo fatto."
+    },
+    {
+      "name": "Pegaso",
+      "date": "2025-04-09",
+      "rating": 5,
+      "excerpt": "Piano alimentare personalizzato analizzando minuziosamente le abitudini errate, senza stress e senza rinunce.",
+      "full_text": "Dottoresse molto attente alle esigenze dell'assistito. Eseguono il piano alimentare personalizzato analizzando minuziosamente le abitudini errate e dopodiché dare una corretta alimentazione da seguire senza stress e senza rinunce. I risultati sono eccellenti e duraturi."
+    },
+    {
+      "name": "Alfonso Galasso",
+      "date": "2025-04-06",
+      "rating": 5,
+      "excerpt": "Bellissima esperienza, serietà e professionalità di ogni membro dello staff!",
+      "full_text": "Bellissima esperienza, serietà e professionalità di ogni membro dello staff!!!"
+    },
+    {
+      "name": "Anastasia",
+      "date": "2025-04-06",
+      "rating": 5,
+      "excerpt": "Persino i cibi che per me erano vietati stanno diventando miei alleati.",
+      "full_text": "Ho iniziato il mio percorso con Dimagrimento Lento qualche mese fa e devo dire che è stata una delle migliori decisioni che abbia mai preso per la mia salute. Il team di dottoresse è semplicemente straordinario: competenti, umane e sempre pronte a supportarti in ogni momento. Ciò che mi ha colpito fin da subito è l'approccio personalizzato. Non si tratta di una semplice dieta, ma di un vero e proprio percorso di consapevolezza. Insieme, analizziamo le radici dei miei comportamenti alimentari, spesso legati a stress o abitudini errate. Le dottoresse mi hanno fornito strumenti pratici e strategie efficaci per affrontare le sfide quotidiane anche con frequenti visite. La loro disponibilità è totale: sono sempre raggiungibili via WhatsApp o telefono, pronte a rispondere a ogni dubbio o necessità. Grazie al loro supporto, sto imparando a gestire le mie emozioni senza ricorrere al cibo e a fare scelte alimentari più sane senza sentirmi privata di nulla. Persino i cibi che per me erano vietati stanno diventando miei alleati. Insomma, sto vivendo l'approccio con il cibo con serenità e senza sensi di colpa. Consiglio vivamente \"Dimagrimento Lento\" a chiunque voglia intraprendere un percorso di cambiamento duraturo e imparare ad amarsi di più."
+    },
+    {
+      "name": "Rosi Pro",
+      "date": "2025-04-04",
+      "rating": 5,
+      "excerpt": "La visita dalla nutrizionista non è più un'ansia ma un divertimento.",
+      "full_text": "Esperienza fantastica! Sono seguita dalle dottoresse dello studio Scarpato da settembre 2023 e non le cambierei mai, ottimi e costanti risultati nonostante la mia testa ballerina. La visita dalla nutrizionista non è più un'ansia ma un divertimento."
+    },
+    {
+      "name": "Autilia Citro",
+      "date": "2025-04-03",
+      "rating": 5,
+      "excerpt": "Le dottoresse sono molto gentili e spiegano in maniera chiara tutto quello che devo fare.",
+      "full_text": "Ho iniziato da poco questo percorso, mi sto trovando molto bene, le dottoresse sono molto gentili e spiegano in maniera chiara tutto quello che devo fare. Ho molti pregiudizi su svariate cose ma oggi, parlando con la dottoressa, sono solo delle mie fisse. La dieta è molto semplice e varia da seguire, sono soddisfatta."
+    },
+    {
+      "name": "Filomena Ultimo",
+      "date": "2025-04-03",
+      "rating": 5,
+      "excerpt": "La dieta che sto seguendo mi piace ed è molto varia, difficilmente ho un senso di fame.",
+      "full_text": "Ho iniziato da circa 2 mesi il percorso, la dieta che sto seguendo mi piace ed è molto varia, difficilmente ho un senso di fame. Direi positivo i primi mesi."
+    },
+    {
+      "name": "Salvatore",
+      "date": "2025-04-03",
+      "rating": 5,
+      "excerpt": "Solo grazie a questo team di esperte sono riuscito ad ottenere risultati reali e duraturi.",
+      "full_text": "Ho iniziato questo percorso circa due anni fa, è stato un percorso un po' tortuoso ma molto piacevole; solo grazie a questo team di esperte sono riuscito ad ottenere risultati reali e soprattutto duraturi. Super consigliato se si vuole un qualcosa di duraturo e senza diete drastiche."
+    },
+    {
+      "name": "Lucia Di Lieto",
+      "date": "2025-04-02",
+      "rating": 5,
+      "excerpt": "Non ho mai avvertito il peso del sacrificio, anzi ho mangiato più sano e più gustoso.",
+      "full_text": "Ho iniziato questo percorso ed ho riscontrato subito una grande professionalità da parte di questo team di nutrizioniste. Mi hanno seguito ed educato ad una nuova visione di alimentazione, corretta alimentazione ecco! Non ho mai avvertito il peso del sacrificio, anzi con i loro suggerimenti ho mangiato più sano e soprattutto più gustoso, variando il mio menù e raggiungendo ottimi risultati!"
+    },
+    {
+      "name": "Alessandra Cooper",
+      "date": "2025-02-20",
+      "rating": 5,
+      "excerpt": "Dopo quattro giorni ho perso 500 grammi, e mi sono sentita finalmente forte e sicura del mio corpo.",
+      "full_text": "Francamente ho sempre avuto l'idea che quando uno si mettesse a dieta dovesse privarsi di tutto, fortunatamente mi sbagliavo poiché ho riscontrato una realtà totalmente diversa da quella che immaginavo. Oltre alla classica dieta, quando sono stata visitata c'è stato un aspetto psicologico che mi ha molto incoraggiata: abbiamo toccato altre corde che vedevano una forte empatia, sono stata rassicurata e mi sono sentita finalmente forte e sicura del mio corpo, oltre al fatto che dopo quattro giorni ho perso 500 grammi. Detto ciò consiglierei a chiunque avesse bisogno di prenotare una visita poiché io ne sono rimasta soddisfattissima."
+    },
+    {
+      "name": "Raffaella D'Antuono",
+      "date": "2025-02-19",
+      "rating": 5,
+      "excerpt": "Sono presenti nei momenti di difficoltà, spesso essendo loro le prime a contattare te per chiedere se va tutto bene.",
+      "full_text": "Ho iniziato questa dieta (o meglio percorso per mangiare sano) da poco, dopo un periodo di forte stress abbastanza lungo che mi aveva portato a perdere il focus sul mangiare sano. Mi sono trovata fin da subito bene: sicuramente è anche questione di volontà, ma la dottoressa Scarpato e lo studio Dimagrimento Lento sono sempre presenti per qualsiasi dubbio, chiarimento o perplessità; soprattutto sono presenti nei momenti di difficoltà, spesso essendo loro le prime a contattare te per chiedere se va tutto bene. Ho apprezzato molto la loro presenza e disponibilità (anche nei weekend! Una cosa non da tutti). Per quanto riguarda la dieta, viene insegnato che è un percorso a lungo termine che, anche se può volerci di più rispetto alle diete drastiche, porta i suoi frutti sia nel breve che nel lungo periodo. Io mi sono trovata molto bene: ho iniziato a cucinare nuove ricette, mangiare alimenti più variegati, ad avere più forza ed energia, essere meno stressata e mi sono anche sentita spronata ad iniziare sport. Vale la pena investire in questo studio, davvero eccellente!"
+    },
+    {
+      "name": "Giovanna Limodio",
+      "date": "2025-02-18",
+      "rating": 5,
+      "excerpt": "Non mi sento mai privata o frustrata: consiglio assolutamente questo programma.",
+      "full_text": "Ho sempre pensato che per perdere peso fosse necessario fare sacrifici enormi e seguire diete troppo rigide. Ma con questo percorso ho cambiato totalmente punto di vista. Ho imparato a mangiare in modo più equilibrato e naturale, senza dover rinunciare ai miei cibi preferiti. L'approccio è molto più flessibile e sostenibile, e i risultati si vedono nel tempo, senza fretta. Mi sento più energica, serena e, cosa più importante, non mi sento mai privata o frustrata. Consiglio assolutamente questo programma a chi vuole un cambiamento duraturo e sano."
+    },
+    {
+      "name": "Raffaele Setaro",
+      "date": "2025-02-04",
+      "rating": 5,
+      "excerpt": "Un percorso graduale e sostenibile che mi ha permesso di ottenere risultati duraturi senza stressare il mio corpo.",
+      "full_text": "Ho avuto il piacere di lavorare con le dottoresse dello Studio Scarpato e sono davvero soddisfatto dei risultati ottenuti. Ho perso un bel po' di peso, ma ciò che mi ha colpito di più è stato il metodo di dimagrimento lento e costante che mi ha proposto. Non si è trattato di soluzioni rapide o drastiche, ma di un percorso graduale e sostenibile che mi ha permesso di ottenere risultati duraturi senza stressare il mio corpo. La dieta era sempre personalizzata in base alle mie esigenze e gusti, e il supporto continuo mi ha dato la motivazione di cui avevo bisogno. Consiglio vivamente lo Studio Scarpato a chiunque voglia intraprendere un percorso di dimagrimento sano e duraturo."
+    },
+    {
+      "name": "Alfonso Galasso",
+      "date": "2025-01-26",
+      "rating": 5,
+      "excerpt": "Sempre super gentili e disponibilissime per ogni singola esigenza.",
+      "full_text": "Sono venuto a conoscenza dello studio Scarpato tramite un'amica. Ho iniziato questo percorso, ancora tutt'oggi in corso, non posso fare altro che complimentarmi per la serietà e professionalità, sempre super gentili e disponibilissime per ogni singola esigenza!"
+    },
+    {
+      "name": "Antonella Romano",
+      "date": "2025-01-25",
+      "rating": 5,
+      "excerpt": "Le ricette dei piani alimentari sono facili ma soprattutto gustose, non manca nulla, nemmeno i dolci.",
+      "full_text": "Ho fatto un percorso con lo studio Scarpato bellissimo, il team di dottoresse è eccellente, paziente, garbato; il loro concetto di dimagrimento non è una dieta vera e propria ma con i loro lunghi discorsi a visita fanno in modo che tu capisca qual è il modo giusto di mangiare. Le ricette dei piani alimentari sono facili ma soprattutto gustose, non manca nulla, nemmeno i dolci. Seguire loro è solo un piacere, ve le consiglio vivamente!"
+    },
+    {
+      "name": "Maria",
+      "date": "2025-01-24",
+      "rating": 5,
+      "excerpt": "Grazie a loro ho imparato a mangiare gestendo anche gli \"sgarri\"!",
+      "full_text": "Ho conosciuto lo studio Scarpato tramite i social. Sono dottoresse molto professionali e disponibili che ti seguono su tutto e ti aiutano passo passo nel seguire il piano alimentare personalizzato! Tale piano viene cambiato di continuo in base ai risultati e alle varie esigenze quindi molto vario, non stancante! Grazie a loro ho imparato a mangiare gestendo anche gli \"sgarri\"! Inoltre ogni paziente ha tutto su un'app, comprese le ricette, che io trovo fantastica e facilmente consultabile."
+    },
+    {
+      "name": "Antonietta Galvan",
+      "date": "2025-01-24",
+      "rating": 5,
+      "excerpt": "Assumevo eutirox e pillole per la stipsi, ho eliminato tutto e non ho più problemi.",
+      "full_text": "Ho iniziato ad agosto 2021 ed ad oggi il mio peso non è variato, grazie al team ho imparato a gestire gli sgarri e a smentire che mangiar sano significhi privazioni tipo una mela e riso in bianco; grazie ai loro ricettari si può mangiar sano e gustoso! Assumevo eutirox e pillole per la stipsi, ho eliminato tutto e non ho più problemi. Le visite non si basano su pesata e un arrivederci, c'è tutto un interessamento del paziente! Mangio cinque volte al giorno, senso di fame inesistente. Lo consiglio a tutti: il dimagrimento lento porta non solo un fisico scolpito, ma una nuova concezione di vita."
+    },
+    {
+      "name": "Sonia",
+      "date": "2025-01-22",
+      "rating": 5,
+      "excerpt": "È un percorso dove non si è mai lasciati soli; il piano alimentare è vario.",
+      "full_text": "Ho conosciuto tramite un'amica e sin dal primo appuntamento ho avuto un'impressione positiva, confermata incontro dopo incontro. È un percorso dove non si è mai lasciati soli; il piano alimentare è vario, adattandosi ai gusti e alle esigenze personali. Inoltre con i suggerimenti si imparano nuovi abbinamenti e nuovi piatti. Soddisfatta della scelta di affidarmi a questo team."
+    },
+    {
+      "name": "Mariarosaria Spina",
+      "date": "2025-01-21",
+      "rating": 5,
+      "excerpt": "Con il loro aiuto ho superato senza difficoltà o privazioni il periodo natalizio.",
+      "full_text": "Da qualche mese frequento lo studio \"Dimagrimento Lento\", dove ho trovato un team di dottoresse empatiche, competenti, professionali e disponibili h24. Durante gli appuntamenti, molto frequenti, insieme ricerchiamo le cause dell'aumento di peso, spesso effetto di comportamenti e abitudini sbagliati. Le dottoresse offrono guida, suggerimenti, strategie, non solo durante gli appuntamenti ma anche tramite corsi online ed in presenza, e tramite WhatsApp o telefono sono sempre presenti. Non esiste la dieta ma un piano alimentare concepito su misura per ogni paziente. Con il loro aiuto ho superato senza difficoltà o privazioni il periodo natalizio. Sono soddisfatta della mia scelta perché ho imparato a volermi bene!"
+    },
+    {
+      "name": "Stefania Gargiulo",
+      "date": "2025-01-21",
+      "rating": 5,
+      "excerpt": "Grazie al loro percorso ho imparato a volermi bene, a mangiare senza rinunce.",
+      "full_text": "Un team di dottoresse eccezionali, sempre molto disponibili e sempre pronte ad aiutarti... grazie al loro percorso ho imparato a volermi bene, a mangiare senza rinunce. Il loro piano alimentare è sempre ricco e soprattutto vario, non ci si stanca mai, e poi ho scoperto abbinamenti e ricette eccezionali mangiando sano. Stra-consiglio lo Studio Scarpato e non smetterò mai di ringraziare per tutto."
+    },
+    {
+      "name": "Federica",
+      "date": "2025-01-16",
+      "rating": 5,
+      "excerpt": "Sto sfatando molti miti o false credenze che hanno portato a numerose turbolenze nel mio percorso di educazione alimentare.",
+      "full_text": "In questo percorso sto scoprendo davvero me stessa, i miei limiti; inoltre, sto sfatando molti miti o false credenze che hanno portato a numerose turbolenze nel mio lungo percorso di educazione alimentare. Grazie al team sto imparando a capire i miei reali bisogni, a mangiare bene e a scoprire tanti suggerimenti per incamminarmi sulla strada dello stare bene."
+    },
+    {
+      "name": "Silvana Gal",
+      "date": "2025-01-16",
+      "rating": 5,
+      "excerpt": "Si viene seguiti costantemente anche a distanza, trovando sempre un'alternativa gustosa e salutare.",
+      "full_text": "Presso lo studio della dottoressa Scarpato è possibile trovare un team di specialiste in grado di trovare una risposta efficace per ogni esigenza. Si può accedere ad un percorso personalizzato che cambia periodicamente in base ai propri bisogni e alla stagionalità. Si viene seguiti costantemente anche a distanza, trovando risposte rapide e sempre un'alternativa gustosa e salutare."
+    },
+    {
+      "name": "Raffaella Califano",
+      "date": "2025-01-14",
+      "rating": 5,
+      "excerpt": "In 13 mesi non mi sono mai sentita sola: hanno cambiato il mio modo di approcciarmi al cibo.",
+      "full_text": "Prendo spunto dalla canzone di Vasco per descrivere la mia esperienza con il team di Dimagrimento Lento. Ho intrapreso il percorso dopo mille diete fallite ed oggi, oltre al risultato positivo della bilancia, ho raggiunto un risultato molto più importante: il cambiamento del mio modo di approcciarmi al cibo. Con il loro lavoro minuzioso, ti seguono, ti correggono, \"indagano\", ti sostengono, ti cambiano! E soprattutto in questi 13 mesi non mi sono mai sentita sola!"
+    },
+    {
+      "name": "Leonilda De Rosa",
+      "date": "2025-01-13",
+      "rating": 5,
+      "excerpt": "Studio tutto al femminile, dottoresse altamente professionali e competenti, attente alle tue esigenze.",
+      "full_text": "Studio tutto al femminile composto da dottoresse altamente professionali e competenti, attente alle tue esigenze e soprattutto molto incoraggianti. Ti supportano in ogni tappa del tuo percorso di dimagrimento e ti seguono costantemente, pronte a gestire le criticità proponendo percorsi alternativi."
+    },
+    {
+      "name": "Giuseppe Belvedere",
+      "date": "2025-01-13",
+      "rating": 5,
+      "excerpt": "Da maggio a Natale dello stesso anno ho perso 23 kg, mangiando anche pizza e dolce.",
+      "full_text": "Ho conosciuto lo studio Dimagrimento attraverso i social. I risultati, da me ottenuti con le dottoresse Scarpato e Donnarumma, sono il frutto del loro programma eccellente e di un'attenzione minuziosa e quotidiana nei riguardi di chi si affida a loro. Da maggio 2024 a Natale dello stesso anno ho perso 23 kg! Precedentemente le mie diete non duravano più di un mese. Francamente, il termine dieta si sposa male con il loro percorso perché è un programma che ha come obiettivo il rapporto corretto con il cibo, oltre la perdita di peso. Infatti il programma Dimagrimento consente di poter mangiare un po' di tutto, anche pizza e dolce, senza particolari rinunce e soprattutto senza avvertire attacchi di fame.",
+      "url": "/recensioni/giuseppe-belvedere-23-kg-in-7-mesi.html"
+    },
+    {
+      "name": "Daniela Paolillo",
+      "date": "2025-01-13",
+      "rating": 5,
+      "excerpt": "Mi ha ormai fatto cancellare tutte le esperienze negative che ho avuto in passato.",
+      "full_text": "Il team Dimagrimento Lento mi dà costantemente e professionalmente affiancamento nel mio stile di alimentazione. Sto seguendo insieme a loro un percorso davvero positivo e costruttivo che mi ha ormai fatto cancellare tutte le esperienze negative che ho avuto in passato. Consiglio fortemente il percorso che propone Dimagrimento Lento per i risultati positivi che sto raggiungendo."
+    },
+    {
+      "name": "Vincenzo Riccio",
+      "date": "2025-01-12",
+      "rating": 5,
+      "excerpt": "Grazie a loro, ho perso 30 kg.",
+      "full_text": "È un gruppo di dottoresse giovani, capaci e molto professionali. Seguono i loro pazienti passo dopo passo, di fatti, grazie a loro, ho perso 30 kg. Attualmente sto continuando il percorso di dimagrimento lento che vede a capo dello staff la dott.ssa Manuela Scarpato.",
+      "url": "/recensioni/vincenzo-riccio-30-kg.html"
+    },
+    {
+      "name": "Filomena Di Lorenzo",
+      "date": "2025-01-11",
+      "rating": 5,
+      "excerpt": "Il focus non è solo bilancia, peso e cambio dieta, ma lo stile di vita e i comportamenti.",
+      "full_text": "La mia esperienza con lo Studio Scarpato è assolutamente positiva, soprattutto per alcuni punti di forza come la modalità di presa in carico del paziente: grazie ad un'app si ha la possibilità di consultare video lezioni e ricette, il contatto di assistenza WhatsApp permette di porre qualsiasi domanda ad ogni dubbio lungo il percorso intrapreso, e le visite di controllo che vanno ad approfondire lo stile di vita e i comportamenti che bloccano gli obiettivi prefissati, quindi il focus non è solo bilancia, peso e cambio dieta."
+    },
+    {
+      "name": "Giulia Capece",
+      "date": "2025-01-09",
+      "rating": 5,
+      "excerpt": "Nessuna pressione né sensazioni di privazione, ma una guida costante su come gestire l'alimentazione quotidiana.",
+      "full_text": "Da soli puoi andare più veloce ma insieme si va lontano. Sapere di avere alle spalle professioniste che ti possono accompagnare e assistere in un percorso di riequilibrio fisico e mentale è stato per me il fattore determinante per iniziare ad utilizzare il metodo del dimagrimento lento. Nessuna pressione né sensazioni di privazione ma una guida costante su come gestire l'alimentazione quotidiana. Sono seguita da queste splendide dottoresse da tre mesi e mi sento decisamente bene, e aver perso diversi kg è solo uno degli aspetti di un ritrovato benessere."
+    },
+    {
+      "name": "Alessia Cucciniello",
+      "date": "2025-01-09",
+      "rating": 5,
+      "excerpt": "Non è la solita \"nutrizionista\", ma una vera e propria guida che mi accompagna con costanza.",
+      "full_text": "Sono davvero felice di aver intrapreso questo percorso con il team di Dimagrimento Lento e del supporto che ricevo ogni giorno. Non è la solita \"nutrizionista\", ma una vera e propria guida che mi accompagna con costanza. Tutto il team è sempre super disponibile, rispondendo ai miei dubbi in ogni momento e adattando ogni settimana l'alimentazione alle mie necessità e preferenze. Mi stanno aiutando a gestire l'alimentazione in modo sano, consapevole, senza privazioni, e con molta serenità. È un approccio che sento davvero mio e che mi sta portando ottimi risultati!"
+    },
+    {
+      "name": "Chiara Caccavo",
+      "date": "2025-01-08",
+      "rating": 5,
+      "excerpt": "In più di un anno e mezzo non ho solo perso 8 kg, ma ho imparato a controllare le cattive abitudini alimentari.",
+      "full_text": "Professionalità e competenza si uniscono a gentilezza e presenza costante. In più di un anno e mezzo che sono loro paziente non ho solo perso 8 kg ma ho imparato a controllare le cattive abitudini alimentari. Sto imparando ad accettare il mio corpo, ad ascoltarlo, e in quasi un anno di mantenimento sto imparando ad ascoltare i miei desideri bilanciando il tutto. È un investimento su se stessi a lungo termine che si conclude quando veramente non sarà più necessario parlare di dieta. Le consiglio a chiunque!"
+    },
+    {
+      "name": "Tiziana Fabbricatore",
+      "date": "2025-01-07",
+      "rating": 5,
+      "excerpt": "Poter mangiare bene senza sentirsi in colpa: gelato, pizza, sono soddisfatta della mia scelta.",
+      "full_text": "Non fare rinunce: insegnano un'alimentazione sana, a riconoscere il senso di sazietà, a riconoscere se davvero c'è la necessità di esagerare. Supporto morale e tanta disponibilità: poter mangiare bene senza sentirsi in colpa, gelato, pizza. Sono soddisfatta della mia scelta."
+    },
+    {
+      "name": "Francesco",
+      "date": "2025-01-04",
+      "rating": 5,
+      "excerpt": "Si impara che ci si può concedere tutto gestendo le cose con il giusto approccio.",
+      "full_text": "Si è molto seguiti sotto tutti i punti di vista, approccio multidisciplinare che va a investigare anche il perché di certi comportamenti non corretti e va a creare capacità di giudizio e di autovalutazione nelle varie situazioni; in questo modo non solo si dimagrisce o si riequilibra ciò che è squilibrato, ma si impara a non ricadere negli stessi errori anche se i contesti cambiano. Un team molto preparato. Non ci si sente mai abbandonati e anzi c'è massima disponibilità a dare feedback rapidi per affrontare situazioni che si presentano improvvisamente. Si impara che ci si può concedere tutto gestendo le cose con il giusto approccio e che non bisogna vivere il cibo come un nemico o con delle privazioni. Complimenti davvero per quello che fanno, non me lo aspettavo."
+    },
+    {
+      "name": "Pegaso",
+      "date": "2024-12-26",
+      "rating": 5,
+      "excerpt": "Personale medico molto preparato, professionale e accorto a tutte le esigenze.",
+      "full_text": "Studio con personale medico molto preparato, professionale e accorto a tutte le esigenze. Negli appuntamenti si riceve massima disponibilità e puntualità. Con le dottoresse si raggiungono ottimi risultati. Molto pratica l'app e di facile consultazione. Utilissime e buone le ricette consigliate. Grazie a tutto lo staff."
+    },
+    {
+      "name": "Nunzia Giorgio",
+      "date": "2024-12-23",
+      "rating": 5,
+      "excerpt": "Un percorso, non una dieta! Imparare a nutrirsi in modo sano, imparare ad accettarsi e ad amarsi.",
+      "full_text": "Per \"caso\", ma probabilmente no, un annetto fa scrollando sui social mi sono imbattuta in un post che invitava a provare il \"Dimagrimento Lento\" e da un click è iniziato il mio percorso. Un percorso, non una dieta! Imparare a nutrirsi in modo sano, imparare ad accettarsi e ad amarsi: il dimagrimento è una mera conseguenza a cui si arriva grazie alle sane abitudini acquisite. Un team di dottoresse speciali, professioniste e professionali, ma prima di tutto \"Persone\" profondamente empatiche che con delicatezza scavano fino ad arrivare al problema che sta alla base di quel peso accumulato, che non è altro che la punta di un iceberg."
+    },
+    {
+      "name": "Stefania V.",
+      "date": "2024-12-23",
+      "rating": 5,
+      "excerpt": "Non un rigido schema alimentare, ma un progressivo abbandono delle cattive abitudini.",
+      "full_text": "L'esperienza è estremamente positiva: non un rigido schema alimentare (che non sarei riuscita a seguire), ma un progressivo abbandono delle cattive abitudini. I risultati ci sono, si vedono e si misurano, ma sono anche stabili e duraturi. Grazie!"
+    },
+    {
+      "name": "Luisa Stanhome Baino",
+      "date": "2024-12-23",
+      "rating": 5,
+      "excerpt": "Dopo 4 percorsi miseramente falliti, ho perso 10 kg seguendo un percorso di analisi dei comportamenti.",
+      "full_text": "Ho iniziato a gennaio 2023, ultimo tentativo di perdere una dozzina di kg di troppo che mi procuravano problemi articolari. 4 percorsi miseramente falliti alle spalle, poche aspettative e la certezza che avrei dovuto affrontare un periodo di restrizioni drastiche, sacrifici e rinunce. Invece ho trovato un percorso fatto di analisi dei comportamenti, consigli, suggerimenti e soprattutto... gusto. Il gusto di mangiare in modo sano ed equilibrato senza rinunciare in maniera pesante. Intrapresa la strada ho perso 10 kg e continuo a seguire il percorso più per un senso di sicurezza che una vera e propria necessità dimagrante. Forever insieme alle mie dottoresse."
+    },
+    {
+      "name": "Rosario M.",
+      "date": "2024-12-23",
+      "rating": 5,
+      "excerpt": "Ti seguono a 360 gradi: corsi online e di persona su cosa mangiare, come fare la spesa, come festeggiare le feste.",
+      "full_text": "Centro di dimagrimento serissimo e diverso dagli altri. Ti seguono a 360 gradi. Sto seguendo un percorso di dimagrimento lento da un anno ormai e non mi definisco a dieta ma sto imparando a mangiare correttamente. Forniscono un supporto quotidiano e raccomandazioni con corsi online e di persona su cosa mangiare, come fare la spesa, come festeggiare il Natale e le feste mangiando ma senza rischiare di perdere il controllo. Leggermente più caro di qualche altro centro di dimagrimento ma il servizio offerto è di alta qualità e professionalità. Raccomando sicuramente."
+    },
+    {
+      "name": "Lucia Paolillo",
+      "date": "2024-12-23",
+      "rating": 5,
+      "excerpt": "Da maggio 2024 ho perso 11 kg: per me è un sogno avverato.",
+      "full_text": "Per me è stato sempre difficile perdere peso, da quando sto frequentando lo Studio Scarpato da maggio 2024 ho perso 11 kg, per me è un sogno avverato grazie a tutte le dottoresse che con la loro professionalità, competenza e dolcezza rendono tutto più semplice. Sono sempre presenti e disponibili, organizzando corsi specifici. Per chi come me era scettico, è il momento buono per cominciare, grazie a tutte."
+    },
+    {
+      "name": "Annamaria Bruni",
+      "date": "2024-12-23",
+      "rating": 5,
+      "excerpt": "Un team eccellente che si scervella per non farmi annoiare, proponendo ricette sane e gustose.",
+      "full_text": "Sto da 1 anno con questo team eccellente che si scervella per non farmi annoiare proponendomi ricette sane e gustose e cercando di gestire al meglio il mio problematico rapporto con il dolce, che mi viene concesso due volte a settimana. Ottimo il servizio assistenza su WhatsApp che ti consente di avere il team sempre vicino a te se non trovi un prodotto o lo vuoi sostituire. Un grazie speciale va alla mia nutrizionista preferita, Francesca Stellato."
+    },
+    {
+      "name": "Franca Memoli",
+      "date": "2024-12-23",
+      "rating": 5,
+      "excerpt": "Sto crescendo in consapevolezza di me stessa e in serenità nell'assunzione del cibo, senza sensi di colpa.",
+      "full_text": "Sono seguita dalle dottoresse dal mese di ottobre e sto crescendo in consapevolezza di me stessa, della qualità dei prodotti che acquisto e in serenità nell'assunzione del cibo senza sensi di colpa. Sto, invece, diminuendo in peso e centimetri. Sono molto soddisfatta."
+    },
+    {
+      "name": "Francesco Cortiglia",
+      "date": "2024-12-23",
+      "rating": 5,
+      "excerpt": "Persone professionali che ti guidano man mano al proprio obiettivo, sia di dimagrimento che di stato di salute.",
+      "full_text": "Persone professionali che ti guidano man mano al proprio obiettivo sia di dimagrimento lento che lo stato di salute."
+    }
+  ]
+}

@@ -100,18 +100,48 @@
       "https://www.facebook.com/nutrizionistamanuelascarpato",
       "https://www.instagram.com/dimagrimentolento/"
     ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.7",
+      "reviewCount": "71",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
     "review": [
       {
         "@type": "Review",
-        "reviewRating": { "@type": "Rating", "ratingValue": "5" },
-        "author": { "@type": "Person", "name": "Laura M." },
-        "reviewBody": "Ho imparato a gestire il mio rapporto con il cibo. Non è stata una semplice dieta, ma un percorso di crescita personale che mi ha cambiato la vita."
+        "datePublished": "2025-07-14",
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+        "author": { "@type": "Person", "name": "Daniela Chionna" },
+        "reviewBody": "Pesavo 74 kg, oggi peso 54 kg e non ho più problemi di salute legati al colon irritabile."
       },
       {
         "@type": "Review",
-        "reviewRating": { "@type": "Rating", "ratingValue": "5" },
-        "author": { "@type": "Person", "name": "Marco R." },
-        "reviewBody": "Dopo anni di diete yo-yo, ho finalmente trovato un metodo che mi ha insegnato a mangiare consapevolmente. Risultati stabili da 2 anni."
+        "datePublished": "2026-02-11",
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+        "author": { "@type": "Person", "name": "Valentina Pagano" },
+        "reviewBody": "Dopo anni di diete fallimentari è stato un vero miracolo: i piani sono DAVVERO personalizzati, nessun alimento è demonizzato."
+      },
+      {
+        "@type": "Review",
+        "datePublished": "2025-01-13",
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+        "author": { "@type": "Person", "name": "Giuseppe Belvedere" },
+        "reviewBody": "Da maggio 2024 a Natale dello stesso anno ho perso 23 kg, mangiando anche pizza e dolce."
+      },
+      {
+        "@type": "Review",
+        "datePublished": "2025-01-12",
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+        "author": { "@type": "Person", "name": "Vincenzo Riccio" },
+        "reviewBody": "Grazie a loro, ho perso 30 kg. Seguono i loro pazienti passo dopo passo con grande professionalità."
+      },
+      {
+        "@type": "Review",
+        "datePublished": "2025-07-09",
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+        "author": { "@type": "Person", "name": "Federica D'Angelo" },
+        "reviewBody": "In meno di tre mesi ho perso 10 kg senza alcun sacrificio. Non ci si sente per nulla a dieta!"
       }
     ]
   }
@@ -167,22 +197,6 @@
       aspect-ratio: 16 / 9;
       border-radius: 0.5rem;
     }
-    .dl-select {
-      padding: .75rem 2.5rem .75rem 1.25rem;
-      border: 2px solid var(--dl-border);
-      border-radius: 9999px;
-      color: var(--dl-text);
-      background: white;
-      font-size: .95rem;
-      font-weight: 600;
-      outline: none;
-      cursor: pointer;
-      min-width: 200px;
-      appearance: none;
-      -webkit-appearance: none;
-      transition: border-color .2s;
-    }
-    .dl-select:focus { border-color: var(--dl-g500); }
   </style>
 </head>
 
@@ -343,6 +357,54 @@
   </div>
 </section>
 
+<!-- ╔══════════════════════════════════╗
+     ║    RECENSIONI TRUSTPILOT       ║
+     ╚══════════════════════════════════╝ -->
+<section id="trustpilot" style="background:var(--dl-section)" class="py-16">
+  <div class="container max-w-6xl mx-auto px-4">
+    <div class="dl-sh">
+      <h2 class="dl-h2">Recensioni Trustpilot</h2>
+      <p>Cosa dicono le nostre pazienti su Trustpilot — recensioni certificate e verificate</p>
+      <div class="dl-divider"></div>
+    </div>
+
+    <div class="flex flex-wrap items-center justify-center gap-4 mb-10" style="background:#fff;border:1px solid var(--dl-border);border-radius:var(--dl-r);padding:1rem 1.5rem">
+      <span style="font-weight:800;font-size:1rem;color:#00B67A;letter-spacing:-.02em">Trustpilot</span>
+      <div class="tp-stars" aria-label="Valutazione 4.7 su 5" style="margin:0">
+        <span class="tp-star filled"></span>
+        <span class="tp-star filled"></span>
+        <span class="tp-star filled"></span>
+        <span class="tp-star filled"></span>
+        <span class="tp-star filled"></span>
+      </div>
+      <span style="font-weight:700;font-size:1.05rem;color:var(--dl-text)">4,7 / 5</span>
+      <span style="color:var(--dl-text-m);font-size:.95rem">· 71 recensioni verificate</span>
+      <a href="https://it.trustpilot.com/review/dimagrimentolento.it" target="_blank" rel="noopener noreferrer"
+         style="font-size:.875rem;color:var(--dl-g700);text-decoration:none;white-space:nowrap"
+         onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">
+        Scrivi una recensione →
+      </a>
+    </div>
+
+    <div class="flex justify-center mb-10">
+      <select id="filter-tp" class="dl-select" aria-label="Filtra recensioni per anno">
+        <option value="all">Tutte le recensioni</option>
+        <option value="2026">2026</option>
+        <option value="2025">2025</option>
+        <option value="2024">2024</option>
+      </select>
+    </div>
+
+    <div id="tp-full-grid" class="tp-full-grid"></div>
+
+    <div class="flex justify-center mt-10">
+      <button id="tp-load-more" class="dl-btn dl-btn-cta dl-btn-lg">
+        Mostra altre recensioni
+      </button>
+    </div>
+  </div>
+</section>
+
 <!-- Wave section → gradient -->
 <div style="background:#0B3D27;overflow:hidden;margin-bottom:-2px">
   <svg viewBox="0 0 1440 55" preserveAspectRatio="none" style="display:block;width:100%;height:55px">
@@ -487,7 +549,7 @@
       <div class="flex-1">
         <p class="f-label">Il Metodo</p>
         <p style="font-size:.88rem;line-height:1.6;color:rgba(255,255,255,.65);max-width:220px">
-          Dal 2022, biologhe nutrizioniste specializzate nel Dimagrimento Lento. Un approccio educativo per risultati permanenti.
+          Dal 2019, biologhe nutrizioniste specializzate nel Dimagrimento Lento. Un approccio educativo per risultati permanenti.
         </p>
       </div>
 
@@ -591,6 +653,7 @@
 
 <!-- Testimonianze JS (video + foto gallery) — deve stare DOPO jQuery -->
 <script src="./assets/js/testimonianze.js"></script>
+<script src="/assets/js/tp-reviews.js" defer></script>
 
 <!-- NAV BEHAVIOUR -->
 <script>
