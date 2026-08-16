@@ -1,0 +1,13 @@
+{
+  "name": "dimagrimentolento-site",
+  "private": true,
+  "scripts": {
+    "build:css": "tailwindcss build assets/css/tailwind.source.css -o assets/css/tailwind.min.css --minify",
+    "optimize:images": "sh scripts/optimize-images.sh",
+    "audit:seo": "node scripts/seo-audit.mjs",
+    "test": "node --check assets/js/testimonianze.js && node --check assets/js/tp-reviews.js && node scripts/seo-audit.mjs"
+  },
+  "devDependencies": {
+    "tailwindcss": "2.2.19"
+  }
+}

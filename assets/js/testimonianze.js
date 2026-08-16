@@ -124,6 +124,15 @@ document.addEventListener('DOMContentLoaded', function() {
       link: 'e-cambiato-completamente-il-mio-approccio-all-alimentazione'
     }
   ];
+
+  function escapeHtml(value) {
+    return String(value)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#039;');
+  }
   
   // Funzione per mostrare le foto in base al filtro
   function showPhotos(filterValue, page = 0) {
@@ -138,8 +147,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
       const img = document.createElement('img');
       img.src = image.path;
-      img.alt = 'Testimonianza';
+      img.alt = 'Testimonianza pubblicata nel ' + image.category;
       img.className = 'w-full h-auto object-cover';
+      img.loading = 'lazy';
+      img.decoding = 'async';
+      img.width = 640;
+      img.height = 1138;
 
       div.appendChild(img);
       facebookContainer.appendChild(div);
@@ -162,50 +175,39 @@ document.addEventListener('DOMContentLoaded', function() {
     );
 
     filteredTestimonials.slice(0, end).forEach(testimonial => {
-        const div = document.createElement('article'); // Cambio da div a article per migliore semantica
+        const div = document.createElement('article');
         div.className = 'w-full sm:w-1/2 lg:w-1/3 p-4';
         div.setAttribute('data-weight', testimonial.category);
 
+        const safeName = escapeHtml(testimonial.name);
+        const safeDescription = escapeHtml(testimonial.description || 'Videotestimonianza Dimagrimento Lento');
+        const storyUrl = '/videotestimonianze/' + encodeURIComponent(testimonial.category) + '/' + encodeURIComponent(testimonial.link) + '.html';
+
         div.innerHTML = `
             <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full flex flex-col">
-                <!-- Schema.org markup -->
-                <script type="application/ld+json">
-                {
-                    "@context": "https://schema.org",
-                    "@type": "VideoObject",
-                    "name": "${testimonial.name}",
-                    "description": "${testimonial.description || 'Videotestimonianza Dimagrimento Lento'}",
-                    "thumbnailUrl": "https://img.youtube.com/vi/${testimonial.videoid}/maxresdefault.jpg",
-                    "uploadDate": "${testimonial.category}-01-01",
-                    "embedUrl": "https://www.youtube.com/embed/${testimonial.videoid}"
-                }
-                </script>
-
                 <div class="video-container" role="presentation">
                     <lite-youtube 
                         videoid="${testimonial.videoid}"
                         style="width: 100%;"
-                        title="${testimonial.name} - Videotestimonianza Dimagrimento Lento"
+                        title="${safeName} - Videotestimonianza Dimagrimento Lento"
                         params="rel=0"
                     ></lite-youtube>
                 </div>
                 
                 <div class="p-4 flex flex-col flex-grow">
                     <header class="flex-grow">
-                        <h2 class="text-gray-700 text-lg font-medium mb-2">
-                            ${testimonial.name}
-                        </h2>
+                        <h3 class="text-gray-700 text-lg font-medium mb-2">${safeName}</h3>
                     
                     </header>
 
                     ${testimonial.description ? `
                         <footer class="mt-3">
-                            <a href="/videotestimonianze/${testimonial.category}/${testimonial.link}.html" 
+                            <a href="${storyUrl}"
                                class="inline-block w-full px-4 py-2 bg-purple-600 hover:bg-purple-700 
                                       text-white text-center rounded-lg transition-colors"
-                               aria-label="Scopri la storia completa di ${testimonial.name}"
-                               title="Leggi la storia completa di ${testimonial.name}">
-                                ${testimonial.description}
+                               aria-label="Scopri la storia completa: ${safeName}"
+                               title="Leggi la storia completa: ${safeName}">
+                                ${safeDescription}
                             </a>
                         </footer>
                     ` : ''}
@@ -257,20 +259,20 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   //For contattaci button:
-  document.getElementById('contactButton').addEventListener('click', function() {
+  const contactButton = document.getElementById('contactButton');
+  if (contactButton) contactButton.addEventListener('click', function() {
     document.getElementById('comeHere').scrollIntoView({ behavior: 'smooth' });
     this.style.opacity = 0; // Usa 'opacity: 0' se vuoi un effetto più graduale
   });
     // Aggiungere animazione allo scroll
     document.addEventListener('scroll', function() {
       const buttonContainer = document.getElementById('contactButtonContainer');
-      if (!buttonContainer.classList.contains('slide-in')) {
+      if (buttonContainer && !buttonContainer.classList.contains('slide-in')) {
         buttonContainer.classList.add('slide-in');
         buttonContainer.style.transform = 'translateY(0)';
       }
     });
   
 });
-
 
 

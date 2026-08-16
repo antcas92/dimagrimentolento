@@ -1,4 +1,6 @@
 User-agent: *
-Disallow:
+Disallow: /scan/
+Disallow: /brevo-widget.html
+Disallow: /contacts-widget.html
 
 Sitemap: https://dimagrimentolento.it/sitemap.xml

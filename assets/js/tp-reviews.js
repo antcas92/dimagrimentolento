@@ -86,24 +86,22 @@
       && r.full_text.length > r.excerpt.length + 30;
 
     return (
-      '<article class="tpw-card" itemscope itemtype="https://schema.org/Review">' +
+      '<article class="tpw-card">' +
         '<div class="tpw-head">' +
           renderStars(r.rating) +
           '<span class="tpw-badge">&#10003; Verificata</span>' +
         '</div>' +
-        '<p class="tpw-text" itemprop="reviewBody">' + esc(r.excerpt) + '</p>' +
+        '<p class="tpw-text">' + esc(r.excerpt) + '</p>' +
         (hasMore
           ? '<p class="tpw-full" hidden>' + esc(r.full_text) + '</p>' +
             '<button class="tpw-toggle" aria-expanded="false">Leggi tutto</button>'
           : '') +
         '<footer class="tpw-footer">' +
-          '<span class="tpw-name" itemprop="author" itemscope itemtype="https://schema.org/Person">' +
-            '<span itemprop="name">' + esc(r.name) + '</span>' +
-          '</span>' +
+          '<span class="tpw-name">' + esc(r.name) + '</span>' +
           '<time class="tpw-date" datetime="' + esc(r.date) + '">' + fmtDate(r.date) + '</time>' +
         '</footer>' +
         (r.url
-          ? '<a class="tpw-link" href="' + r.url + '">Leggi la storia completa &#8594;</a>'
+          ? '<a class="tpw-link" href="' + esc(r.url) + '">Leggi la storia completa &#8594;</a>'
           : '') +
       '</article>'
     );

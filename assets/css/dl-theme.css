@@ -692,3 +692,13 @@ body.gradient {
   color: var(--dl-g700) !important;
 }
 .dl-btn-outline:hover { background: var(--dl-g50); }
+/* Link aggiunto alla navigazione mobile durante il consolidamento SEO. */
+#nav-mobile-panel .dl-reviews-link,
+#nav-content-mobile .dl-reviews-link {
+  display: block;
+  padding: .9rem 0;
+  color: #18212e;
+  font-size: 1.05rem;
+  font-weight: 600;
+  text-decoration: none;
+}
