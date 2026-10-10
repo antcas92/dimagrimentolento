@@ -63,12 +63,15 @@
     var local = path.match(/^\/nutrizionista-(angri|nocera|salerno)/);
     if (local) return { type: 'local_landing', studio: local[1] };
     if (path === '/' || path === '/index') return { type: 'home' };
+    if (/^\/blog\/?(index)?$/.test(path)) return { type: 'blog_hub' };
     if (/^\/blog\//.test(path)) return { type: 'blog_article' };
+    if (/^\/mobile-app/.test(path)) return { type: 'app_page' };
     if (/^\/recensioni\/?(index)?$/.test(path)) return { type: 'reviews_hub' };
     if (/^\/recensioni\//.test(path)) return { type: 'review_story' };
     if (/^\/videotestimonianze\//.test(path)) return { type: 'video_testimonial' };
     if (/^\/testimonianze/.test(path)) return { type: 'testimonials_hub' };
     if (/^\/ti-aspettiamo/.test(path)) return { type: 'partner_landing' };
+    if (/^\/pps\/grazieLanding/.test(path)) return { type: 'thank_you' };
     return { type: 'other' };
   }
 

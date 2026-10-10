@@ -7,7 +7,7 @@
   const index = document.querySelector('.dl-article-index');
   const links = [...panel.querySelectorAll('a[href]')];
   let isOpen = false;
-  index.open = desktop.matches;
+  if (index) index.open = desktop.matches;
 
   const updateHeader = () => header.classList.toggle('scrolled', window.scrollY > 12);
 
@@ -30,7 +30,7 @@
   links.forEach(link => link.addEventListener('click', () => setMenu(false, false)));
   desktop.addEventListener('change', event => {
     if (event.matches && isOpen) setMenu(false, false);
-    index.open = event.matches;
+    if (index) index.open = event.matches;
   });
   document.addEventListener('keydown', event => {
     if (!isOpen) return;
@@ -52,4 +52,41 @@
   });
   window.addEventListener('scroll', updateHeader, { passive: true });
   updateHeader();
+
+  // Avanzamento di lettura e voce attiva dell'indice: solo sulle pagine articolo.
+  const body = document.querySelector('.dl-blog-body');
+  if (!body || !index) return;
+
+  const progress = document.createElement('div');
+  progress.className = 'dl-read-progress';
+  progress.setAttribute('aria-hidden', 'true');
+  const bar = progress.appendChild(document.createElement('span'));
+  document.body.appendChild(progress);
+  let ticking = false;
+  const updateProgress = () => {
+    ticking = false;
+    const rect = body.getBoundingClientRect();
+    const total = rect.height - window.innerHeight * 0.6;
+    const read = total > 0 ? Math.min(1, Math.max(0, (header.offsetHeight - rect.top) / total)) : 0;
+    bar.style.setProperty('--read', read.toFixed(4));
+  };
+  window.addEventListener('scroll', () => {
+    if (!ticking) { ticking = true; requestAnimationFrame(updateProgress); }
+  }, { passive: true });
+  window.addEventListener('resize', updateProgress);
+  updateProgress();
+
+  const indexLinks = new Map([...index.querySelectorAll('a[href^="#"]')]
+    .map(link => [decodeURIComponent(link.hash.slice(1)), link]));
+  const sections = [...indexLinks.keys()].map(id => document.getElementById(id)).filter(Boolean);
+  if (!('IntersectionObserver' in window) || !sections.length) return;
+  const setCurrent = id => indexLinks.forEach((link, key) => {
+    if (key === id) link.setAttribute('aria-current', 'true');
+    else link.removeAttribute('aria-current');
+  });
+  const spy = new IntersectionObserver(entries => {
+    const visible = entries.filter(entry => entry.isIntersecting);
+    if (visible.length) setCurrent(visible[0].target.id);
+  }, { rootMargin: '-25% 0px -65% 0px' });
+  sections.forEach(section => spy.observe(section));
 })();

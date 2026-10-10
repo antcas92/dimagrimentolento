@@ -52,7 +52,7 @@ Tutta la misurazione vive in `assets/js/analytics.js`, incluso da ogni pagina co
 | `directions_click` | Click su "Indicazioni" di uno studio | `studio_location` |
 | `article_read` | Articolo del blog letto (75% + 30 secondi) | `read_time_sec` |
 
-Ogni evento porta anche `page_type` (`home`, `local_landing`, `blog_article`, `review_story`, `reviews_hub`, `video_testimonial`, `testimonials_hub`), `content_group` e, sulle landing locali, `studio_location`. La proprietà utente `lead_status` vale `prospect` o `lead`.
+Ogni evento porta anche `page_type` (`home`, `local_landing`, `blog_hub`, `blog_article`, `app_page`, `review_story`, `reviews_hub`, `video_testimonial`, `testimonials_hub`, `thank_you`), `content_group` e, sulle landing locali, `studio_location`. La proprietà utente `lead_status` vale `prospect` o `lead`.
 
 Il nome di una sezione (`section_id`, `cta_location`) deriva dal suo `id` o dal titolo; per fissarlo e non perdere lo storico quando cambia il testo, aggiungere `data-section="nome"` al `<section>`.
 

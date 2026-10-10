@@ -774,3 +774,11 @@ body.gradient {
     transition: none !important;
   }
 }
+/* Con sei voci la barra desktop resta su una riga anche a 1024 px. */
+#header #navAction,
+#header > div:first-child > a > span { white-space: nowrap; }
+@media (min-width: 1024px) and (max-width: 1199px) {
+  #header > div:first-child > a { font-size: 1.2rem; }
+  #nav-content .dl-nav-link { padding-inline: .5rem; font-size: .95rem; }
+  #nav-content #navAction { margin-left: .5rem; padding-inline: 1.15rem; font-size: .95rem; }
+}

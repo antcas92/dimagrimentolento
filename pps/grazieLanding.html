@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prenotazione ricevuta - Dimagrimento Lento</title>
+  <meta name="description" content="La tua consulenza gratuita con Dimagrimento Lento è prenotata.">
+  <!-- Pagina di conferma dopo la prenotazione: non va indicizzata. -->
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#0B3D27">
+  <link rel="icon" type="image/webp" href="/assets/images/webp/logo-100.webp">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
+  <link rel="stylesheet" href="/assets/css/dl-theme.css">
+
+  <style>
+    body.dl-thanks {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      /* Lo stesso motivo a cerchi delle testate del sito, disegnato come sfondo. */
+      background:
+        radial-gradient(circle at calc(100% - 90px) 50px, rgba(255,255,255,.06) 0 230px, rgba(255,255,255,.035) 231px 310px, transparent 311px) no-repeat,
+        var(--dl-gradient);
+      color: var(--dl-text);
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    }
+    .dl-thanks-top {
+      position: relative;
+      padding: 1.5rem 1rem 0;
+      text-align: center;
+    }
+    .dl-thanks-logo {
+      display: inline-flex;
+      align-items: center;
+      gap: .55rem;
+      color: white;
+      font-size: 1.15rem;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .dl-thanks-logo img { width: 2.1rem; height: auto; }
+    .dl-thanks-logo:hover { color: white; text-decoration: none; }
+
+    .dl-thanks-main {
+      position: relative;
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1rem 3rem;
+    }
+
+    .dl-thanks-card {
+      position: relative;
+      width: 100%;
+      max-width: 560px;
+      padding: 2.5rem 1.5rem 2rem;
+      border-radius: 28px;
+      background: white;
+      box-shadow: var(--dl-shadow-lg);
+      text-align: center;
+    }
+    .dl-thanks-check {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 4.25rem;
+      height: 4.25rem;
+      margin-bottom: 1.25rem;
+      border-radius: 50%;
+      background: var(--dl-g100);
+      color: var(--dl-g700);
+    }
+    .dl-thanks-check svg { width: 2.1rem; height: 2.1rem; }
+    .dl-thanks-check path {
+      stroke-dasharray: 30;
+      stroke-dashoffset: 30;
+      animation: dl-thanks-draw .5s .25s ease-out forwards;
+    }
+    @keyframes dl-thanks-draw { to { stroke-dashoffset: 0; } }
+
+    .dl-thanks-card h1 {
+      margin: 0 0 .75rem;
+      color: var(--dl-g900);
+      font-size: clamp(1.7rem, 6vw, 2.25rem);
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -.025em;
+      text-wrap: balance;
+    }
+    .dl-thanks-lead {
+      margin: 0 auto 1.75rem;
+      max-width: 40ch;
+      color: var(--dl-text-m);
+      font-size: 1.06rem;
+      line-height: 1.6;
+    }
+
+    .dl-thanks-next {
+      margin: 0 0 1.75rem;
+      padding: 1.25rem 1.25rem 1.1rem;
+      border-radius: var(--dl-r-lg);
+      background: var(--dl-g50);
+      text-align: left;
+    }
+    .dl-thanks-next h2 {
+      margin: 0 0 .85rem;
+      color: var(--dl-g900);
+      font-size: 1rem;
+      font-weight: 700;
+    }
+    .dl-thanks-next ol {
+      list-style: none;
+      counter-reset: step;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: .8rem;
+    }
+    .dl-thanks-next li {
+      counter-increment: step;
+      display: flex;
+      gap: .8rem;
+      color: var(--dl-text);
+      font-size: .96rem;
+      line-height: 1.5;
+    }
+    .dl-thanks-next li::before {
+      content: counter(step);
+      flex: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 1.6rem;
+      height: 1.6rem;
+      border-radius: 50%;
+      background: var(--dl-g700);
+      color: white;
+      font-size: .82rem;
+      font-weight: 700;
+    }
+
+    .dl-thanks-help {
+      margin: 0 0 .9rem;
+      color: var(--dl-text-m);
+      font-size: .95rem;
+      line-height: 1.5;
+    }
+    .dl-thanks-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: .75rem;
+    }
+    .dl-thanks-actions a {
+      flex: 1 1 200px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: .5rem;
+      min-height: 3rem;
+      padding: .75rem 1rem;
+      white-space: nowrap;
+      border-radius: 999px;
+      font-size: 1rem;
+      font-weight: 700;
+      text-decoration: none;
+      transition: background .2s, border-color .2s;
+    }
+    .dl-thanks-actions svg { width: 1.2rem; height: 1.2rem; flex: none; }
+    .dl-thanks-wa { background: var(--dl-cta); color: white; }
+    .dl-thanks-wa:hover { background: var(--dl-g900); color: white; text-decoration: none; }
+    .dl-thanks-call { border: 2px solid var(--dl-border); color: var(--dl-g700); }
+    .dl-thanks-call:hover { border-color: var(--dl-g700); color: var(--dl-g900); text-decoration: none; }
+    .dl-thanks-actions a:focus-visible,
+    .dl-thanks-more a:focus-visible,
+    .dl-thanks-logo:focus-visible { outline: 3px solid var(--dl-g300); outline-offset: 3px; }
+
+    .dl-thanks-more {
+      margin: 1.75rem 0 0;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--dl-g100);
+      color: var(--dl-text-m);
+      font-size: .95rem;
+      line-height: 1.6;
+    }
+    .dl-thanks-more a {
+      color: var(--dl-g700);
+      font-weight: 700;
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 4px;
+      text-decoration-color: var(--dl-g300);
+    }
+    .dl-thanks-more a:hover { color: var(--dl-g900); text-decoration-color: var(--dl-g700); }
+
+    .dl-thanks-foot {
+      padding: 0 1rem 1.5rem;
+      color: rgba(255,255,255,.75);
+      font-size: .8rem;
+      text-align: center;
+    }
+    .dl-thanks-foot a { color: rgba(255,255,255,.9); text-decoration: underline; }
+
+    @media (min-width: 600px) {
+      .dl-thanks-card { padding: 3rem 2.75rem 2.5rem; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .dl-thanks-check path { animation: none; stroke-dashoffset: 0; }
+      .dl-thanks-actions a { transition: none; }
+    }
+  </style>
+
+  <!-- I tracker si attivano dopo il consenso, senza rallentare la pagina. -->
+  <script src="/assets/js/analytics.js" defer></script>
+  <script type="text/plain" cookie-consent="targeting">
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init','332690361790159');fbq('track','PageView');
+  </script>
+</head>
+<body class="dl-thanks">
+  <header class="dl-thanks-top">
+    <a class="dl-thanks-logo" href="/">
+      <img src="/assets/images/optimized/logo-96.webp" width="96" height="63" alt="">
+      <span>Dimagrimento Lento</span>
+    </a>
+  </header>
+
+  <main class="dl-thanks-main">
+    <div class="dl-thanks-card">
+      <span class="dl-thanks-check" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>
+      </span>
+      <h1>Grazie, la tua consulenza è prenotata</h1>
+      <p class="dl-thanks-lead">Abbiamo ricevuto la tua richiesta. La consulenza è gratuita, dura circa un’ora e non ti impegna a nulla.</p>
+
+      <section class="dl-thanks-next" aria-labelledby="thanks-next-title">
+        <h2 id="thanks-next-title">Cosa succede adesso</h2>
+        <ol>
+          <li>Ti contattiamo noi per confermare giorno, orario e studio.</li>
+          <li>Al colloquio parliamo di te e ti spieghiamo come lavoriamo: alla fine decidi con calma.</li>
+        </ol>
+      </section>
+
+      <p class="dl-thanks-help">Devi cambiare qualcosa o hai una domanda?</p>
+      <div class="dl-thanks-actions">
+        <a class="dl-thanks-wa" href="https://wa.me/393516793334?text=Ciao%2C%20ho%20appena%20prenotato%20la%20consulenza%20gratuita." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.051 3.488"/></svg>
+          Scrivici su WhatsApp
+        </a>
+        <a class="dl-thanks-call" href="tel:+393516793334">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+          351 679 3334
+        </a>
+      </div>
+
+      <p class="dl-thanks-more">Nel frattempo puoi leggere <a href="/blog/prima-visita-nutrizionista-come-funziona">come funziona la prima visita</a> oppure le <a href="/recensioni/">storie di chi ha già iniziato</a>.</p>
+    </div>
+  </main>
+
+  <footer class="dl-thanks-foot">
+    © 2026 Dimagrimento Lento · Studi ad Angri, Salerno e Nocera · <a href="/privacy.html">Privacy Policy</a>
+  </footer>
+
+  <script src="https://www.freeprivacypolicy.com/public/cookie-consent/4.0.0/cookie-consent.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      if (!window.cookieconsent) return;
+      cookieconsent.run({notice_banner_type:'simple',consent_type:'express',palette:'dark',language:'it',page_load_consent_levels:['strictly-necessary'],notice_banner_reject_button_hide:false,preferences_center_close_button_hide:false,page_refresh_confirmation_buttons:false,website_name:'Dimagrimento Lento',website_privacy_policy_url:'https://dimagrimentolento.it/privacy.html'});
+    });
+  </script>
+</body>
+</html>

@@ -92,7 +92,13 @@
         "height": 641
       },
       "wordCount": 1175,
-      "isAccessibleForFree": true
+      "isAccessibleForFree": true,
+      "isPartOf": {
+        "@type": "Blog",
+        "@id": "https://dimagrimentolento.it/blog/#blog",
+        "name": "Il blog di Dimagrimento Lento",
+        "url": "https://dimagrimentolento.it/blog/"
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -107,6 +113,12 @@
         {
           "@type": "ListItem",
           "position": 2,
+          "name": "Blog",
+          "item": "https://dimagrimentolento.it/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
           "name": "Dimagrimento lento: il metodo",
           "item": "https://dimagrimentolento.it/blog/dimagrimento-lento-metodo"
         }
@@ -122,6 +134,7 @@
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
   <link rel="stylesheet" href="/assets/css/tailwind.min.css">
   <link rel="stylesheet" href="/assets/css/dl-theme.css">
+  <link rel="stylesheet" href="/assets/css/dl-showcase.css">
   <link rel="stylesheet" href="/assets/css/blog-article.css">
   <script src="/assets/js/blog-article.js" defer></script>
 
@@ -152,6 +165,7 @@
           <li><a class="dl-nav-link toggleColour text-white inline-block py-2 px-3" href="/nutrizionista-nocera/">Nocera</a></li>
           <li><a class="dl-nav-link toggleColour text-white inline-block py-2 px-3" href="/testimonianze.html">Testimonianze</a></li>
           <li><a class="dl-nav-link toggleColour text-white inline-block py-2 px-3" href="/recensioni/">Recensioni</a></li>
+          <li><a class="dl-nav-link toggleColour text-white inline-block py-2 px-3 active" href="/blog/">Blog</a></li>
         </ul>
         <a href="/#comeHere" class="dl-btn dl-btn-white ml-4" id="navAction">Prenota Gratis</a>
       </div>
@@ -166,7 +180,8 @@
         <li><a href="/nutrizionista-nocera/">Nocera</a></li>
         <li><a href="/testimonianze.html">Testimonianze</a></li>
         <li><a href="/recensioni/">Recensioni</a></li>
-        <li><a href="/blog/dimagrimento-lento-metodo" aria-current="page">Il metodo</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/mobile-app/">L’app per i pazienti</a></li>
       </ul>
       <a href="/#comeHere" class="dl-btn dl-btn-cta dl-mobile-cta">Prenota Gratis <span aria-hidden="true">→</span></a>
       <a class="dl-mobile-contact" href="tel:+393516793334">Chiama: 351 679 3334</a>
@@ -179,7 +194,7 @@
       <header class="dl-blog-hero">
         <div class="dl-blog-container">
           <nav class="dl-blog-breadcrumb" aria-label="Percorso di navigazione">
-            <ol><li><a href="/">Home</a></li><li aria-current="page">Dimagrimento lento: il metodo</li></ol>
+            <ol><li><a href="/">Home</a></li><li><a href="/blog/">Blog</a></li><li aria-current="page">Dimagrimento lento: il metodo</li></ol>
           </nav>
           <div class="dl-blog-hero-grid">
             <div>
@@ -187,8 +202,8 @@
               <h1 id="titolo-articolo">Dimagrimento lento: perdere peso senza riprenderlo</h1>
               <p class="dl-blog-deck">La domanda giusta non è quanti chili perdi, è quanti ne restano persi due anni dopo. Perché lavoriamo sui comportamenti, un po' alla volta, e con chi non funzioniamo.</p>
               <div class="dl-blog-byline">
-                <span>A cura del <a href="/#team" rel="author">team di Dimagrimento Lento</a></span>
-                <span><time datetime="2026-10-10">10 ottobre 2026</time> · 6 minuti di lettura</span>
+                <span class="dl-byline-faces" aria-hidden="true"><img src="/assets/images/optimized/team/manuela-260.webp" width="260" height="260" alt="" decoding="async"><img src="/assets/images/optimized/team/rosamaria-260.webp" width="260" height="260" alt="" decoding="async"><img src="/assets/images/optimized/team/ornella-260.webp" width="260" height="260" alt="" decoding="async"></span>
+                <span class="dl-byline-text"><span>A cura del <a href="/#team" rel="author">team di Dimagrimento Lento</a></span><span><time datetime="2026-10-10">10 ottobre 2026</time> · 6 minuti di lettura</span></span>
               </div>
             </div>
             <figure class="dl-blog-photo">
@@ -223,6 +238,12 @@
               </ol>
             </nav>
           </details>
+          <div class="dl-rail-cta">
+            <p class="dl-rail-cta-title">Prima consulenza gratuita</p>
+            <p>Un’ora con una biologa nutrizionista, senza impegno.</p>
+            <a href="/#comeHere" class="dl-btn dl-btn-cta">Prenota Gratis <span aria-hidden="true">→</span></a>
+            <a class="dl-rail-wa" href="https://wa.me/393516793334?text=Ciao%2C%20ho%20letto%20il%20vostro%20metodo%20e%20vorrei%20informazioni." target="_blank" rel="noopener">Oppure scrivici su WhatsApp</a>
+          </div>
         </aside>
         <div class="dl-blog-body">
         <section id="perche-lento" aria-labelledby="perche-lento-titolo">
@@ -249,6 +270,14 @@
           <p>Ogni metodo che chiede di mettere la vita in pausa funziona finché la pausa dura.</p>
           <p>Le due domande che ci arrivano più spesso su questo punto le abbiamo sciolte a parte: <a href="/blog/perche-riprendi-i-chili-persi">perché si riprendono i chili persi</a> e <a href="/blog/mangio-poco-ma-non-dimagrisco">perché si può mangiare poco senza vedere risultati</a>.</p>
         </section>
+
+        <aside class="dl-inline-cta" aria-label="Consulenza conoscitiva gratuita">
+          <div>
+            <p class="dl-inline-cta-title">Vuoi capire se vale anche per te?</p>
+            <p>La consulenza conoscitiva dura un’ora, è gratuita e senza impegno.</p>
+          </div>
+          <a href="/#comeHere" class="dl-btn dl-btn-cta">Prenota la consulenza gratuita <span aria-hidden="true">→</span></a>
+        </aside>
 
         <section id="nessuna-promessa-di-chili" aria-labelledby="nessuna-promessa-di-chili-titolo">
           <h2 id="nessuna-promessa-di-chili-titolo">Quello che non scriveremo mai in un annuncio</h2>
@@ -304,7 +333,15 @@
           <p>Non costa niente.</p>
           <p>La consulenza conoscitiva è gratuita: ci racconti la tua storia, comprese le volte che sono andate male, e ti diciamo con onestà se il nostro modo di lavorare è adatto a te. Se non lo è, te lo diciamo lo stesso: è una cosa che facciamo spesso e non ci pesa.</p>
           <p>Puoi fissarla su <a href="/#comeHere">www.dimagrimentolento.it</a>. Riceviamo a <a href="/nutrizionista-salerno/">Salerno</a>, <a href="/nutrizionista-angri/">Angri</a> e <a href="/nutrizionista-nocera/">Nocera</a>.</p>
-          <a href="/#comeHere" class="dl-btn dl-btn-white dl-btn-lg">Prenota la consulenza gratuita <span aria-hidden="true">→</span></a>
+          <ul class="dl-start-facts" aria-label="La consulenza conoscitiva">
+            <li>Gratuita</li>
+            <li>1 ora one-to-one</li>
+            <li>Senza impegno</li>
+          </ul>
+          <div class="dl-start-actions">
+            <a href="/#comeHere" class="dl-btn dl-btn-white dl-btn-lg">Prenota la consulenza gratuita <span aria-hidden="true">→</span></a>
+            <a href="https://wa.me/393516793334?text=Ciao%2C%20ho%20letto%20il%20vostro%20metodo%20e%20vorrei%20informazioni." class="dl-btn dl-btn-outline-white dl-btn-lg" target="_blank" rel="noopener">Scrivici su WhatsApp</a>
+          </div>
         </section>
         </div>
       </div>
@@ -312,11 +349,31 @@
     <section class="dl-blog-related" aria-labelledby="leggi-anche-titolo">
       <div class="dl-blog-container">
         <h2 id="leggi-anche-titolo" class="dl-h2">Leggi anche</h2>
-        <div class="dl-blog-related-grid">
-          <a class="dl-studio-link" href="/blog/perche-riprendi-i-chili-persi">Perché riprendi i chili persi (e non è forza di volontà) <span class="arrow" aria-hidden="true">→</span></a>
-          <a class="dl-studio-link" href="/blog/mangio-poco-ma-non-dimagrisco">Mangio poco ma non dimagrisco: perché succede <span class="arrow" aria-hidden="true">→</span></a>
-          <a class="dl-studio-link" href="/blog/dimagrire-senza-rinunciare-a-pane-pasta-pizza">Dimagrire senza rinunciare a pane, pasta e pizza <span class="arrow" aria-hidden="true">→</span></a>
-          <a class="dl-studio-link" href="/blog/prima-visita-nutrizionista-come-funziona">Prima visita dal nutrizionista: come funziona <span class="arrow" aria-hidden="true">→</span></a>
+        <div class="dl-post-grid dl-post-grid--3">
+          <a class="dl-post-card" href="/blog/perche-riprendi-i-chili-persi">
+            <span class="dl-post-cat">Comportamenti e peso</span>
+            <h3>Perché riprendi i chili persi (e non è forza di volontà)</h3>
+            <p>Perdi qualche chilo, poi la vita ti travolge e torni al punto di prima. Non è mancanza di costanza: è il comportamento che nessuna dieta ha toccato.</p>
+            <span class="dl-post-meta">5 minuti di lettura <span class="go" aria-hidden="true">→</span></span>
+          </a>
+          <a class="dl-post-card" href="/blog/mangio-poco-ma-non-dimagrisco">
+            <span class="dl-post-cat">Abitudini alimentari</span>
+            <h3>Mangio poco ma non dimagrisco: perché succede</h3>
+            <p>Se mangi poco a tavola e la bilancia non scende, il conto non torna per un motivo preciso. Cosa guardiamo al posto delle calorie, e perché togliere non basta.</p>
+            <span class="dl-post-meta">5 minuti di lettura <span class="go" aria-hidden="true">→</span></span>
+          </a>
+          <a class="dl-post-card" href="/blog/dimagrire-senza-rinunciare-a-pane-pasta-pizza">
+            <span class="dl-post-cat">Il rapporto con il cibo</span>
+            <h3>Dimagrire senza rinunciare a pane, pasta e pizza</h3>
+            <p>La domanda che ci fanno per prima, e la risposta vera. Perché eliminare pasta e pizza non fa dimagrire più in fretta, e cosa succede davvero al primo strappo.</p>
+            <span class="dl-post-meta">5 minuti di lettura <span class="go" aria-hidden="true">→</span></span>
+          </a>
+          <a class="dl-post-card" href="/blog/prima-visita-nutrizionista-come-funziona">
+            <span class="dl-post-cat">La prima visita</span>
+            <h3>Prima visita dal nutrizionista: come funziona</h3>
+            <p>Cosa succede davvero alla prima visita, cosa portare, quanto dura e cosa viene prima. Il colloquio conoscitivo è gratuito, a Salerno, Angri e Nocera Inferiore.</p>
+            <span class="dl-post-meta">5 minuti di lettura <span class="go" aria-hidden="true">→</span></span>
+          </a>
         </div>
       </div>
     </section>
@@ -325,6 +382,7 @@
         <h2 id="approfondimenti-titolo" class="dl-h2">Conosci il nostro studio</h2>
         <div class="dl-blog-related-grid">
           <a class="dl-studio-link" href="/recensioni/">Le esperienze di chi ci ha scelto <span class="arrow" aria-hidden="true">→</span></a>
+          <a class="dl-studio-link" href="/mobile-app/">L’app che accompagna il percorso <span class="arrow" aria-hidden="true">→</span></a>
           <a class="dl-studio-link" href="/nutrizionista-salerno/">Lo studio di Salerno <span class="arrow" aria-hidden="true">→</span></a>
           <a class="dl-studio-link" href="/nutrizionista-angri/">Lo studio di Angri <span class="arrow" aria-hidden="true">→</span></a>
           <a class="dl-studio-link" href="/nutrizionista-nocera/">Lo studio di Nocera Inferiore <span class="arrow" aria-hidden="true">→</span></a>
@@ -337,7 +395,7 @@
     <div class="dl-blog-container">
       <div class="dl-blog-footer-grid">
         <div><p class="f-label">Studi</p><ul><li><a href="/nutrizionista-angri/">Nutrizionista Angri</a></li><li><a href="/nutrizionista-salerno/">Nutrizionista Salerno</a></li><li><a href="/nutrizionista-nocera/">Nutrizionista Nocera</a></li></ul></div>
-        <div><p class="f-label">Contenuti</p><ul><li><a href="/blog/dimagrimento-lento-metodo" aria-current="page">Dimagrimento lento: perdere peso senza riprenderlo</a></li><li><a href="/blog/prima-visita-nutrizionista-come-funziona">Prima visita dal nutrizionista: come funziona</a></li><li><a href="/blog/nutrizionista-salerno-angri-nocera-come-scegliere">Nutrizionista a Salerno, Angri e Nocera: come scegliere</a></li><li><a href="/blog/perche-riprendi-i-chili-persi">Perché riprendi i chili persi (e non è forza di volontà)</a></li><li><a href="/blog/mangio-poco-ma-non-dimagrisco">Mangio poco ma non dimagrisco: perché succede</a></li><li><a href="/blog/dimagrire-senza-rinunciare-a-pane-pasta-pizza">Dimagrire senza rinunciare a pane, pasta e pizza</a></li><li><a href="/testimonianze.html">Testimonianze</a></li><li><a href="/recensioni/">Recensioni</a></li></ul></div>
+        <div><p class="f-label">Contenuti</p><ul><li><a href="/blog/">Blog</a></li><li><a href="/blog/dimagrimento-lento-metodo" aria-current="page">Dimagrimento lento: perdere peso senza riprenderlo</a></li><li><a href="/blog/prima-visita-nutrizionista-come-funziona">Prima visita dal nutrizionista: come funziona</a></li><li><a href="/blog/nutrizionista-salerno-angri-nocera-come-scegliere">Nutrizionista a Salerno, Angri e Nocera: come scegliere</a></li><li><a href="/blog/perche-riprendi-i-chili-persi">Perché riprendi i chili persi (e non è forza di volontà)</a></li><li><a href="/blog/mangio-poco-ma-non-dimagrisco">Mangio poco ma non dimagrisco: perché succede</a></li><li><a href="/blog/dimagrire-senza-rinunciare-a-pane-pasta-pizza">Dimagrire senza rinunciare a pane, pasta e pizza</a></li><li><a href="/mobile-app/">L’app per i pazienti</a></li><li><a href="/testimonianze.html">Testimonianze</a></li><li><a href="/recensioni/">Recensioni</a></li></ul></div>
         <div><p class="f-label">Seguici</p><ul><li><a href="https://www.facebook.com/nutrizionistamanuelascarpato">Facebook</a></li><li><a href="https://www.instagram.com/dimagrimentolento/">Instagram</a></li><li><a href="tel:+393516793334">351 679 3334</a></li></ul></div>
         <div><p class="f-label">Legale</p><ul><li><a href="/privacy.html">Privacy Policy</a></li></ul></div>
       </div>
