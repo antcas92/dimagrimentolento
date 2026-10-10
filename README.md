@@ -15,7 +15,7 @@ npm run optimize:images
 
 Il file `assets/css/tailwind.min.css` è una build Tailwind 2.2.19 purgata sulle classi realmente presenti negli HTML e negli script. Va rigenerato quando vengono introdotte nuove utility Tailwind.
 
-Lo script `scripts/seo-audit.mjs` controlla le 18 URL in sitemap, canonical, title, description, H1, JSON-LD, link/asset locali, immagini, lingua e dipendenze SEO legacy.
+Lo script `scripts/seo-audit.mjs` controlla le URL in sitemap, canonical, title, description, H1, JSON-LD, link/asset locali, immagini, lingua e dipendenze SEO legacy. Riconosce anche gli slug senza estensione serviti da GitHub Pages tramite i corrispondenti file `.html`.
 
 ## Regole SEO del progetto
 

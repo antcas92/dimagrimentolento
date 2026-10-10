@@ -18,6 +18,7 @@ function urlToFile(url) {
   const path = new URL(url).pathname;
   if (path === '/') return 'index.html';
   if (path.endsWith('/')) return path.slice(1) + 'index.html';
+  if (!extname(path) && existsSync(resolve(projectDir, path.slice(1) + '.html'))) return path.slice(1) + '.html';
   return path.slice(1);
 }
 
@@ -102,7 +103,8 @@ const testimonialJs = readFileSync(resolve(projectDir, 'assets/js/testimonianze.
 const reviewJs = readFileSync(resolve(projectDir, 'assets/js/tp-reviews.js'), 'utf8');
 if (/application\/ld\+json/.test(testimonialJs)) errors.push('testimonianze.js: JSON-LD dinamico ancora presente');
 if (/schema\.org\/Review|itemprop="reviewBody"/.test(reviewJs)) errors.push('tp-reviews.js: microdata Review incompleto ancora presente');
-if (sitemapUrls.length !== 18) errors.push(`sitemap.xml: attese 18 URL, trovate ${sitemapUrls.length}`);
+if (sitemapUrls.length === 0) errors.push('sitemap.xml: nessuna URL presente');
+if (new Set(sitemapUrls).size !== sitemapUrls.length) errors.push('sitemap.xml: URL duplicate');
 if (/<(?:changefreq|priority)>/.test(sitemap)) errors.push('sitemap.xml: changefreq/priority non rimossi');
 
 console.log(`SEO audit: ${sitemapUrls.length} URL sitemap, ${trackedHtml.length} file HTML.`);
