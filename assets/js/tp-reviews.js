@@ -3,7 +3,8 @@
 
   var REVIEWS_URL = '/assets/reviews.json';
   var PER_PAGE = 6;
-  var HOME_PICKS = [17, 4, 6];
+  // Le sei recensioni che hanno una pagina in /recensioni/: stesse card scritte in index.html.
+  var HOME_PICKS = [17, 19, 53, 6, 4, 55];
 
   /* ── Inietta CSS del componente una sola volta ───────────────── */
   function injectCSS() {
@@ -124,7 +125,7 @@
     });
   }
 
-  /* ── Home: 3 card scelte ─────────────────────────────────────── */
+  /* ── Home: 6 card scelte ─────────────────────────────────────── */
   function initHome(reviews) {
     var grid = document.getElementById('tp-home-cards');
     if (!grid) return;

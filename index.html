@@ -632,7 +632,7 @@
       <div class="dl-divider"></div>
     </div>
 
-    <div class="dl-video-grid">
+    <div class="dl-video-grid dl-video-grid--swipe">
       <div>
         <lite-youtube videoid="2wZr_8FOoNM" playlabel="Testimonianza — Ho sconfitto gli attacchi di fame"></lite-youtube>
         <p class="dl-video-caption">"Ho sconfitto gli attacchi di fame che mi facevano riprendere tutto il peso perso"</p>
@@ -656,32 +656,31 @@
       </div>
     </div>
 
-    <!-- Review boxes -->
-    <div class="flex flex-col md:flex-row gap-5 justify-center mt-12">
-      <a href="/testimonianze.html" class="review-box w-full md:w-1/2 max-w-md" aria-label="Leggi le recensioni dettagliate dei nostri pazienti">
-        <h3 class="box-title">Storie di Dimagrimento</h3>
-        <p class="box-text">Leggi i percorsi completi delle nostre pazienti — trasformazioni vere, non promesse</p>
-        <span class="box-button">Scopri le testimonianze →</span>
-      </a>
-      <a href="https://it.trustpilot.com/review/dimagrimentolento.it" target="_blank" rel="noopener noreferrer" class="review-box trustpilot w-full md:w-1/2 max-w-md" aria-label="Leggi le nostre recensioni su Trustpilot">
-        <p class="box-title" style="color:#00B67A;font-weight:800;letter-spacing:-.02em;font-size:1.1rem">Trustpilot</p>
-        <div class="tp-stars" aria-label="Valutazione 4.7 su 5">
+    <p class="dl-proof-more"><a class="dl-text-link" href="/testimonianze.html">Guarda tutte le testimonianze</a></p>
+
+    <!-- Trustpilot: valutazione e tre recensioni scelte -->
+    <div class="tp-home-shell" style="background:#E4F5EC;border-radius:20px;padding:1.5rem 1.25rem 1.75rem;margin-top:1.5rem;">
+      <div class="dl-tp-bar">
+        <span class="dl-tp-brand">Trustpilot</span>
+        <span class="tp-stars" role="img" aria-label="Valutazione 4,7 su 5">
           <span class="tp-star filled"></span>
           <span class="tp-star filled"></span>
           <span class="tp-star filled"></span>
           <span class="tp-star filled"></span>
           <span class="tp-star half-filled"></span>
-        </div>
-        <p class="box-text"><strong>4,7 / 5</strong> · 88 recensioni verificate</p>
-        <span class="box-button" style="background:#00B67A;color:#fff">Leggi le recensioni →</span>
-      </a>
-    </div>
-
-    <!-- Le 3 migliori recensioni Trustpilot -->
-    <div class="tp-home-shell" style="background:#E4F5EC;border-radius:20px;padding:1.5rem 1.25rem 1.75rem;margin-top:1.5rem;">
-      <p style="font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#146B3E;margin:0 0 0.85rem">★ Top recensioni Trustpilot</p>
-      <div id="tp-home-cards"></div>
-      <p class="text-center" style="margin-top:1.5rem">
+        </span>
+        <span class="dl-tp-score"><strong>4,7 / 5</strong> · 88 recensioni verificate</span>
+      </div>
+      <!-- Sei recensioni con storia completa: presenti nell'HTML, poi ridisegnate da tp-reviews.js (HOME_PICKS). -->
+      <div id="tp-home-cards" class="tpw-grid">
+        <article class="tpw-card"><div class="tpw-head"><div class="tpw-stars" role="img" aria-label="5 stelle su 5"><span class="tpw-star on"></span><span class="tpw-star on"></span><span class="tpw-star on"></span><span class="tpw-star on"></span><span class="tpw-star on"></span></div><span class="tpw-badge">&#10003; Verificata</span></div><p class="tpw-text">Pesavo 74 kg, oggi peso 54 kg e non ho più problemi di salute legati al colon irritabile.</p><footer class="tpw-footer"><span class="tpw-name">Daniela Chionna</span><time class="tpw-date" datetime="2025-07-14">luglio 2025</time></footer><a class="tpw-link" href="/recensioni/daniela-chionna-da-74-a-54-kg.html">Leggi la storia completa &#8594;</a></article>
+        <article class="tpw-card"><div class="tpw-head"><div class="tpw-stars" role="img" aria-label="5 stelle su 5"><span class="tpw-star on"></span><span class="tpw-star on"></span><span class="tpw-star on"></span><span class="tpw-star on"></span><span class="tpw-star on"></span></div><span class="tpw-badge">&#10003; Verificata</span></div><p class="tpw-text">In meno di tre mesi ho perso 10 kg senza alcun sacrificio.</p><footer class="tpw-footer"><span class="tpw-name">Federica D'Angelo</span><time class="tpw-date" datetime="2025-07-09">luglio 2025</time></footer><a class="tpw-link" href="/recensioni/federica-dangelo-10-kg-in-3-mesi.html">Leggi la storia completa &#8594;</a></article>
+        <article class="tpw-card"><div class="tpw-head"><div class="tpw-stars" role="img" aria-label="5 stelle su 5"><span class="tpw-star on"></span><span class="tpw-star on"></span><span class="tpw-star on"></span><span class="tpw-star on"></span><span class="tpw-star on"></span></div><span class="tpw-badge">&#10003; Verificata</span></div><p class="tpw-text">Da maggio a Natale dello stesso anno ho perso 23 kg, mangiando anche pizza e dolce.</p><footer class="tpw-footer"><span class="tpw-name">Giuseppe Belvedere</span><time class="tpw-date" datetime="2025-01-13">gennaio 2025</time></footer><a class="tpw-link" href="/recensioni/giuseppe-belvedere-23-kg-in-7-mesi.html">Leggi la storia completa &#8594;</a></article>
+        <article class="tpw-card"><div class="tpw-head"><div class="tpw-stars" role="img" aria-label="5 stelle su 5"><span class="tpw-star on"></span><span class="tpw-star on"></span><span class="tpw-star on"></span><span class="tpw-star on"></span><span class="tpw-star on"></span></div><span class="tpw-badge">&#10003; Verificata</span></div><p class="tpw-text">La parola &quot;dieta&quot; è stata sostituita con &quot;percorso alimentare&quot;: con questo metodo non ti senti stressata.</p><footer class="tpw-footer"><span class="tpw-name">Ilaria Bartiromo</span><time class="tpw-date" datetime="2026-02-10">febbraio 2026</time></footer><a class="tpw-link" href="/recensioni/ilaria-bartiromo-percorso-non-dieta.html">Leggi la storia completa &#8594;</a></article>
+        <article class="tpw-card"><div class="tpw-head"><div class="tpw-stars" role="img" aria-label="5 stelle su 5"><span class="tpw-star on"></span><span class="tpw-star on"></span><span class="tpw-star on"></span><span class="tpw-star on"></span><span class="tpw-star on"></span></div><span class="tpw-badge">&#10003; Verificata</span></div><p class="tpw-text">Dopo anni di diete fallimentari è stato un vero miracolo: i piani sono DAVVERO personalizzati, nessun alimento è demonizzato.</p><footer class="tpw-footer"><span class="tpw-name">Valentina Pagano</span><time class="tpw-date" datetime="2026-02-11">febbraio 2026</time></footer><a class="tpw-link" href="/recensioni/valentina-pagano-anni-di-diete-e-poi-la-svolta.html">Leggi la storia completa &#8594;</a></article>
+        <article class="tpw-card"><div class="tpw-head"><div class="tpw-stars" role="img" aria-label="5 stelle su 5"><span class="tpw-star on"></span><span class="tpw-star on"></span><span class="tpw-star on"></span><span class="tpw-star on"></span><span class="tpw-star on"></span></div><span class="tpw-badge">&#10003; Verificata</span></div><p class="tpw-text">Grazie a loro, ho perso 30 kg.</p><footer class="tpw-footer"><span class="tpw-name">Vincenzo Riccio</span><time class="tpw-date" datetime="2025-01-12">gennaio 2025</time></footer><a class="tpw-link" href="/recensioni/vincenzo-riccio-30-kg.html">Leggi la storia completa &#8594;</a></article>
+      </div>
+      <p class="text-center" style="margin-top:1.25rem">
         <a href="https://it.trustpilot.com/review/dimagrimentolento.it" target="_blank" rel="noopener noreferrer" class="dl-btn dl-btn-outline">Leggi tutte le 88 recensioni →</a>
       </p>
     </div>
