@@ -15,8 +15,8 @@
       '.tp-home-shell{background:#E4F5EC!important;border-radius:20px!important;' +
       'padding:1.5rem 1.25rem 1.75rem!important;margin-top:1.5rem!important;}' +
       /* grids */
-      '.tpw-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(255px,1fr));gap:1rem;}' +
-      '.tpw-grid-full{display:grid;grid-template-columns:repeat(auto-fill,minmax(285px,1fr));gap:1.1rem;}' +
+      '.tpw-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,255px),1fr));gap:1rem;}' +
+      '.tpw-grid-full{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,285px),1fr));gap:1.1rem;}' +
       /* card */
       '.tpw-card{background:#ffffff;border:1.5px solid #b8d9c8;border-top:3px solid #00B67A;' +
       'border-radius:12px;padding:1rem 1.25rem .95rem;display:flex;flex-direction:column;' +
@@ -39,11 +39,11 @@
       '.tpw-full{font-size:.85rem;line-height:1.62;color:#18212E;font-style:italic;' +
       'margin:0 0 .4rem;padding-left:1rem;}' +
       '.tpw-toggle{background:none;border:none;padding:0 0 .4rem 1rem;font-size:.75rem;' +
-      'color:#22A05A;cursor:pointer;text-decoration:underline;text-align:left;' +
+      'color:#146B3E;cursor:pointer;text-decoration:underline;text-align:left;min-height:44px;' +
       'font-family:inherit;display:block;line-height:1.4;}' +
       '.tpw-toggle:hover{color:#146B3E;}' +
       /* footer nome + data */
-      '.tpw-footer{display:flex;justify-content:space-between;align-items:center;' +
+      '.tpw-footer{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;' +
       'border-top:1px solid #C4E0CE;padding-top:.5rem;margin-top:auto;gap:.5rem;}' +
       '.tpw-name{font-weight:700;font-size:.8rem;color:#18212E;white-space:nowrap;' +
       'overflow:hidden;text-overflow:ellipsis;}' +
@@ -51,7 +51,8 @@
       /* link storia completa */
       '.tpw-link{display:inline-block;margin-top:.55rem;font-size:.78rem;font-weight:700;' +
       'color:#146B3E;text-decoration:none;border-bottom:1.5px solid #6DD09C;line-height:1.5;}' +
-      '.tpw-link:hover{color:#16A34A;border-color:#16A34A;}';
+      '.tpw-link:hover{color:#146B3E;border-color:#16A34A;}' +
+      '@media(prefers-reduced-motion:reduce){.tpw-card{transition:none;}.tpw-card:hover{transform:none;}}';
     document.head.appendChild(el);
   }
 

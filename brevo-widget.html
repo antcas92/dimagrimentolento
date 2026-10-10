@@ -48,7 +48,7 @@
             min-height: 4.75rem !important;
             appearance: none !important;
             -webkit-appearance: none !important;
-            background-color: #16A34A !important;
+            background-color: #15803D !important;
             color: #FFFFFF !important;
             -webkit-text-fill-color: #FFFFFF !important;
             border: none !important;
@@ -114,14 +114,19 @@
             margin-right: auto !important;
             box-sizing: border-box !important;
         }
+        #sib-container {
+            border-radius: 16px !important;
+            box-shadow: 0 8px 32px rgba(11, 61, 39, .12);
+        }
         @media (max-width: 640px) {
+            .sib-form,
             #form-section {
-                padding-inline: 12px !important;
+                padding-inline: 0 !important;
             }
             #sib-container,
             #error-message,
             #success-message {
-                width: min(calc(100% - 24px), 340px) !important;
+                width: 100% !important;
             }
         }
 	</style>

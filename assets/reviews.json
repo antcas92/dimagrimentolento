@@ -3,7 +3,11 @@
     "source": "Trustpilot",
     "subject": "Studio Dimagrimento Lento (Dott.ssa Scarpato)",
     "rating_scale": "1-5",
-    "total_reviews": 71,
+    "total_reviews": 88,
+    "rating_value": 4.7,
+    "archive_reviews": 71,
+    "checked_at": "2026-10-10",
+    "source_url": "https://it.trustpilot.com/review/dimagrimentolento.it",
     "note": "Dati estratti via copia-incolla da Trustpilot e ripuliti (refusi corretti, elementi UI rimossi, date normalizzate ISO 8601). 'excerpt' è la frase più efficace di ogni recensione, pensata per anteprime/widget compatti con possibilità di espansione al 'full_text'."
   },
   "reviews": [

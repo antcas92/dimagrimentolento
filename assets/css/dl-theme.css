@@ -13,7 +13,7 @@
   --dl-g50:  #F0FAF4;
   --dl-teal: #0E8A72;
 
-  --dl-cta:    #16A34A;
+  --dl-cta:    #15803D;
   --dl-cta-dk: #15803D;
 
   --dl-gradient: linear-gradient(135deg, #0B3D27 0%, #146B3E 55%, #0E8A72 100%);
@@ -44,6 +44,15 @@ body {
 
 img { max-width: 100%; height: auto; }
 a { transition: color 0.2s; }
+
+html { scroll-padding-top: calc(var(--dl-nav-h) + 1.25rem); }
+:is(a, button, summary, select, input):focus-visible {
+  outline: 3px solid var(--dl-g500);
+  outline-offset: 4px;
+}
+#header > div:first-child > a { min-width: 0; }
+#nav-toggle { flex-shrink: 0; }
+:is(#nav-mobile-panel, #nav-content-mobile) { padding-bottom: calc(2rem + env(safe-area-inset-bottom, 0px)) !important; }
 
 /* ── NEW GRADIENT (overrides all old .gradient) ─────────────── */
 .gradient,
@@ -87,6 +96,7 @@ body.gradient {
 /* ── NAVIGATION ─────────────────────────────────────────────── */
 #header {
   height: var(--dl-nav-h);
+  z-index: 50;
   transition: background 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   align-items: center;
@@ -96,6 +106,11 @@ body.gradient {
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+}
+/* Il blur del contenitore non deve vincolare l'altezza del pannello fixed. */
+#header:has(#nav-toggle.open) {
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
 }
 #header.scrolled .toggleColour { color: var(--dl-text) !important; }
 #header.scrolled #navAction {
@@ -552,9 +567,10 @@ body.gradient {
   position: fixed;
   bottom: 0; left: 0; right: 0;
   display: flex;
-  z-index: 100;
+  z-index: 30;
   box-shadow: 0 -2px 20px rgba(0,0,0,0.14);
   background: white;
+  padding-bottom: env(safe-area-inset-bottom, 0px);
 }
 .dl-float-bar a {
   flex: 1;
@@ -564,7 +580,8 @@ body.gradient {
   justify-content: center;
   gap: 3px;
   padding: 0.6rem 0.25rem;
-  font-size: 0.68rem;
+  font-size: 0.75rem;
+  min-height: 56px;
   font-weight: 700;
   text-decoration: none !important;
   transition: filter 0.15s;
@@ -573,14 +590,14 @@ body.gradient {
 .dl-float-bar a:hover { filter: brightness(0.88); text-decoration: none !important; }
 .dl-float-bar a .fi { font-size: 1.2rem; line-height: 1; }
 .dl-float-call { background: #1A72BE; color: white !important; }
-.dl-float-wa   { background: #22C55E; color: white !important; }
+.dl-float-wa   { background: var(--dl-g700); color: white !important; }
 .dl-float-book { background: var(--dl-cta); color: white !important; flex: 1.5; }
 
 @media (min-width: 1024px) { .dl-float-bar { display: none; } }
 
 /* Body padding on mobile so content isn't hidden behind bar */
 @media (max-width: 1023px) {
-  body { padding-bottom: 68px; }
+  body { padding-bottom: calc(68px + env(safe-area-inset-bottom, 0px)); }
 }
 
 /* ── HOME HERO IMAGE ─────────────────────────────────────────── */
@@ -601,7 +618,7 @@ body.gradient {
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: rgba(255,255,255,0.4);
+  color: rgba(255,255,255,0.72);
   margin-bottom: 1rem;
 }
 .dl-footer .f-copy {
@@ -609,7 +626,7 @@ body.gradient {
   padding: 1.1rem 0;
   text-align: center;
   font-size: 0.8rem;
-  color: rgba(255,255,255,0.4);
+  color: rgba(255,255,255,0.72);
 }
 .dl-footer ul { list-style: none; padding: 0; margin: 0; }
 .dl-footer ul li { margin-bottom: 0.5rem; }
@@ -701,4 +718,59 @@ body.gradient {
   font-size: 1.05rem;
   font-weight: 600;
   text-decoration: none;
+}
+
+/* Le griglie restano entro il viewport anche sui telefoni da 320 px. */
+#testimonials { margin-inline: -1rem; }
+.dl-review-stories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  gap: 1.5rem;
+}
+.dl-review-stories > a { min-width: 0; }
+.dl-review-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+.dl-review-stats > div { min-width: 0; overflow-wrap: break-word; }
+.dl-footer ul { display: grid; gap: .35rem; }
+.dl-footer a { display: inline-block; padding-block: .3rem; overflow-wrap: anywhere; }
+@media (max-width: 479px) {
+  #header > div:first-child > a { font-size: clamp(.95rem, 5vw, 1.25rem); }
+  .dl-review-stats { grid-template-columns: minmax(0, 1fr); gap: .65rem; }
+  .dl-review-stats > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: .8rem 1rem !important;
+    text-align: left !important;
+  }
+  .dl-review-stats > div > div:first-child { font-size: 1.45rem !important; }
+  .dl-review-stats > div > div:last-child { margin-top: 0 !important; text-align: right; }
+}
+@media (max-width: 639px) {
+  .freeprivacypolicy-com---nb-simple {
+    height: auto !important;
+    max-height: 70vh !important;
+    max-height: 70svh !important;
+    overscroll-behavior: contain;
+    background: var(--dl-g900) !important;
+    box-shadow: 0 -4px 24px rgba(0, 0, 0, .16);
+  }
+  .freeprivacypolicy-com---nb-simple .cc-nb-main-container { padding: 1.25rem 1rem !important; }
+  .freeprivacypolicy-com---nb-simple .cc-nb-title { font-size: 1.125rem !important; margin-bottom: .65rem !important; }
+  .freeprivacypolicy-com---nb-simple .cc-nb-text { font-size: .875rem !important; line-height: 1.6 !important; }
+  .freeprivacypolicy-com---nb-simple .cc-nb-buttons-container { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .5rem; }
+  .freeprivacypolicy-com---nb-simple button { min-height: 44px; margin: 0 !important; }
+  .freeprivacypolicy-com---nb-simple .cc-nb-okagree { background: var(--dl-cta-dk) !important; color: white !important; }
+  .freeprivacypolicy-com---nb-simple .cc-nb-reject { background: white !important; color: var(--dl-g900) !important; }
+  .freeprivacypolicy-com---nb-simple .cc-nb-changep { grid-column: 1 / -1; background: transparent !important; color: white !important; border: 1px solid var(--dl-border) !important; }
+}
+@media (prefers-reduced-motion: reduce) {
+  :is(.dl-btn, .dl-card, .dl-team-card, .dl-nav-link, #header, #nav-toggle, #nav-mobile-panel) {
+    transition: none !important;
+  }
 }

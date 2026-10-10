@@ -81,62 +81,142 @@
 
   <!--Schema.org Markup-->
   <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalOrganization",
+  "name": "Dimagrimento Lento",
+  "description": "Centro nutrizionale specializzato nel metodo Dimagrimento Lento per una trasformazione naturale e duratura del rapporto con il cibo",
+  "founder": "Manuela Scarpato",
+  "foundingDate": "2019",
+  "image": "https://dimagrimentolento.it/assets/images/webp/homePotrait.webp",
+  "url": "https://dimagrimentolento.it/",
+  "telephone": "+39 3516793334",
+  "memberOf": "Ordine dei Biologi",
+  "sameAs": [
+    "https://www.facebook.com/nutrizionistamanuelascarpato",
+    "https://www.instagram.com/dimagrimentolento/"
+  ],
+  "location": [
     {
-      "@context": "https://schema.org",
-      "@type": "DietNutrition",
-      "name": "Dimagrimento Lento",
-      "image": "https://dimagrimentolento.it/assets/images/webp/homePotrait.webp",
-      "@id": "https://dimagrimentolento.it/",
-      "url": "https://dimagrimentolento.it/",
+      "@type": "MedicalClinic",
+      "name": "Dimagrimento Lento Salerno",
       "telephone": "+39 3516793334",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Via Irno 2",
         "addressLocality": "Salerno",
+        "addressRegion": "SA",
         "postalCode": "84135",
         "addressCountry": "IT"
-    },
+      },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": 40.7049274,
-        "longitude": 14.7004344
+        "latitude": 40.682056,
+        "longitude": 14.7757074
       },
       "openingHoursSpecification": [
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday"
-      ],
-      "opens": "09:00",
-      "closes": "21:00"
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "09:00",
+          "closes": "21:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "09:00",
+          "closes": "14:00"
+        }
+      ]
     },
     {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": "Saturday",
-      "opens": "09:00",
-      "closes": "14:00"
-    }
-  ],
-      "sameAs": [
-        "https://www.facebook.com/nutrizionistamanuelascarpato",
-        "https://www.instagram.com/dimagrimentolento/"
+      "@type": "MedicalClinic",
+      "name": "Dimagrimento Lento Angri",
+      "telephone": "+39 3516793334",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Corso Vittorio Emanuele 13",
+        "addressLocality": "Angri",
+        "addressRegion": "SA",
+        "postalCode": "84012",
+        "addressCountry": "IT"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 40.7395,
+        "longitude": 14.57857
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "09:00",
+          "closes": "21:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "09:00",
+          "closes": "14:00"
+        }
+      ]
+    },
+    {
+      "@type": "MedicalClinic",
+      "name": "Dimagrimento Lento Nocera Inferiore",
+      "telephone": "+39 3516793334",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Via Attilio Barbarulo 105",
+        "addressLocality": "Nocera Inferiore",
+        "addressRegion": "SA",
+        "postalCode": "84014",
+        "addressCountry": "IT"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 40.7401795,
+        "longitude": 14.6395214
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "09:00",
+          "closes": "21:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "09:00",
+          "closes": "14:00"
+        }
       ]
     }
-  </script>
+  ],
+  "medicalSpecialty": "https://schema.org/DietNutrition"
+}
+</script>
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-77WRRK3HT4"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-77WRRK3HT4', {'page_title': 'Stefania — Dimagrimento Lento', 'page_path': '/videotestimonianze/2024/Ho-smesso-di-chiamarle-diete-finalmente-ho-imparato-a-mangiare.html'});
-  </script>
+  <script src="/assets/js/analytics.js" defer></script>
 
   <!-- Meta Pixel Code -->
   <script>
@@ -228,8 +308,8 @@
     <a href="/#comeHere" class="dl-btn dl-btn-cta dl-btn-lg" style="width:100%;margin-top:1.5rem;display:flex;justify-content:center">Prenota Gratis →</a>
     <div style="margin-top:2rem;padding-top:1.5rem;border-top:1px solid #e5f0ea">
       <p style="font-size:.78rem;color:#6b7280;font-weight:700;text-transform:uppercase;letter-spacing:.07em;margin-bottom:.75rem">Contatti</p>
-      <a href="tel:3516793334" style="display:flex;align-items:center;gap:.5rem;color:#146B3E;font-weight:600;font-size:.95rem;text-decoration:none;margin-bottom:.5rem"><i class="fas fa-phone-alt"></i> 351 679 3334</a>
-      <a href="https://wa.me/3516793334" style="display:flex;align-items:center;gap:.5rem;color:#22c55e;font-weight:600;font-size:.95rem;text-decoration:none"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+      <a href="tel:+393516793334" style="display:flex;align-items:center;gap:.5rem;color:#146B3E;font-weight:600;font-size:.95rem;text-decoration:none;margin-bottom:.5rem"><i class="fas fa-phone-alt"></i> 351 679 3334</a>
+      <a href="https://wa.me/393516793334" style="display:flex;align-items:center;gap:.5rem;color:#22c55e;font-weight:600;font-size:.95rem;text-decoration:none"><i class="fab fa-whatsapp"></i> WhatsApp</a>
     </div>
   </div>
 </nav>
@@ -351,11 +431,11 @@
   </footer>
 
 <div class="dl-float-bar">
-  <a href="tel:3516793334" class="dl-float-call">
+  <a href="tel:+393516793334" class="dl-float-call">
     <span class="fi">📞</span>
     Chiama
   </a>
-  <a href="https://wa.me/3516793334?text=Ciao%2C%20ho%20visto%20una%20testimonianza%20e%20vorrei%20informazioni" class="dl-float-wa" target="_blank" rel="noopener">
+  <a href="https://wa.me/393516793334?text=Ciao%2C%20ho%20visto%20una%20testimonianza%20e%20vorrei%20informazioni" class="dl-float-wa" target="_blank" rel="noopener">
     <span class="fi">💬</span>
     WhatsApp
   </a>
@@ -404,7 +484,7 @@
   charset="UTF-8"></script>
 <script type="text/javascript" charset="UTF-8">
   document.addEventListener('DOMContentLoaded', function () {
-    cookieconsent.run({ "notice_banner_type": "simple", "consent_type": "express", "palette": "dark", "language": "it", "page_load_consent_levels": ["strictly-necessary"], "notice_banner_reject_button_hide": false, "preferences_center_close_button_hide": false, "page_refresh_confirmation_buttons": false, "website_name": "Dimagrimento Lento", "website_privacy_policy_url": "https://www.nutrizionistascarpato.it/cookie" });
+    cookieconsent.run({ "notice_banner_type": "simple", "consent_type": "express", "palette": "dark", "language": "it", "page_load_consent_levels": ["strictly-necessary"], "notice_banner_reject_button_hide": false, "preferences_center_close_button_hide": false, "page_refresh_confirmation_buttons": false, "website_name": "Dimagrimento Lento", "website_privacy_policy_url": "https://dimagrimentolento.it/privacy.html" });
   });
 </script>
 

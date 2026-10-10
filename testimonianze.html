@@ -32,119 +32,131 @@
 
   <!-- Schema.org -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "MedicalOrganization",
-    "name": "Dimagrimento Lento - Dott.ssa Scarpato",
-    "url": "https://dimagrimentolento.it/testimonianze.html",
-    "description": "Centro specializzato in percorsi di dimagrimento duraturo attraverso l'educazione alimentare consapevole.",
-    "medicalSpecialty": ["Nutrition", "Lifestyle Medicine"],
-    "slogan": "Non una dieta, ma un nuovo stile di vita",
-    "location": [
-      {
-        "@type": "MedicalClinic",
-        "name": "Studio Salerno",
-        "telephone": "+39 3516793334",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Via Irno 2",
-          "addressLocality": "Salerno",
-          "postalCode": "84135",
-          "addressRegion": "SA",
-          "addressCountry": "IT"
-        },
-        "geo": { "@type": "GeoCoordinates", "latitude": 40.7049274, "longitude": 14.7004344 },
-        "openingHoursSpecification": [
-          { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "21:00" },
-          { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "14:00" }
-        ]
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalOrganization",
+  "name": "Dimagrimento Lento - Dott.ssa Scarpato",
+  "url": "https://dimagrimentolento.it/testimonianze.html",
+  "description": "Centro specializzato in percorsi di dimagrimento duraturo attraverso l'educazione alimentare consapevole.",
+  "medicalSpecialty": "https://schema.org/DietNutrition",
+  "slogan": "Non una dieta, ma un nuovo stile di vita",
+  "location": [
+    {
+      "@type": "MedicalClinic",
+      "name": "Studio Salerno",
+      "telephone": "+39 3516793334",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Via Irno 2",
+        "addressLocality": "Salerno",
+        "postalCode": "84135",
+        "addressRegion": "SA",
+        "addressCountry": "IT"
       },
-      {
-        "@type": "MedicalClinic",
-        "name": "Studio Angri",
-        "telephone": "+39 3516793334",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Corso Vittorio Emanuele 13",
-          "addressLocality": "Angri",
-          "postalCode": "84012",
-          "addressRegion": "SA",
-          "addressCountry": "IT"
-        },
-        "openingHoursSpecification": [
-          { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "21:00" },
-          { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "14:00" }
-        ]
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 40.682056,
+        "longitude": 14.7757074
       },
-      {
-        "@type": "MedicalClinic",
-        "name": "Studio Nocera Inferiore",
-        "telephone": "+39 3516793334",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Via Attilio Barbarulo 105",
-          "addressLocality": "Nocera Inferiore",
-          "postalCode": "84014",
-          "addressRegion": "SA",
-          "addressCountry": "IT"
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "09:00",
+          "closes": "21:00"
         },
-        "geo": { "@type": "GeoCoordinates", "latitude": 40.7401795, "longitude": 14.6395214 },
-        "openingHoursSpecification": [
-          { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "21:00" },
-          { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "14:00" }
-        ]
-      }
-    ],
-    "sameAs": [
-      "https://www.facebook.com/nutrizionistamanuelascarpato",
-      "https://www.instagram.com/dimagrimentolento/"
-    ],
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.7",
-      "reviewCount": "71",
-      "bestRating": "5",
-      "worstRating": "1"
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "09:00",
+          "closes": "14:00"
+        }
+      ]
     },
-    "review": [
-      {
-        "@type": "Review",
-        "datePublished": "2025-07-14",
-        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-        "author": { "@type": "Person", "name": "Daniela Chionna" },
-        "reviewBody": "Pesavo 74 kg, oggi peso 54 kg e non ho più problemi di salute legati al colon irritabile."
+    {
+      "@type": "MedicalClinic",
+      "name": "Studio Angri",
+      "telephone": "+39 3516793334",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Corso Vittorio Emanuele 13",
+        "addressLocality": "Angri",
+        "postalCode": "84012",
+        "addressRegion": "SA",
+        "addressCountry": "IT"
       },
-      {
-        "@type": "Review",
-        "datePublished": "2026-02-11",
-        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-        "author": { "@type": "Person", "name": "Valentina Pagano" },
-        "reviewBody": "Dopo anni di diete fallimentari è stato un vero miracolo: i piani sono DAVVERO personalizzati, nessun alimento è demonizzato."
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "09:00",
+          "closes": "21:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "09:00",
+          "closes": "14:00"
+        }
+      ]
+    },
+    {
+      "@type": "MedicalClinic",
+      "name": "Studio Nocera Inferiore",
+      "telephone": "+39 3516793334",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Via Attilio Barbarulo 105",
+        "addressLocality": "Nocera Inferiore",
+        "postalCode": "84014",
+        "addressRegion": "SA",
+        "addressCountry": "IT"
       },
-      {
-        "@type": "Review",
-        "datePublished": "2025-01-13",
-        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-        "author": { "@type": "Person", "name": "Giuseppe Belvedere" },
-        "reviewBody": "Da maggio 2024 a Natale dello stesso anno ho perso 23 kg, mangiando anche pizza e dolce."
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 40.7401795,
+        "longitude": 14.6395214
       },
-      {
-        "@type": "Review",
-        "datePublished": "2025-01-12",
-        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-        "author": { "@type": "Person", "name": "Vincenzo Riccio" },
-        "reviewBody": "Grazie a loro, ho perso 30 kg. Seguono i loro pazienti passo dopo passo con grande professionalità."
-      },
-      {
-        "@type": "Review",
-        "datePublished": "2025-07-09",
-        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-        "author": { "@type": "Person", "name": "Federica D'Angelo" },
-        "reviewBody": "In meno di tre mesi ho perso 10 kg senza alcun sacrificio. Non ci si sente per nulla a dieta!"
-      }
-    ]
-  }
-  </script>
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "09:00",
+          "closes": "21:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "09:00",
+          "closes": "14:00"
+        }
+      ]
+    }
+  ],
+  "sameAs": [
+    "https://www.facebook.com/nutrizionistamanuelascarpato",
+    "https://www.instagram.com/dimagrimentolento/"
+  ]
+}
+</script>
 
   <!-- Fonts + Styles -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -160,16 +172,7 @@
   <link rel="stylesheet" href="/assets/plugins/lite-yt-embed.css">
 
   <!-- Google Analytics — per-page tracking -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-77WRRK3HT4"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){ dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-77WRRK3HT4', {
-      'page_title': 'Testimonianze — Dimagrimento Lento',
-      'page_path': '/testimonianze.html'
-    });
-  </script>
+  <script src="/assets/js/analytics.js" defer></script>
 
   <!-- Meta Pixel -->
   <script>
@@ -249,8 +252,8 @@
     <a href="#comeHere" id="nav-mobile-cta" class="dl-btn dl-btn-cta dl-btn-lg" style="width:100%;margin-top:1.5rem;display:flex;justify-content:center">Prenota Gratis →</a>
     <div style="margin-top:2rem;padding-top:1.5rem;border-top:1px solid #e5f0ea">
       <p style="font-size:.78rem;color:#6b7280;font-weight:700;text-transform:uppercase;letter-spacing:.07em;margin-bottom:.75rem">Contatti</p>
-      <a href="tel:3516793334" style="display:flex;align-items:center;gap:.5rem;color:#146B3E;font-weight:600;font-size:.95rem;text-decoration:none;margin-bottom:.5rem"><i class="fas fa-phone-alt"></i> 351 679 3334</a>
-      <a href="https://wa.me/3516793334" style="display:flex;align-items:center;gap:.5rem;color:#22c55e;font-weight:600;font-size:.95rem;text-decoration:none"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+      <a href="tel:+393516793334" style="display:flex;align-items:center;gap:.5rem;color:#146B3E;font-weight:600;font-size:.95rem;text-decoration:none;margin-bottom:.5rem"><i class="fas fa-phone-alt"></i> 351 679 3334</a>
+      <a href="https://wa.me/393516793334" style="display:flex;align-items:center;gap:.5rem;color:#22c55e;font-weight:600;font-size:.95rem;text-decoration:none"><i class="fab fa-whatsapp"></i> WhatsApp</a>
     </div>
   </div>
 </nav>
@@ -272,7 +275,7 @@
       </p>
       <div class="flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
         <a href="#comeHere" class="dl-btn dl-btn-white dl-btn-lg">Consulenza Gratuita</a>
-        <a href="https://wa.me/3516793334?text=Ciao%2C%20ho%20visto%20le%20testimonianze%20e%20vorrei%20saperne%20di%20pi%C3%B9" target="_blank" rel="noopener" class="dl-btn dl-btn-outline-white dl-btn-lg">
+        <a href="https://wa.me/393516793334?text=Ciao%2C%20ho%20visto%20le%20testimonianze%20e%20vorrei%20saperne%20di%20pi%C3%B9" target="_blank" rel="noopener" class="dl-btn dl-btn-outline-white dl-btn-lg">
           <i class="fab fa-whatsapp"></i> WhatsApp
         </a>
       </div>
@@ -420,11 +423,11 @@
         <span class="tp-star filled"></span>
         <span class="tp-star filled"></span>
         <span class="tp-star filled"></span>
-        <span class="tp-star filled"></span>
+        <span class="tp-star half-filled"></span>
       </div>
       <span style="font-weight:700;font-size:1.05rem;color:var(--dl-text)">4,7 / 5</span>
-      <span style="color:var(--dl-text-m);font-size:.95rem">· 71 recensioni verificate</span>
-      <a href="https://it.trustpilot.com/review/dimagrimentolento.it" target="_blank" rel="noopener noreferrer"
+      <span style="color:var(--dl-text-m);font-size:.95rem">· 88 recensioni verificate</span>
+      <a href="https://it.trustpilot.com/evaluate/dimagrimentolento.it" target="_blank" rel="noopener noreferrer"
          style="font-size:.875rem;color:var(--dl-g700);text-decoration:none;white-space:nowrap"
          onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">
         Scrivi una recensione →
@@ -508,7 +511,7 @@
             <span>🕐 Lun–Ven: 09:00–21:00</span>
             <span>🕐 Sabato: 09:00–14:00</span>
             <span>❌ Domenica: Chiuso</span>
-            <span>📞 <a href="tel:3516793334" style="color:var(--dl-g700);font-weight:600">351 679 3334</a></span>
+            <span>📞 <a href="tel:+393516793334" style="color:var(--dl-g700);font-weight:600">351 679 3334</a></span>
           </div>
           <iframe
             src="https://www.openstreetmap.org/export/embed.html?bbox=14.7657074%2C40.672056%2C14.7857074%2C40.692056&layer=mapnik&marker=40.682056%2C14.7757074"
@@ -535,7 +538,7 @@
             <span>🕐 Lun–Ven: 09:00–21:00</span>
             <span>🕐 Sabato: 09:00–14:00</span>
             <span>❌ Domenica: Chiuso</span>
-            <span>📞 <a href="tel:3516793334" style="color:var(--dl-g700);font-weight:600">351 679 3334</a></span>
+            <span>📞 <a href="tel:+393516793334" style="color:var(--dl-g700);font-weight:600">351 679 3334</a></span>
           </div>
           <iframe
             src="https://www.openstreetmap.org/export/embed.html?bbox=14.56857%2C40.7295%2C14.58857%2C40.7495&layer=mapnik&marker=40.7395%2C14.57857"
@@ -562,7 +565,7 @@
             <span>🕐 Lun–Ven: 09:00–21:00</span>
             <span>🕐 Sabato: 09:00–14:00</span>
             <span>❌ Domenica: Chiuso</span>
-            <span>📞 <a href="tel:3516793334" style="color:var(--dl-g700);font-weight:600">351 679 3334</a></span>
+            <span>📞 <a href="tel:+393516793334" style="color:var(--dl-g700);font-weight:600">351 679 3334</a></span>
           </div>
           <iframe
             src="https://www.openstreetmap.org/export/embed.html?bbox=14.6295214%2C40.7301795%2C14.6495214%2C40.7501795&layer=mapnik&marker=40.7401795,14.6395214"
@@ -630,7 +633,7 @@
             </a>
           </li>
           <li>
-            <a href="tel:3516793334">
+            <a href="tel:+393516793334">
               <i class="fas fa-phone-alt mr-1"></i> 351 679 3334
             </a>
           </li>
@@ -653,11 +656,11 @@
      ║      FLOATING BOTTOM BAR       ║
      ╚══════════════════════════════════╝ -->
 <div class="dl-float-bar">
-  <a href="tel:3516793334" class="dl-float-call">
+  <a href="tel:+393516793334" class="dl-float-call">
     <span class="fi">📞</span>
     Chiama
   </a>
-  <a href="https://wa.me/3516793334?text=Ciao%2C%20ho%20visto%20le%20testimonianze%20e%20vorrei%20informazioni%20sul%20percorso%20Dimagrimento%20Lento." class="dl-float-wa" target="_blank" rel="noopener">
+  <a href="https://wa.me/393516793334?text=Ciao%2C%20ho%20visto%20le%20testimonianze%20e%20vorrei%20informazioni%20sul%20percorso%20Dimagrimento%20Lento." class="dl-float-wa" target="_blank" rel="noopener">
     <span class="fi">💬</span>
     WhatsApp
   </a>
@@ -723,7 +726,7 @@
 <script type="text/javascript" src="//www.freeprivacypolicy.com/public/cookie-consent/4.0.0/cookie-consent.js" charset="UTF-8"></script>
 <script type="text/javascript" charset="UTF-8">
   document.addEventListener('DOMContentLoaded', function () {
-    cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palette":"dark","language":"it","page_load_consent_levels":["strictly-necessary"],"notice_banner_reject_button_hide":false,"preferences_center_close_button_hide":false,"page_refresh_confirmation_buttons":false,"website_name":"Dimagrimento Lento","website_privacy_policy_url":"https://www.nutrizionistascarpato.it/cookie"});
+    cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palette":"dark","language":"it","page_load_consent_levels":["strictly-necessary"],"notice_banner_reject_button_hide":false,"preferences_center_close_button_hide":false,"page_refresh_confirmation_buttons":false,"website_name":"Dimagrimento Lento","website_privacy_policy_url":"https://dimagrimentolento.it/privacy.html"});
   });
 </script>
 <noscript>Cookie Consent by <a href="https://www.freeprivacypolicy.com/" rel="noopener">Free Privacy Policy Generator</a></noscript>

@@ -126,13 +126,7 @@
   <script src="/assets/js/blog-article.js" defer></script>
 
   <!-- I tracker si attivano dopo il consenso, senza rallentare l’articolo. -->
-  <script type="text/plain" cookie-consent="tracking" async src="https://www.googletagmanager.com/gtag/js?id=G-77WRRK3HT4"></script>
-  <script type="text/plain" cookie-consent="tracking">
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-77WRRK3HT4');
-  </script>
+  <script src="/assets/js/analytics.js" defer></script>
   <script type="text/plain" cookie-consent="targeting">
     !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
     n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
@@ -258,11 +252,17 @@
 
         <section id="nessuna-promessa-di-chili" aria-labelledby="nessuna-promessa-di-chili-titolo">
           <h2 id="nessuna-promessa-di-chili-titolo">Quello che non scriveremo mai in un annuncio</h2>
-          <p>Non scriveremo quanti chili perderai e in quanto tempo.</p>
+          <p class="dl-article-callout">Non scriveremo quanti chili perderai e in quanto tempo.</p>
           <p>Non perché siamo prudenti: perché non lo sappiamo, e chi lo scrive non lo sa più di noi. Dipende da dove parti, da cosa hai già fatto negli anni scorsi, da quali sono i tuoi comportamenti e da quanto sono radicati.</p>
           <p>Non useremo foto del prima e del dopo per convincerti. E non ti diremo che il tuo problema è la forza di volontà: se fosse quello, saresti già a posto, perché nella tua vita di cose difficili ne hai portate a termine parecchie.</p>
           <p>Il nostro scopo non è darti un risultato da mostrare sui social il mese prossimo. Se ti dessimo quello e basta, ti rivedremmo tra due anni al punto di partenza, e questo per noi non è un successo: è un cliente che torna perché il lavoro non era finito.</p>
         </section>
+
+        <figure class="dl-article-visual">
+          <img src="/assets/images/optimized/vane-france-640.webp" width="640" height="427"
+            loading="lazy" decoding="async"
+            alt="Le biologhe nutrizioniste Francesca e Vanessa nello studio Dimagrimento Lento">
+        </figure>
 
         <section id="visite-di-controllo" aria-labelledby="visite-di-controllo-titolo">
           <h2 id="visite-di-controllo-titolo">Le visite di controllo, e perché le nostre non si pagano</h2>
